@@ -1,0 +1,17 @@
+html{
+    background:
+        linear-gradient(to bottom right,
+            white,
+            rgba(158, 158, 228, 0.5),
+            rgba(118, 118, 211, 0.5),
+            rgba(86, 86, 195, 0.5),
+            rgba(44, 44, 150, 0.5),
+            rgba(21, 21, 109, 0.5),
+            black),
+        url('texture1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
