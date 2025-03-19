@@ -1,17 +1,229 @@
+/*WHOLE PAGE*/
 html{
     background:
         linear-gradient(to bottom right,
-            white,
-            rgba(158, 158, 228, 0.5),
-            rgba(118, 118, 211, 0.5),
-            rgba(86, 86, 195, 0.5),
-            rgba(44, 44, 150, 0.5),
-            rgba(21, 21, 109, 0.5),
-            black),
-        url('texture1.jpeg');
+            rgba(253, 245, 236, 1),
+            rgba(215, 208, 200, 0.7),
+            rgba(253, 245, 236, 0.5),
+            rgba(168, 163, 157, 0.5),
+            rgba(100, 97, 93, 0.7),
+            rgba(29, 28, 27, 1)),
+        url('Images/texture.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: rgb(0, 50, 0);
 }
+body{
+    width: 90%;
+    margin: auto;
+}
+.sectionHeading{
+    font-family: "Big Shoulders Inline", sans-serif;
+    text-align: center;
+}
+section{
+    border-top: 5px double rgb(0, 24, 0);
+    margin-top: 20px;
+}
+
+#socials{
+    text-align: center;
+    margin: auto;
+}
+
+/*HEADER*/
+#name{
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+#tagline{
+    font-family: "Emblema One", system-ui;
+    font-size: 20px;
+    margin-top: 0;
+}
+#name, #tagline{
+    text-align: center;
+}
+#socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 105px;
+    margin-top: 0;
+}
+#LiFavicon{
+    width: 55px;
+    margin-right: 0;
+    grid-column: 1;
+}
+#GhFavicon{
+    width: 50px;
+    margin-left: 0;
+    grid-column: 2;
+}
+
+/*JUMP TO*/
+#jumpTo{
+    border: 5px double rgba(13, 18, 0, 0.4);
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    background: radial-gradient(ellipse, rgba(68, 69, 4, 0.7), rgba(95, 97, 14, 0.7), rgba(131, 133, 37, 0.7),rgba(159, 160, 63, 0.7),rgba(239, 241, 121, 0.7));
+    background-size: 100%;
+    margin: auto;
+}
+#jumpTo h2{
+    text-decoration: underline;
+}
+#jumpTo a{
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+}
+#jumpTo, #jumpTo a{
+    color: rgb(253, 243, 233);
+    text-shadow: 1px 1px 1px rgb(13, 6, 0), -1px -1px 1px rgb(13, 6, 1);
+}
+#jumpTo a:hover{
+    text-shadow: 3px 4px 3px rgb(7, 3, 0), -2px -3px 2px rgb(34, 16, 4);
+}
+
+/*ABOUT ME*/
+#aboutMe{
+    margin-top: 20px;
+}
+    /*CAR ANIMATION*/
+#timeline{
+    position: relative;
+}
+#car{
+    width: 50px;
+    right: 90%;
+    margin-bottom: 0;
+    position: absolute;
+    top: 65px;
+}
+.line{
+    border: 1px solid rgb(0, 0, 46);
+    height: 10px;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    margin-top: 0;
+}
+.plotPoint{
+    border-radius: 10px;
+    background-color: rgb(17, 81, 142);
+    color: white;
+    text-align: center;
+    width: 100px;
+    margin-inline: 10px;
+    height: auto;
+    position: absolute;
+    top: 8px;
+    left: 110%;
+}
+
+#point1{
+    animation-delay: 0s;
+}
+#point2{
+    animation-delay: 6s;
+}
+#point3{
+    animation-delay: 12s;
+}
+#point4{
+    animation-delay: 18s;
+}
+#point5{
+    animation-delay: 24s;
+}
+#point6{
+    animation-delay: 30s;
+}
+#point7{
+    animation-delay: 36s;
+}
+#point8{
+    animation-delay: 42s;
+}
+#point9{
+    animation-delay: 48s;
+}
+#point10{
+    animation-delay: 54s;
+}
+
+.animateCar{
+    animation: driveRight 15s ease-in 1 forwards, rumble 0.2s ease-in-out infinite;
+    animation-play-state: paused;
+}
+.animatePlotPoints{
+    animation: scrollLeft 60s linear 1 forwards;
+    animation-play-state: paused;
+}
+
+@keyframes driveRight{
+   to{
+        right: 15%;
+    }
+}
+@keyframes rumble{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes scrollLeft{
+    from{
+        left: 100%;
+    }
+    to{
+        left: -100%;
+    }
+}
+.controlBtn{
+    margin-top: 50px;
+    background: radial-gradient(rgba(252, 228, 216, 1) 0%, rgba(252, 215, 199, 0.7) 50%, rgba(247, 195, 170, 0.5) 70%, rgba(250, 143, 94, 0.3) 95%);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+}
+.controlBtn:hover{
+    box-shadow: 2px 1px 4px rgb(57, 26, 0); 
+}
+#timelineControls{
+    text-align: center;
+    margin: auto;
+}
+
+
+/*FONTS*/
+.big-shoulders-inline-font {
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+.emblema-one-regular {
+    font-family: "Emblema One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+.fascinate-inline-regular {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  

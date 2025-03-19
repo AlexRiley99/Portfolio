@@ -4,32 +4,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Riley - Portfolio</title>
     <link rel="stylesheet" href="Styles.css">
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Emblema+One&family=Fascinate+Inline&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="heading">
+        <h1 id="name">Alex Riley </h1>
+        <h2 id="tagline">Software Engineer | Web Developer | Mobile Developer</h2>
+    </div>
+    <div id="socials"><a href="https://www.linkedin.com/in/alex-r-riley" target="_blank"><img src="Images/LinkedInFavicon.png" id="LiFavicon" alt="LinkedIn Logo"></a><a href="https://github.com/AlexRiley99" target="_blank"><img src="Images/GitHubFavicon.png" id="GhFavicon" alt="GitHub Logo"></a></div>
+    
     <div id="jumpTo">
         <h2>Jump To:</h2>
-        <ul>
-            <a href="#AboutMe"><li>About Me</li></a>
-            <a href="#Education"><li>Education</li></a>
-            <a href="#Experience"><li>Experience</li></a>
-            <a href="#Projects"><li>Projects</li></a>
-        </ul>
+        <h3>
+            <a href="#AboutMe">About Me</a><br>
+            <a href="#Education">Education</a><br>
+            <a href="#Experience">Experience</a><br>
+            <a href="#Projects">Projects</a>
+        </h3>
     </div>
-    <div id="introDiv">
-        <h1 id="intro">Intro</h1>
-    </div>
-    <div id="aboutMeDiv">
-        <h1 id="aboutMe">About Me</h1>
-    </div>
-    <div id="educationDiv">
-        <h1 id="education">Education</h1>
-    </div>
-    <div id="experienceDiv">
-        <h1 id="experience">Experience</h1>
-    </div>
-    <div id="projectsDiv">
-        <h1 id="projects">Projects</h1>
-    </div>
+    
+    <section id="aboutMeDiv">
+        <h1 id="aboutMe" class="sectionHeading">About Me</h1>
+        <div id="timeline">
+            <h2>The Journey</h2>
+            <p>*Volume up for optimal experience</p>
+            <br>
+            <img src="Images/Car.png" id="car" alt="Yellow Car">
+            <div class="line">
+                <div class="plotPoint" id="point1">Point1</div>
+                <div class="plotPoint" id="point2">Point2</div>
+                <div class="plotPoint" id="point3">Point3</div>
+                <div class="plotPoint" id="point4">Point4</div>
+                <div class="plotPoint" id="point5">Point5</div>
+                <div class="plotPoint" id="point6">Point6</div>
+                <div class="plotPoint" id="point7">Point7</div>
+                <div class="plotPoint" id="point8">Point8</div>
+                <div class="plotPoint" id="point9">Point9</div>
+                <div class="plotPoint" id="point10">Point10</div>
+            </div>
+            
+            <div id="timelineControls">
+                <a href="#start"><button id="toBeginning" class="fas fa-step-backward controlBtn"></button></a> </button> <button id="backward" class="fas fa-backward controlBtn"></button> <button id="play" class="fas fa-play controlBtn"></button> <button id="pause" class="fas fa-pause controlBtn"></button> <button id="forward" class="fas fa-forward controlBtn"></button> <a href="#End"><button id="toEnd" class="fas fa-step-forward controlBtn"></button></a>
+            </div>
+            <audio id="beepbeep" src="Audio/BeepBeep.wav"></audio>
+            <audio id="idling" src="Audio/Idle.wav"></audio>
+            <audio id="break" src="Audio/TireScreech.m4a"></audio>
+        </div>
+    </section>
+    <section id="educationDiv">
+        <h1 id="education" class="sectionHeading">Education</h1>
+    </section>
+    <section id="experienceDiv">
+        <h1 id="experience" class="sectionHeading">Experience</h1>
+    </section>
+    <section id="projectsDiv">
+        <h1 id="projects" class="sectionHeading">Projects</h1>
+    </section>
     <div class="footer_div">
         <footer>
             <h6><a href="https://jupitertechstudio.com">Jupiter Tech Studio</a> | March 2025 | Last Updated: March 14, 2025</h6>
