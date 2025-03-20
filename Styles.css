@@ -20,7 +20,19 @@ body{
     width: 90%;
     margin: auto;
 }
+
+button{
+    text-align: center;
+    background: radial-gradient(rgba(252, 228, 216, 1) 0%, rgba(252, 215, 199, 0.7) 50%, rgba(247, 195, 170, 0.5) 70%, rgba(250, 143, 94, 0.3) 95%);
+    color: black;
+    border-radius: 10px;
+}
+button:hover{
+    box-shadow: 2px 1px 4px rgb(57, 26, 0);
+}
+
 .sectionHeading{
+    text-decoration: underline;
     font-size: 45px;
     font-family: "Big Shoulders Inline", sans-serif;
     text-align: center;
@@ -221,16 +233,10 @@ section{
 }
 
 .controlBtn{
-    text-align: center;
-    background: radial-gradient(rgba(252, 228, 216, 1) 0%, rgba(252, 215, 199, 0.7) 50%, rgba(247, 195, 170, 0.5) 70%, rgba(250, 143, 94, 0.3) 95%);
-    color: black;
-    border-radius: 10px;
     padding: 10px;
     width: 50px;
 }
-.controlBtn:hover{
-    box-shadow: 2px 1px 4px rgb(57, 26, 0); 
-}
+
 #timelineControls{
     top: 130px;
     left: 40%;
@@ -256,8 +262,27 @@ section{
 
 /*EDUCATION*/
 .credentials{
-    width: 200px;
+    width: 300px;
+    height: auto;
 }
+
+#degreeInfo{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+#degreeBtn{
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+#degreeBtnContainer{
+    text-align: center;
+    margin: auto;
+}
+
+
+
 
 
 /*FONTS*/
