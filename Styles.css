@@ -394,10 +394,6 @@ footer{
     padding: 10px;
     text-align: center;
 }
-footer a{
-    text-decoration: none;
-    color: rgb(0, 50, 0);
-}
 
 /*FONTS*/
 .big-shoulders-inline-font {
