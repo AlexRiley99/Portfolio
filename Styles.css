@@ -15,6 +15,7 @@ html{
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: rgb(0, 50, 0);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5), -1px -1px 5px rgba(255, 255, 255, 0.5);
 }
 body{
     width: 90%;
@@ -45,8 +46,8 @@ button:hover{
     margin-top: 0;
 }
 section{
-    border-top: 5px double rgb(0, 24, 0);
     margin-top: 20px;
+    border-top: 5px double rgb(0, 24, 0);
 }
 
 #socials{
@@ -128,7 +129,6 @@ section{
 #timeline{
     position: relative;
     height: 500px;
-    border-bottom: 1px solid rgb(0, 50, 0);
     padding-bottom: 20px;
 }
 #car{
@@ -294,14 +294,26 @@ section{
 }
 
 /*EDUCATION*/
+#education{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 7px;
+    text-align: center;
+}
 .credentials{
     width: 300px;
     height: auto;
 }
-
+#bachelorsDegree{
+    font-weight: 700;
+}
 #degreeInfo{
-    text-align: center;
     font-weight: 500;
+    text-align: center;
+}
+#degreeInfo p{
+    margin: 0;
     font-size: 20px;
 }
 #degreeBtn{
@@ -310,13 +322,63 @@ section{
     font-weight: 700;
 }
 #degreeBtnContainer{
-    text-align: center;
     margin: auto;
 }
 
+/*EXPERIENCE*/
+#experience{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 7px;
+}
+#experienceContainer{
+    font-size: 17px;
+}
+#experienceContainer p{
+    margin: 3px;
+}
+#accomplishments{
+    border-top: 1px solid rgb(0, 24, 0);
+    padding-top: 10px;
+}
+#transferrableSkillsContainer{
+    border-top: 1px solid rgb(0, 24, 0);
+}
+.positionTitle{
+    font-weight: 700;
+    font-size: 20px;
+}
+#triSphereContainer ul, #accomplishments ul{
+    text-align: left;
+    margin-left: 25%;
+}
+#transferrableSkillsContainer ul{
+    text-align: left;
+    margin-left: 25%;
+}
+.sublist{
+    margin-left: 5%;
+}
 
 
+/*PROJECTS*/
+#projectsDiv{
+    border-bottom: 5px double rgb(0, 24, 0);
+    padding-bottom: 20px;
+}
 
+
+/*FOOTER*/
+footer{
+    padding: 10px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(0, 50, 0);
+}
 
 /*FONTS*/
 .big-shoulders-inline-font {
@@ -356,6 +418,13 @@ section{
     }
     #controls{
         left: 22%;
+    }
+    #experienceContainer ul{
+        text-align: left;
+        margin-left: 0;
+    }
+    .sublist{
+        margin-left: 10%;
     }
   }
   
