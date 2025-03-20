@@ -32,9 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     //Other
     let message = document.getElementById('message');
     const timelineControls = document.getElementById('timelineControls');
+    let controls = document.getElementById('controls');
 
     //Start driving
     function startDriving(){
+        controls.style.display = 'none';
         timelineControls.style.top = "440px";
         point10.style.left = '100%';
         point9.style.left = '100%';
@@ -110,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Close 
     function closeAnimation(){
+        controls.style.display = 'block';
         //stop all audio
         carRunning.pause();
         //reset all animations

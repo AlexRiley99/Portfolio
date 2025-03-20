@@ -253,6 +253,31 @@ section{
     padding: 5px;
     width: 100px;
 }
+#controls{
+    position: absolute;
+    top: 190px;
+    left: 36%;
+}
+#controlsLabel{
+    margin-left: 33%;
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+#controlsList{
+    text-align: center;
+    font-family: "Emblema One", system-ui;
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: -8%;
+}
+#haveFun{
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 8%;
+}
+
 #message{
     text-align: center;
     font-family: "Denk One", sans-serif;
@@ -320,6 +345,9 @@ section{
     }
     #car{
         top: 84px;
+    }
+    #controls{
+        left: 22%;
     }
   }
   
