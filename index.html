@@ -30,28 +30,29 @@
     <section id="aboutMeDiv">
         <h1 id="aboutMe" class="sectionHeading">About Me</h1>
         <div id="timeline">
-            <h2>Where I Came From and Where I'm Going</h2>
-            <p>*Volume up for optimal experience</p>
+            <h2 id="theJourney" class="sectionSubHeading">The Journey: A Summary of Where I Came From and Where I'm Going</h2>
+            <p id="message"></p>
             <br>
             <img src="Images/Car.png" id="car" alt="Yellow Car">
-            <div id="line">
-                <div class="plotPoint" id="point1">Point1</div>
-                <div class="plotPoint" id="point2">Point2</div>
-                <div class="plotPoint" id="point3">Point3</div>
-                <div class="plotPoint" id="point4">Point4</div>
-                <div class="plotPoint" id="point5">Point5</div>
-                <div class="plotPoint" id="point6">Point6</div>
-                <div class="plotPoint" id="point7">Point7</div>
-                <div class="plotPoint" id="point8">Point8</div>
-                <div class="plotPoint" id="point9">Point9</div>
-                <div class="plotPoint" id="point10">Point10</div>
+            <div id="line"></div>
+            <div id="plotPointContainer">
+            <div class="plotPoint" id="point1"><b><u>Past:</u></b><br>Lifelong interest in art and design. Love for problem solving and logic puzzles.</div>
+                <div class="plotPoint" id="point2">Customer service experience provided me with soft skills</div>
+                <div class="plotPoint" id="point3">Wanted a way to combine creativity with problem solving to create something meaningful. Chose to pursue software development.</div>                    
+                <div class="plotPoint" id="point4">Bachelor's degree in computer & information science, majoring in software development. <strong>Graduated with honors</strong></div>
+                <div class="plotPoint" id="point5"><b><u>Present:</u></b><br>Apprenticeship at TriSphere Apps as Software Testing Engineer & Software Development Manager</div>
+                <div class="plotPoint" id="point6">Gaining valuable knowledge and experience working with a shared codebase and managing a remote team</div>
+                <div class="plotPoint" id="point7">Actively working on courses, certifications, and personal projects to hone my skills further</div>
+                <div class="plotPoint" id="point8"><b><u>Future:</u></b><br>An entry-level role where I can learn and grow, becoming a part of an awesome team for the long term</div>
+                <div class="plotPoint" id="point9">Gaining knowledge and independence, spending time sharpening my skills in areas where I'm not yet proficient.</div>   
+                <div class="plotPoint" id="point10"><b><u>End Goal:</u></b><br>Full-Stack Senior Developer, leading and mentoring junior developers</div>
             </div>
             <div id="timelineControls">
-                <div id="messageContainer"><p id="message"></p></div>
                 <button id="toBeginning" class="fas fa-step-backward controlBtn"></button> </button> </button> <button id="play" class="fas fa-play controlBtn"></button> <button id="pause" class="fas fa-pause controlBtn"></button> <button id="toEnd" class="fas fa-step-forward controlBtn"></button>
+                <br><button id="closeBtn" class="controlBtn">Close</button>
             </div>
             <audio id="beepbeep" src="Audio/BeepBeep.wav"></audio>
-            <audio id="carRunning" src="Audio/CarRunning.m4a"></audio>
+            <audio id="carRunning" src="Audio/CarRunning.m4a" loop></audio>
             <audio id="break" src="Audio/TireScreech.m4a"></audio>
         </div>
     </section>

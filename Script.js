@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const playBtn = document.getElementById('play');
     const pauseBtn = document.getElementById('pause');
     const toEnd = document.getElementById('toEnd');
+    const closeBtn = document.getElementById('closeBtn');
 
     //Audio
     const beepbeep = document.getElementById('beepbeep');
@@ -30,12 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Other
     let message = document.getElementById('message');
+    const timelineControls = document.getElementById('timelineControls');
 
     //Start driving
     function startDriving(){
+        timelineControls.style.top = "440px";
+        point10.style.left = '100%';
+        point9.style.left = '100%';
+        point8.style.left = '100%';
         beepbeep.play(); //Play "beep beep" and "car running" audio when play button is clicked
         carRunning.play();
-        carRunning.loop = true; //Loop this audio as long as the car is running
         message.textContent = "Let's go! Road trip!";
         car.style.animation = carRumble;
         car.style.animationPlayState = 'running'; //Start animation
@@ -72,19 +77,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function jumpToBeginning(){
+        message.textContent = "";
         carRunning.pause();
-        message.textContent = "Back to square one!";
         car.style.animation = 'none';
         Array.from(plotPoints).forEach(point => {
             point.style.animation = 'none'; //Reset animations
         });
+        point10.style.left = '100%';
+        point9.style.left = '100%';
+        point8.style.left = '100%';
     }
     function jumpToEnd(){
         carRunning.pause();
         car.style.animation = 'none';
         message.textContent = "We've arrived at our destination!"
         Array.from(plotPoints).forEach(point => {
-            point.style.animationPlayState = 'paused'; 
+            point.style.left = '100%';
+            point.style.animation = 'none'; 
         });
         point10.style.left = '40%';
         point9.style.left = '20%';
@@ -99,10 +108,22 @@ document.addEventListener('DOMContentLoaded', () => {
         message.textContent = "We've arrived at our destination!";
     }
 
+    //Close 
+    function closeAnimation(){
+        //reset all animations
+        car.style.animation = 'none';
+        Array.from(plotPoints).forEach(point => {
+            point.style.left = '100%';
+            point.style.animation = 'none'; 
+        });
+
+        timelineControls.style.top = '130px';
+    }
     //Event listeners
     toBeginning.addEventListener('click', jumpToBeginning)
     playBtn.addEventListener('click', startDriving);
     pauseBtn.addEventListener('click', stopDriving);
     toEnd.addEventListener('mouseup', jumpToEnd);
     point10.addEventListener('animationend', endAnimation);
+    closeBtn.addEventListener('click', closeAnimation);
 });
