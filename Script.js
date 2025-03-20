@@ -110,6 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Close 
     function closeAnimation(){
+        //stop all audio
+        carRunning.pause();
         //reset all animations
         car.style.animation = 'none';
         Array.from(plotPoints).forEach(point => {

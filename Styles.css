@@ -108,6 +108,8 @@ section{
 #timeline{
     position: relative;
     height: 500px;
+    border-bottom: 1px solid rgb(0, 50, 0);
+    padding-bottom: 20px;
 }
 #car{
     width: 50px;
@@ -250,6 +252,11 @@ section{
     font-family: "Denk One", sans-serif;
     font-size: 18px;
     height: 17px;
+}
+
+/*EDUCATION*/
+.credentials{
+    width: 200px;
 }
 
 
