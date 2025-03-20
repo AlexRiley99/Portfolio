@@ -317,6 +317,7 @@ section{
     font-size: 20px;
 }
 #degreeBtn{
+    margin-top: 10px;
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -367,6 +368,17 @@ section{
 #projectsDiv{
     border-bottom: 5px double rgb(0, 24, 0);
     padding-bottom: 20px;
+    text-align: center;
+}
+.projectBtn{
+    width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+#inTheMeantime{
+    font-size: 20px;
 }
 
 /*TO TOP BUTTON*/

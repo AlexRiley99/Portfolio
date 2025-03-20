@@ -48,22 +48,22 @@ document.addEventListener('DOMContentLoaded', () => {
         car.style.animationPlayState = 'running'; //Start animation
         //Animate each plot point individually
         Array.from(plotPoints).forEach(point => {
-            point.style.animation = 'scrollTimeline 30s linear 1 forwards';
+            point.style.animation = 'scrollTimeline 60s linear 1 forwards';
         });
-        point10.style.animation = 'point10Stop 9s linear 1 forwards';
-        point9.style.animation = 'point9Stop 12s linear 1 forwards';
-        point8.style.animation = 'point8Stop 15s linear 1 forwards';
+        point10.style.animation = 'point10Stop 18s linear 1 forwards';
+        point9.style.animation = 'point9Stop 24s linear 1 forwards';
+        point8.style.animation = 'point8Stop 30s linear 1 forwards';
 
         point1.style.animationDelay = '0s';
-        point2.style.animationDelay = '3s';
-        point3.style.animationDelay = '6s';
-        point4.style.animationDelay = '9s';
-        point5.style.animationDelay = '12s';
-        point6.style.animationDelay = '15s';
-        point7.style.animationDelay = '18s';
-        point8.style.animationDelay = '21s';
-        point9.style.animationDelay = '24s';
-        point10.style.animationDelay = '27s';
+        point2.style.animationDelay = '6s';
+        point3.style.animationDelay = '12s';
+        point4.style.animationDelay = '18s';
+        point5.style.animationDelay = '24s';
+        point6.style.animationDelay = '30s';
+        point7.style.animationDelay = '36s';
+        point8.style.animationDelay = '42s';
+        point9.style.animationDelay = '48s';
+        point10.style.animationDelay = '54s';
     }
 
     //Stop driving
