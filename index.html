@@ -18,13 +18,12 @@
     <div id="socials"><a href="https://www.linkedin.com/in/alex-r-riley" target="_blank"><img src="Images/LinkedInFavicon.png" id="LiFavicon" alt="LinkedIn Logo"></a><a href="https://github.com/AlexRiley99" target="_blank"><img src="Images/GitHubFavicon.png" id="GhFavicon" alt="GitHub Logo"></a></div>
     
     <div id="jumpTo">
-        <h2>Jump To:</h2>
-        <h3>
-            <a href="#AboutMe">About Me</a><br>
-            <a href="#Education">Education</a><br>
-            <a href="#Experience">Experience</a><br>
-            <a href="#Projects">Projects</a>
-        </h3>
+        <p id="jumpToLabel">Jump To:</p>
+        <ul id="jumpToList">
+            <li><a href="#AboutMe">About Me</a></li>
+            <li><a href="#educationAndExperience">Education & Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+        </ul>
     </div>
     
     <section id="aboutMeDiv">
@@ -68,23 +67,28 @@
             <audio id="break" src="Audio/TireScreech.m4a"></audio>
         </div>
     </section>
-    <section>
-        <h1 id="education" class="sectionHeading">Education</h1>
-        <div id="educationContainer">
-            <div id="degreeInfo">
-                <p id="bachelorsDegree">Bachelor of Science</p>
-                <p>Computer & Information Science</p>
-                <p>Majored in Software Development</p>
-                <p>ECPI University</p>
-                <strong><p>Magna Cum Laude</p></strong>
+    <section id="educationAndExperience">
+        <section id="education">
+            <h1 id="education" class="sectionHeading">Education</h1>
+            <div id="educationContainer">
+                <div id="degreeInfo">
+                    <p id="bachelorsDegree">Bachelor of Science</p>
+                    <p>Computer & Information Science</p>
+                    <p>Majored in Software Development</p>
+                    <p>ECPI University</p>
+                    <strong><p>Magna Cum Laude</p></strong>
+                </div>
+                <div id="degreeBtnContainer">
+                    <a href="Images/BachelorsDegree.png" target="_blank"><button id="degreeBtn" class="clickToView">Click To View</button></a>
+                </div>
             </div>
-            <div id="degreeBtnContainer">
-                <a href="Images/BachelorsDegree.png" target="_blank"><button id="degreeBtn" class="clickToView">Click To View</button></a>
-            </div>
-        </div>
+        </section>
+        <section id="experience">
+            <h1 id="experience" class="sectionHeading">Experience</h1>
+        </section>
     </section>
     <section id="experienceDiv">
-        <h1 id="experience" class="sectionHeading">Experience</h1>
+        
     </section>
     <section id="projectsDiv">
         <h1 id="projects" class="sectionHeading">Projects</h1>
