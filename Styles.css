@@ -369,6 +369,25 @@ section{
     padding-bottom: 20px;
 }
 
+/*TO TOP BUTTON*/
+#toTop{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 15px;
+    width: 100px;
+    opacity: 60%;
+    transition: opacity 1s;
+}
+#toTop:hover{
+    opacity: 100%;
+}
+#toTopContainer{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
 
 /*FOOTER*/
 footer{
