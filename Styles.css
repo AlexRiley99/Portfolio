@@ -99,15 +99,16 @@ section{
     /*CAR ANIMATION*/
 #timeline{
     position: relative;
+    height: 500px;
 }
 #car{
     width: 50px;
-    right: 90%;
+    right: 50%;
     margin-bottom: 0;
     position: absolute;
     top: 65px;
 }
-.line{
+#line{
     border: 1px solid rgb(0, 0, 46);
     height: 10px;
     background-color: rgb(31, 31, 31);
@@ -124,54 +125,14 @@ section{
     height: auto;
     position: absolute;
     top: 8px;
-    left: 110%;
+    left: 100%;
 }
 
-#point1{
-    animation-delay: 0s;
-}
-#point2{
-    animation-delay: 6s;
-}
-#point3{
-    animation-delay: 12s;
-}
-#point4{
-    animation-delay: 18s;
-}
-#point5{
-    animation-delay: 24s;
-}
-#point6{
-    animation-delay: 30s;
-}
-#point7{
-    animation-delay: 36s;
-}
-#point8{
-    animation-delay: 42s;
-}
-#point9{
-    animation-delay: 48s;
-}
-#point10{
-    animation-delay: 54s;
+#messageContainer{
+    margin-top: 100px;
+    font-family: "Denk One", sans-serif;
 }
 
-.animateCar{
-    animation: driveRight 15s ease-in 1 forwards, rumble 0.2s ease-in-out infinite;
-    animation-play-state: paused;
-}
-.animatePlotPoints{
-    animation: scrollLeft 60s linear 1 forwards;
-    animation-play-state: paused;
-}
-
-@keyframes driveRight{
-   to{
-        right: 15%;
-    }
-}
 @keyframes rumble{
     0%{
         transform: translateY(0);
@@ -183,7 +144,7 @@ section{
         transform: translateY(0);
     }
 }
-@keyframes scrollLeft{
+@keyframes scrollTimeline{
     from{
         left: 100%;
     }
@@ -191,8 +152,32 @@ section{
         left: -100%;
     }
 }
+@keyframes point10Stop{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 40%;
+    }
+}
+@keyframes point9Stop{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 20%;
+    }
+}
+@keyframes point8Stop{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
 .controlBtn{
-    margin-top: 50px;
     background: radial-gradient(rgba(252, 228, 216, 1) 0%, rgba(252, 215, 199, 0.7) 50%, rgba(247, 195, 170, 0.5) 70%, rgba(250, 143, 94, 0.3) 95%);
     color: black;
     border-radius: 10px;
@@ -222,6 +207,11 @@ section{
   }
 .fascinate-inline-regular {
     font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+.denk-one-regular {
+    font-family: "Denk One", sans-serif;
     font-weight: 400;
     font-style: normal;
   }

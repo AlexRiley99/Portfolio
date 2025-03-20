@@ -1,31 +1,69 @@
 document.addEventListener('DOMContentLoaded', () => {
+    //DECLARATIONS//
+    //Control Buttons
+    const toBeginning = document.getElementById('toBeginning');
     const playBtn = document.getElementById('play');
     const pauseBtn = document.getElementById('pause');
+    const toEnd = document.getElementById('toEnd');
 
+    //Audio
     const beepbeep = document.getElementById('beepbeep');
-    const idling = document.getElementById('idling');
+    const carRunning = document.getElementById('carRunning');
     const breakScreech = document.getElementById('break');
 
+    //Items on the timeline
     const car = document.getElementById('car');
     const plotPoints = document.getElementsByClassName('plotPoint');
+    const point1 = document.getElementById('point1');
+    const point2 = document.getElementById('point2');
+    const point3 = document.getElementById('point3');
+    const point4 = document.getElementById('point4');
+    const point5 = document.getElementById('point5');
+    const point6 = document.getElementById('point6');
+    const point7 = document.getElementById('point7');
+    const point8 = document.getElementById('point8');
+    const point9 = document.getElementById('point9');
+    const point10 = document.getElementById('point10');
+
+    //Animations
+    const carRumble = 'rumble 0.2s ease-in-out infinite';
+
+    //Other
+    let message = document.getElementById('message');
 
     //Start driving
     function startDriving(){
-        beepbeep.play(); //Play "beep beep" and "idling" audio when play button is clicked
-        idling.play();
-        car.classList.add('animateCar');
+        beepbeep.play(); //Play "beep beep" and "car running" audio when play button is clicked
+        carRunning.play();
+        carRunning.loop = true; //Loop this audio as long as the car is running
+        message.textContent = "Let's go! Road trip!";
+        car.style.animation = carRumble;
         car.style.animationPlayState = 'running'; //Start animation
         //Animate each plot point individually
         Array.from(plotPoints).forEach(point => {
-            point.classList.add('animatePlotPoints');
-            point.style.animationPlayState = 'running';
+            point.style.animation = 'scrollTimeline 30s linear 1 forwards';
         });
+        point10.style.animation = 'point10Stop 9s linear 1 forwards';
+        point9.style.animation = 'point9Stop 12s linear 1 forwards';
+        point8.style.animation = 'point8Stop 15s linear 1 forwards';
+
+        point1.style.animationDelay = '0s';
+        point2.style.animationDelay = '3s';
+        point3.style.animationDelay = '6s';
+        point4.style.animationDelay = '9s';
+        point5.style.animationDelay = '12s';
+        point6.style.animationDelay = '15s';
+        point7.style.animationDelay = '18s';
+        point8.style.animationDelay = '21s';
+        point9.style.animationDelay = '24s';
+        point10.style.animationDelay = '27s';
     }
 
     //Stop driving
     function stopDriving(){
         breakScreech.play(); //Play break screech
-        idling.pause(); //stop idling
+        carRunning.pause(); //stop running
+        message.textContent = "Skrrrt! Time for a rest stop."
         car.style.animationPlayState = 'paused';
         //Pause each plot point
         Array.from(plotPoints).forEach(point => {
@@ -33,8 +71,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function jumpToBeginning(){
+        carRunning.pause();
+        message.textContent = "Back to square one!";
+        car.style.animation = 'none';
+        Array.from(plotPoints).forEach(point => {
+            point.style.animation = 'none'; //Reset animations
+        });
+    }
+    function jumpToEnd(){
+        carRunning.pause();
+        car.style.animation = 'none';
+        message.textContent = "We've arrived at our destination!"
+        Array.from(plotPoints).forEach(point => {
+            point.style.animationPlayState = 'paused'; 
+        });
+        point10.style.left = '40%';
+        point9.style.left = '20%';
+        point8.style.left = '0%';
+    }
+    
+
+    //End animation
+    function endAnimation(){
+        carRunning.pause();
+        car.style.animationPlayState = 'paused';
+        message.textContent = "We've arrived at our destination!";
+    }
 
     //Event listeners
+    toBeginning.addEventListener('click', jumpToBeginning)
     playBtn.addEventListener('click', startDriving);
     pauseBtn.addEventListener('click', stopDriving);
+    toEnd.addEventListener('mouseup', jumpToEnd);
+    point10.addEventListener('animationend', endAnimation);
 });

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Emblema+One&family=Fascinate+Inline&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Denk+One&family=Emblema+One&family=Fascinate+Inline&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="heading">
@@ -30,11 +30,11 @@
     <section id="aboutMeDiv">
         <h1 id="aboutMe" class="sectionHeading">About Me</h1>
         <div id="timeline">
-            <h2>The Journey</h2>
+            <h2>Where I Came From and Where I'm Going</h2>
             <p>*Volume up for optimal experience</p>
             <br>
             <img src="Images/Car.png" id="car" alt="Yellow Car">
-            <div class="line">
+            <div id="line">
                 <div class="plotPoint" id="point1">Point1</div>
                 <div class="plotPoint" id="point2">Point2</div>
                 <div class="plotPoint" id="point3">Point3</div>
@@ -46,12 +46,12 @@
                 <div class="plotPoint" id="point9">Point9</div>
                 <div class="plotPoint" id="point10">Point10</div>
             </div>
-            
             <div id="timelineControls">
-                <a href="#start"><button id="toBeginning" class="fas fa-step-backward controlBtn"></button></a> </button> <button id="backward" class="fas fa-backward controlBtn"></button> <button id="play" class="fas fa-play controlBtn"></button> <button id="pause" class="fas fa-pause controlBtn"></button> <button id="forward" class="fas fa-forward controlBtn"></button> <a href="#End"><button id="toEnd" class="fas fa-step-forward controlBtn"></button></a>
+                <div id="messageContainer"><p id="message"></p></div>
+                <button id="toBeginning" class="fas fa-step-backward controlBtn"></button> </button> </button> <button id="play" class="fas fa-play controlBtn"></button> <button id="pause" class="fas fa-pause controlBtn"></button> <button id="toEnd" class="fas fa-step-forward controlBtn"></button>
             </div>
             <audio id="beepbeep" src="Audio/BeepBeep.wav"></audio>
-            <audio id="idling" src="Audio/Idle.wav"></audio>
+            <audio id="carRunning" src="Audio/CarRunning.m4a"></audio>
             <audio id="break" src="Audio/TireScreech.m4a"></audio>
         </div>
     </section>
