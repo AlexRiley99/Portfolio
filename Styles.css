@@ -1,3 +1,4 @@
+@media (max-width: 3000px){
 /*WHOLE PAGE*/
 html{
     background:
@@ -135,10 +136,10 @@ section{
 }
 #car{
     width: 50px;
-    right: 50%;
+    right: 45vw;
     margin-bottom: 0;
     position: absolute;
-    top: 61px;
+    top: 60px;
 }
 #line{
     border: 1px solid rgb(0, 0, 46);
@@ -249,7 +250,7 @@ section{
 
 #timelineControls{
     top: 130px;
-    left: 40%;
+    left: 37vw;
     margin-bottom: 0;
     text-align: center;
     position: absolute;
@@ -266,7 +267,7 @@ section{
 #controls{
     position: absolute;
     top: 190px;
-    left: 36%;
+    left: 33vw;
 }
 #controlsLabel{
     margin-left: 33%;
@@ -429,9 +430,9 @@ footer{
     font-weight: 400;
     font-style: normal;
   }
+}
 
-  /*MEDIA QUERIES*/
-  @media (min-width: 1028px) and (max-width: 2800px){
+@media (max-width: 1080px){
     .plotPoint{
         top: 130px;
         margin-inline: 10px;
@@ -461,12 +462,10 @@ footer{
         left: 30%;
     }
     #car{
-        top: 84px;
+        top: 83px;
     }
     #controls{
         top: 38%;
         left: 22%;
     }
   }
-  
-  
