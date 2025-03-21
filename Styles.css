@@ -504,22 +504,6 @@ footer{
     .sublist{
         margin-left: 10%;
     }
-    #storefront1{
-        bottom: 52%;
-        right: 39%;
-    }
-    #storefront2{
-        bottom: 48%;
-        right: 10%;
-    }
-    #storefront3{
-        bottom: 53%;
-        right: 72%;
-    }
-    #storefront4{
-        bottom: 20%;
-        right: 10%;
-    }
   }
 
   @media (min-width: 400px) and (max-width: 812px){
@@ -533,33 +517,6 @@ footer{
     #controls{
         top: 38%;
         left: 22%;
-    }
-    #map{
-        width: 400px;
-    }
-    #storefront1{
-        width: 100px;
-        height: 90px;
-        bottom: 48%;
-        right: 42%;
-    }
-    #storefront2{
-        width: 100px;
-        height: 100px;
-        bottom: 45%;
-        right: 20%;
-    }
-    #storefront3{
-        width: 90px;
-        height: 90px;
-        bottom: 49%;
-        right: 65%;
-    }
-    #storefront4{
-        width: 90px;
-        height: 90px;
-        bottom: 18%;
-        right: 19%;
     }
   }
   
