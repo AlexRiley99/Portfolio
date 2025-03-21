@@ -521,5 +521,37 @@ footer{
         right: 10%;
     }
   }
+
+  @media screen and (max-width: 768px){
+    #timelineControls{
+        top: 150px;
+        left: 30%;
+    }
+    #car{
+        top: 90px;
+    }
+    #controls{
+        left: 20%;
+    }
+    #map{
+        width: 400px;
+    }
+    #storefront1{
+        bottom: 50%;
+        right: 25%;
+    }
+    #storefront2{
+        bottom: 46%;
+        right: 10%;
+    }
+    #storefront3{
+        bottom: 51%;
+        right: 72%;
+    }
+    #storefront4{
+        bottom: 18%;
+        right: 5%;
+    }
+  }
   
   
