@@ -522,7 +522,7 @@ footer{
     }
   }*/
 
-  @media (max-width: 812px){
+  @media (min-width: 400px) and (max-width: 812px){
     #timelineControls{
         top: 150px;
         left: 30%;
