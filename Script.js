@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Project hover text
     function showHoverText(event){
-        projectName.style.padding = "13px";
+        projectName.style.padding = "11px";
         if(event.target === storefront1){
             projectName.textContent = "Grocery List Maker";
         }

@@ -383,6 +383,7 @@ section{
 #projectName{
     font-size: 20px;
     padding: 23px;
+    font-family: "Big Shoulders Inline", sans-serif;
 }
 .storefront{
     position: absolute;
@@ -391,32 +392,33 @@ section{
     width: 130px;
     height: 105px;
     bottom: 52%;
-    right: 39%;
-}
-#storefront1:hover, #storefront2:hover, #storefront3:hover, #storefront4:hover{
-    animation: hoverBounce 1s linear infinite;
+    right: 45%;
 }
 #storefront2{
     width: 125px;
     height: 110px;
     bottom: 48%;
-    right: 10%;
+    right: 30%;
 }
 #storefront3{
     width: 112px;
     height: 100px;
     bottom: 53%;
-    right: 72%;
+    right: 61%;
 }
 #storefront4{
     width: 100px;
     height: 90px;
     bottom: 18%;
-    right: 10%;
+    right: 30%;
 }
 #map{
     width: 550px;
     border-radius: 10px;
+}
+
+#storefront1:hover, #storefront2:hover, #storefront3:hover, #storefront4:hover{
+    animation: hoverBounce 1s linear infinite;
 }
 @keyframes hoverBounce{
     0%{
@@ -501,6 +503,22 @@ footer{
     }
     .sublist{
         margin-left: 10%;
+    }
+    #storefront1{
+        bottom: 52%;
+        right: 39%;
+    }
+    #storefront2{
+        bottom: 48%;
+        right: 10%;
+    }
+    #storefront3{
+        bottom: 53%;
+        right: 72%;
+    }
+    #storefront4{
+        bottom: 20%;
+        right: 10%;
     }
   }
   
