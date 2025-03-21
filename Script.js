@@ -1,17 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    //DECLARATIONS//
+//DECLARATIONS//
     //Control Buttons
     const toBeginning = document.getElementById('toBeginning');
     const playBtn = document.getElementById('play');
     const pauseBtn = document.getElementById('pause');
     const toEnd = document.getElementById('toEnd');
     const closeBtn = document.getElementById('closeBtn');
-
     //Audio
     const beepbeep = document.getElementById('beepbeep');
     const carRunning = document.getElementById('carRunning');
     const breakScreech = document.getElementById('break');
-
     //Items on the timeline
     const car = document.getElementById('car');
     const plotPoints = document.getElementsByClassName('plotPoint');
@@ -25,15 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const point8 = document.getElementById('point8');
     const point9 = document.getElementById('point9');
     const point10 = document.getElementById('point10');
-
     //Animations
     const carRumble = 'rumble 0.2s ease-in-out infinite';
-
+    //Projects
+    const storefront1 = document.getElementById('storefront1');
+    const storefront2 = document.getElementById('storefront2');
+    const storefront3 = document.getElementById('storefront3');
+    const storefront4 = document.getElementById('storefront4');
+    const projectName = document.getElementById('projectName');
     //Other
     let message = document.getElementById('message');
     const timelineControls = document.getElementById('timelineControls');
     let controls = document.getElementById('controls');
 
+
+//CODE BEGINS//
     //Start driving
     function startDriving(){
         controls.style.display = 'none';
@@ -65,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         point9.style.animationDelay = '48s';
         point10.style.animationDelay = '54s';
     }
-
     //Stop driving
     function stopDriving(){
         breakScreech.play(); //Play break screech
@@ -77,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             point.style.animationPlayState = 'paused'; 
         });
     }
-
+    //Jump to beginning
     function jumpToBeginning(){
         message.textContent = "";
         carRunning.pause();
@@ -89,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         point9.style.left = '100%';
         point8.style.left = '100%';
     }
+    //Jump to end
     function jumpToEnd(){
         carRunning.pause();
         car.style.animation = 'none';
@@ -101,15 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
         point9.style.left = '20%';
         point8.style.left = '0%';
     }
-    
-
     //End animation
     function endAnimation(){
         carRunning.pause();
         car.style.animationPlayState = 'paused';
         message.textContent = "We've arrived at our destination!";
     }
-
     //Close 
     function closeAnimation(){
         controls.style.display = 'block';
@@ -124,6 +125,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         timelineControls.style.top = '130px';
     }
+
+
+    //Project hover text
+    function showHoverText(event){
+        projectName.style.padding = "13px";
+        if(event.target === storefront1){
+            projectName.textContent = "Grocery List Maker";
+        }
+        else if(event.target === storefront2){
+            projectName.textContent = "Sundust Photography";
+        }
+        else if(event.target === storefront3){
+            projectName.textContent = "Jupiter Tech Studio";
+        }
+        else if(event.target === storefront4){
+            projectName.textContent = "Variable Income Calculator"
+        }
+    }
+    function hideHoverText(){
+        projectName.style.padding = "23px";
+        projectName.textContent = "";
+    }
+
     //Event listeners
     toBeginning.addEventListener('click', jumpToBeginning)
     playBtn.addEventListener('click', startDriving);
@@ -131,4 +155,13 @@ document.addEventListener('DOMContentLoaded', () => {
     toEnd.addEventListener('mouseup', jumpToEnd);
     point10.addEventListener('animationend', endAnimation);
     closeBtn.addEventListener('click', closeAnimation);
+
+    storefront1.addEventListener('mouseover', showHoverText);
+    storefront1.addEventListener('mouseout', hideHoverText);
+    storefront2.addEventListener('mouseover', showHoverText);
+    storefront2.addEventListener('mouseout', hideHoverText);
+    storefront3.addEventListener('mouseover', showHoverText);
+    storefront3.addEventListener('mouseout', hideHoverText);
+    storefront4.addEventListener('mouseover', showHoverText);
+    storefront4.addEventListener('mouseout', hideHoverText);
 });

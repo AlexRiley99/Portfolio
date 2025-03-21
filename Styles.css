@@ -371,6 +371,7 @@ section{
     border-bottom: 5px double rgb(0, 24, 0);
     padding-bottom: 20px;
     text-align: center;
+    position: relative;
 }
 .projectBtn{
     width: 300px;
@@ -379,8 +380,54 @@ section{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
 }
-#inTheMeantime{
+#projectName{
     font-size: 20px;
+    padding: 23px;
+}
+.storefront{
+    position: absolute;
+}
+#storefront1{
+    width: 130px;
+    height: 105px;
+    bottom: 52%;
+    right: 39%;
+}
+#storefront1:hover, #storefront2:hover, #storefront3:hover, #storefront4:hover{
+    animation: hoverBounce 1s linear infinite;
+}
+#storefront2{
+    width: 125px;
+    height: 110px;
+    bottom: 48%;
+    right: 10%;
+}
+#storefront3{
+    width: 112px;
+    height: 100px;
+    bottom: 53%;
+    right: 72%;
+}
+#storefront4{
+    width: 100px;
+    height: 90px;
+    bottom: 18%;
+    right: 10%;
+}
+#map{
+    width: 550px;
+    border-radius: 10px;
+}
+@keyframes hoverBounce{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 /*TO TOP BUTTON*/
