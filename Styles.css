@@ -132,7 +132,6 @@ section{
 #timeline{
     height: 410px;
     padding-bottom: 20px;
-    border: 1px solid red;
 }
 #carContainer{
     display: flex;
