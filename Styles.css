@@ -385,18 +385,94 @@ section{
 
 
 /*PROJECTS*/
+#characterAndSpeech{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    overflow: hidden;
+    position: relative;
+    width: 360px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+#speechBubbleContainer{
+    grid-column: 2;
+    display: flex;
+    position: relative;
+    right: 25%;
+    top: 15%;
+    padding: 0;
+    margin: 0;
+    height: 150px;
+}
+#speechBubble{
+    opacity: 50%;
+    width: 200px;
+    height: 200px;
+}
+#speechTxt{
+    position: absolute;
+    top: -5%;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 100px;
+    padding: 10%;
+    background: radial-gradient(ellipse, 
+        white, 
+        rgba(255, 255, 255, 0.9) 10%,
+        rgba(255, 255, 255, 0.7) 50%, 
+        rgba(255, 255, 255, 0.5) 60%, 
+        rgba(255, 255, 255, 0.3) 65%, 
+        rgba(255, 255, 255, 0) 90%
+    );
+}
+#characterContainer{
+    grid-column: 1;
+    position: relative;
+    top: 0;
+    mask-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 100%
+        );
+        mask-size: 100% 100%;
+    padding: 0;
+    margin: 0;
+}
+#character{
+    width: 200px;
+}
 #projectsDiv{
+    width: 73%;
+    margin: auto;
     border-bottom: 5px double rgb(0, 24, 0);
     padding-bottom: 20px;
     text-align: center;
     position: relative;
 }
+#projectButtons{
+    position: absolute;
+    display: block;
+    height: auto;        
+    width: 600px;
+    right: 0;
+    bottom: 0;
+}
 .projectBtn{
-    width: 300px;
-    margin-top: 10px;
-    padding: 10px;
+    width: 600px;
+    height: 85px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
+    font-size: 30px;
+    margin: 10px auto;
+    padding: 10px;
 }
 
 /*TO TOP BUTTON*/
@@ -422,6 +498,7 @@ section{
 /*FOOTER*/
 footer{
     padding: 10px;
+    margin: 0;
     text-align: center;
 }
 
@@ -474,5 +551,23 @@ footer{
     #controls{
         top: 38%;
         left: 22%;
+    }
+    #projectsDiv{
+        width: 100%;
+    }
+    #projectButtons{
+        position: absolute;
+        display: block;
+        height: auto;
+        width: 300px;
+        right: 0;
+        bottom: 0;
+    }
+    .projectBtn{
+        width: 280px;
+        height: 85px;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 20px;
     }
   }
