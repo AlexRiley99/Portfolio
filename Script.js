@@ -117,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //Close 
     function closeAnimation(){
         controls.style.display = 'block';
+        message.textContent = "";
         plotPointContainer.style.height = '0px';
         timeline.style.height = '410px';
         //stop all audio
