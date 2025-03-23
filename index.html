@@ -17,6 +17,7 @@
     </div>
     <div id="socials"><a href="https://www.linkedin.com/in/alex-r-riley" target="_blank"><img src="Images/LinkedInFavicon.png" id="LiFavicon" alt="LinkedIn Logo"></a><a href="https://github.com/AlexRiley99" target="_blank"><img src="Images/GitHubFavicon.png" id="GhFavicon" alt="GitHub Logo"></a></div>
     
+    <!--NAVIGATION-->
     <nav id="jumpTo">
         <div id="navContainer">
             <p><a href="#AboutMe">About Me</a> | </p> 
@@ -26,14 +27,23 @@
         </div>
     </nav>
     
+    <!--ABOUT ME SECTION-->
     <section id="aboutMeDiv">
         <h1 id="aboutMe" class="sectionHeading">About Me</h1>
         <div id="timeline">
             <h2 id="theJourney" class="sectionSubHeading">The Journey: A Summary of Where I Came From and Where I'm Going</h2>
             <p id="message"></p>
             <br>
-            <img src="Images/Car.png" id="car" alt="Yellow Car">
+
+            <!--Car asset-->
+            <div id="carContainer">
+                <img src="Images/Car.png" id="car" alt="Yellow Car">
+            </div>
+
+            <!--Road-->
             <div id="line"></div>
+
+            <!--Plot points-->
             <div id="plotPointContainer">
             <div class="plotPoint" id="point1"><b><u>Past:</u></b><br>Lifelong interest in art and design. Love for problem solving and logic puzzles.</div>
                 <div class="plotPoint" id="point2">Spent time in positions that built my soft skills. Knew I wanted to continue my education, but didn't yet have a field in mind.</div>
@@ -46,27 +56,35 @@
                 <div class="plotPoint" id="point9">Gaining knowledge and independence, spending time sharpening my skills in areas where I'm not yet proficient.</div>   
                 <div class="plotPoint" id="point10"><b><u>End Goal:</u></b><br>Full-Stack Senior Developer, leading and mentoring junior developers</div>
             </div>
-            <div id="timelineControls">
-                <button id="toBeginning" class="fas fa-step-backward controlBtn"></button> </button> </button> <button id="play" class="fas fa-play controlBtn"></button> <button id="pause" class="fas fa-pause controlBtn"></button> <button id="toEnd" class="fas fa-step-forward controlBtn"></button>
-                <br><button id="closeBtn" class="controlBtn">Close</button>
+
+            <!--Control Buttons-->
+            <div id="controlBtnContainer">
+                <div id="timelineControls">
+                    <button id="toBeginning" class="fas fa-step-backward controlBtn"></button> </button> </button> <button id="play" class="fas fa-play controlBtn"></button> <button id="pause" class="fas fa-pause controlBtn"></button> <button id="toEnd" class="fas fa-step-forward controlBtn"></button>
+                    <br><button id="closeBtn" class="controlBtn">Close</button>
+                </div>
             </div>
             
-            <div id="controls">
-                <p id="controlsLabel"><u>Controls</u></p>
-                <ul id="controlsList">
-                    <li>Click <p class="fas fa-play"></p> to start</li>
-                    <li>Click <p class="fas fa-pause"></p> to stop</li>
-                    <li>Click <p class="fas fa-step-backward"></p> to restart</li>
-                    <li>Click <p class="fas fa-step-forward"></p> to skip to the end</li>
-                </ul>
-                <p id="haveFun">Have fun! I hope you packed snacks for the trip!</p>
+            <!--Controls List-->
+            <div id="controlsListContainer">
+                    <p id="controlsLabel"><u>Controls</u></p>
+                    <div id="controlsList">
+                        <div id="clickPlay"><p>* Click <p class="fas fa-play"></p> to start</p></div>
+                        <div id="clickPause"><p>* Click <p class="fas fa-pause"></p> to stop</p></div>
+                        <div id="clickRewind"><p>* Click <p class="fas fa-step-backward"></p> to restart</p></div>
+                        <div id="clickFastForward"><p>* Click <p class="fas fa-step-forward"></p> to skip to the end</p></div>
+                    <p id="haveFun">Have fun! I hope you packed snacks for the trip!</p>
+                </div>
             </div>
 
+            <!--Audio Files-->
             <audio id="beepbeep" src="Audio/BeepBeep.wav"></audio>
             <audio id="carRunning" src="Audio/CarRunning.m4a" loop></audio>
             <audio id="break" src="Audio/TireScreech.m4a"></audio>
         </div>
     </section>
+
+    <!--EDUCATION SECTION-->
     <section id="education">
             <h1 id="education" class="sectionHeading">Education</h1>
             <div id="educationContainer">
@@ -82,6 +100,8 @@
                 </div>
             </div>
     </section>
+
+    <!--EXPERIENCE SECTION-->
     <section id="experience">
         <h1 id="experience" class="sectionHeading">Experience</h1>
             <div id="experienceContainer">
@@ -130,6 +150,8 @@
             </div>
         </div>
     </section>
+
+    <!--PROJECTS SECTION-->
     <section id="projectsDiv">
         <h1 id="projects" class="sectionHeading">Projects</h1>
         <p class="sectionSubHeading">Click any button below to be redirected to the corresponding project</p>
@@ -139,10 +161,12 @@
         <a href="https://alexriley99.github.io/Variable_Income_Calculator/" target="_blank"><button id="variableincome" class="projectBtn">Variable Income Calculator</button></a>
     </section>
 
+    <!--TO TOP BUTTON-->
     <div id="toTopContainer">
         <a href="#name"><button id="toTop">&#8593; To Top</button></a>
     </div>
 
+    <!--FOOTER-->
     <div class="footer_div">
         <footer>
             <p>Alex Riley | March 2025 | Last Updated: March 20, 2025</p>

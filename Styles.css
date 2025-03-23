@@ -130,16 +130,18 @@ section{
 }
     /*CAR ANIMATION*/
 #timeline{
-    position: relative;
-    height: 500px;
+    height: 520px;
     padding-bottom: 20px;
+}
+#carContainer{
+    display: flex;
+    width: 50px;
+    margin: 0 auto;
+    padding: 0;
 }
 #car{
     width: 50px;
-    right: 45vw;
-    margin-bottom: 0;
-    position: absolute;
-    top: 60px;
+    height: auto;
 }
 #line{
     border: 1px solid rgb(0, 0, 46);
@@ -168,6 +170,14 @@ section{
             rgba(2, 10, 99, 0.7) 85%,
             rgba(1, 12, 123, 0.5) 90%
         );
+    mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 10%,
+            rgba(0, 0, 0, 1) 90%,
+            rgba(0, 0, 0, 0)
+        );
+        mask-size: 100% 100%;
     color: white;
     text-shadow: 1px 1px 1px rgb(1, 6, 64), -1px -1px 1px rgb(1, 6, 64);
     text-align: center;
@@ -176,20 +186,14 @@ section{
     padding: 10px;
     height: auto;
     position: absolute;
-    top: 105px;
+    top: 0;
     left: 100%;
     overflow: hidden;
-    mask-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1) 10%,
-        rgba(0, 0, 0, 1) 90%,
-        rgba(0, 0, 0, 0)
-    );
-    mask-size: 100% 100%;
 }
 #plotPointContainer{
-    height: 300px;
+    display: flex;
+    position: relative;
+    height: 0px;
     mask-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0),
@@ -198,6 +202,8 @@ section{
         rgba(0, 0, 0, 0)
     );
     mask-size: 100% 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 @keyframes rumble{
     0%{
@@ -243,17 +249,19 @@ section{
     }
 }
 
+#controlBtnContainer{
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+}
 .controlBtn{
     padding: 10px;
     width: 50px;
 }
 
 #timelineControls{
-    top: 130px;
-    left: 37vw;
-    margin-bottom: 0;
+    margin: 0 auto;
     text-align: center;
-    position: absolute;
 }
 #closeBtn{
     text-align: center;
@@ -264,29 +272,38 @@ section{
     padding: 5px;
     width: 100px;
 }
-#controls{
-    position: absolute;
-    top: 190px;
-    left: 33vw;
+#controlsListContainer{
+    text-align: center;
+    margin: 5% auto;
+    width: 400px;
 }
 #controlsLabel{
-    margin-left: 33%;
     font-family: "Fascinate Inline", system-ui;
     font-size: 25px;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
 #controlsList{
-    text-align: center;
     font-family: "Emblema One", system-ui;
     list-style-type: none;
-    margin-top: 0;
-    margin-left: -8%;
+}
+#controlsList p{
+    margin: 5px auto;
+}
+#clickPlay, #clickPause, #clickFastForward, #clickRewind{
+    display: flex;
+    margin: auto;
+}
+#clickPlay, #clickPause, #clickRewind{
+    width: 180px;
+}
+#clickFastForward{
+    width: 260px;
 }
 #haveFun{
     font-family: "Big Shoulders Inline", sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-left: 8%;
+    margin: 0 auto;
 }
 
 #message{
@@ -434,18 +451,8 @@ footer{
 
 @media (max-width: 1080px){
     .plotPoint{
-        top: 130px;
-        margin-inline: 10px;
+        margin-inline: 15px;
         width: 115px;
-    }
-    #timelineControls{
-        left: 30%;
-    }
-    #car{
-        top: 84px;
-    }
-    #controls{
-        left: 40%;
     }
     #experienceContainer ul{
         text-align: left;
