@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //Start driving
     function startDriving(){
         controls.style.display = 'none';
-        timeline.style.height = '520px';
+        timeline.style.height = '510px';
         plotPointContainer.style.height = '300px';
         point10.style.left = '100%';
         point9.style.left = '100%';

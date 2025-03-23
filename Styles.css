@@ -581,7 +581,7 @@ footer{
     }
     .plotPoint{
         font-size: 15px;
-        margin-inline: 40px;
+        margin-inline: 80px;
     }
     #projectsDiv{
         display: grid;
