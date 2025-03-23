@@ -36,12 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const timelineControls = document.getElementById('timelineControls');
     let controls = document.getElementById('controlsListContainer');
     const plotPointContainer = document.getElementById('plotPointContainer');
+    const timeline = document.getElementById('timeline');
 
 
 //CODE BEGINS//
     //Start driving
     function startDriving(){
         controls.style.display = 'none';
+        timeline.style.height = '520px';
         plotPointContainer.style.height = '300px';
         point10.style.left = '100%';
         point9.style.left = '100%';
@@ -116,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function closeAnimation(){
         controls.style.display = 'block';
         plotPointContainer.style.height = '0px';
+        timeline.style.height = '410px';
         //stop all audio
         carRunning.pause();
         //reset all animations

@@ -130,8 +130,9 @@ section{
 }
     /*CAR ANIMATION*/
 #timeline{
-    height: 520px;
+    height: 410px;
     padding-bottom: 20px;
+    border: 1px solid red;
 }
 #carContainer{
     display: flex;
@@ -274,7 +275,7 @@ section{
 }
 #controlsListContainer{
     text-align: center;
-    margin: 5% auto;
+    margin: auto;
     width: 400px;
 }
 #controlsLabel{
