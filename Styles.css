@@ -567,9 +567,14 @@ footer{
 
   /*MOBILE PHONE*/
   @media (max-width: 768px){
-    html, body{
-        width: 90%;
-        height: 100%;
+    html{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    body{
+        width: 90vw;
+        height: 100vh;
         overflow: hidden;
     }
     #timeline{
