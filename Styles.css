@@ -508,44 +508,39 @@ footer{
 }
 
 /*PORTRAIT MODE ON MOBILE*/
-#portraitModeMessageContainer{
+#portraitModeContainer {
     display: none;
-    position: fixed;
-    width: 70%;
-    height: 30%;
-    margin-top: 28%;
-    margin-left: 27%;
-    z-index: 2;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    margin: 35% auto;
 }
-#portraitModeMessage{
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    width: 70%;
-    height: 30%;
-    font-size: 19px;
-    font-weight: bold;
-    color: rgb(0, 50, 0);
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5), -1px -1px 5px rgba(255, 255, 255, 0.5);
-}
-#flowerFrameContainer{
-    position: fixed;
-    top: 0;
+#portraitModeMessage {
     margin: auto;
-    bottom: 90%;
-    width: 80vw;
+    text-align: center;
+    font-family: "Emblema One", system-ui;
+    background-color: rgb(0, 50, 0);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    width: 80%;
+    height: auto; 
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(0, 50, 0), -1px -1px 5px rgb(0, 50, 0);
+}
+
+#flowerFrameContainer{
     display: none;
-    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
 }
 #flowerFrame{
     width: 100vw;
-}
-#portraitModeContainer{
-    display: none;
-    width: 100vw;
     height: auto;
-    margin: auto;
 }
 
 /*FONTS*/
@@ -621,7 +616,7 @@ footer{
         display: block;
     }
     html, body{
-        overflow-x: hidden;
+        overflow: hidden;
         margin: 0;
     }
   }
