@@ -26,6 +26,10 @@ body{
     width: 100vw;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 button{
     text-align: center;
     background: radial-gradient(rgba(252, 228, 216, 1) 0%, rgba(252, 215, 199, 0.7) 50%, rgba(247, 195, 170, 0.5) 70%, rgba(250, 143, 94, 0.3) 95%);
@@ -509,8 +513,8 @@ footer{
     position: fixed;
     top: 26%;
     left: 17%;
-    width: 70vw;
-    height: auto;
+    width: 500px;
+    height: 200px;
     z-index: 2;
 }
 #portraitModeMessage{
@@ -606,57 +610,6 @@ footer{
   }
 
   /*MOBILE PHONE*/
-  /*@media (max-width: 600px){
-    html{
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-    }
-    body{
-        width: 90vw;
-        height: 100vh;
-        overflow: auto;
-    }
-    #timeline{
-        height: 420px;
-    }
-    .plotPoint{
-        font-size: 15px;
-        margin-inline: 80px;
-    }
-    #projectsDiv{
-        display: grid;
-        grid-template-rows: 45px 460px 380px;
-        grid-template-columns: auto;
-        width: 100%;
-    }
-    #projects{
-        width: 100%;
-        grid-row: 1;
-    }
-    #characterAndSpeech{
-        margin: auto;
-        grid-row: 2;
-    }
-    #speechTxt{
-        font-size: 14px;
-    }
-    #projectButtons{
-        position: absolute;
-        display: block;
-        height: auto;
-        width: 100%;
-        grid-row: 3;
-    }
-    .projectBtn{
-        width: 100%;
-        height: 85px;
-        margin: 10px auto;
-        padding: 10px;
-        font-size: 20px;
-    }
-  }*/
-
   @media (max-width: 600px) and (orientation: portrait){
     body > *, #socials{
         display: none;
