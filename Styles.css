@@ -506,8 +506,8 @@ footer{
 /*PORTRAIT MODE ON MOBILE*/
 #portraitModeMessageContainer{
     display: none;
-    position: absolute;
-    top: 35%;
+    position: fixed;
+    top: 26%;
     left: 21%;
     width: 70vw;
     height: auto;
@@ -526,7 +526,7 @@ footer{
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5), -1px -1px 5px rgba(255, 255, 255, 0.5);
 }
 #flowerFrameContainer{
-    position: relative;
+    position: fixed;
     top: 0;
     margin: auto;
     bottom: 90%;
