@@ -511,19 +511,20 @@ footer{
 #portraitModeMessageContainer{
     display: none;
     position: fixed;
-    top: 26%;
-    left: 16%;
-    width: 75vw;
-    height: auto;
+    width: 70%;
+    height: 30%;
+    margin-top: 18%;
+    margin-left: 27%;
     z-index: 2;
 }
 #portraitModeMessage{
     text-align: center;
     background-color: white;
-    border-radius: 10px;;
+    border-radius: 10px;
     padding: 10px;
-    height: auto;
-    font-size: 3.5vw;
+    width: 70%;
+    height: 30%;
+    font-size: 19px;
     font-weight: bold;
     color: rgb(0, 50, 0);
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5), -1px -1px 5px rgba(255, 255, 255, 0.5);
