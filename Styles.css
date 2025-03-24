@@ -26,9 +26,9 @@ body{
     width: 100vw;
 }
 
-/*html, body{
+html, body{
     overflow-x: hidden;
-}*/
+}
 
 button{
     text-align: center;
