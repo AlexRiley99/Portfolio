@@ -536,11 +536,12 @@ footer{
     bottom: 0;
     top: 0;
     width: 100vw;
-    height: auto;
+    height: 110vh;
 }
 #flowerFrame{
+    position: absolute;
     width: 100vw;
-    height: auto;
+    height: 100vh;
 }
 
 /*FONTS*/
