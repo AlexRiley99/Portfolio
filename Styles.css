@@ -508,7 +508,7 @@ footer{
     display: none;
     position: fixed;
     top: 26%;
-    left: 21%;
+    left: 17%;
     width: 70vw;
     height: auto;
     z-index: 2;
@@ -663,5 +663,9 @@ footer{
     }
     #portraitModeContainer, #portraitModeMessageContainer, #flowerFrameContainer{
         display: block;
+    }
+    html, body{
+        overflow-x: hidden;
+        margin: 0;
     }
   }
