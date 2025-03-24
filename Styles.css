@@ -588,6 +588,9 @@ footer{
   }
 
   @media (min-width: 300px) and (max-width: 812px){
+    .plotPoint{
+        left: 110%;
+    }
     #projectsDiv{
         width: 100%;
     }
