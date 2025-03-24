@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const plotPointContainer = document.getElementById('plotPointContainer');
     const timeline = document.getElementById('timeline');
 
-
 //CODE BEGINS//
     //Start driving
     function startDriving(){
@@ -132,28 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
         timelineControls.style.top = '130px';
     }
 
-
-    //Project hover text
-    function showHoverText(event){
-        projectName.style.padding = "11px";
-        if(event.target === storefront1){
-            projectName.textContent = "Grocery List Maker";
-        }
-        else if(event.target === storefront2){
-            projectName.textContent = "Sundust Photography";
-        }
-        else if(event.target === storefront3){
-            projectName.textContent = "Jupiter Tech Studio";
-        }
-        else if(event.target === storefront4){
-            projectName.textContent = "Variable Income Calculator"
-        }
-    }
-    function hideHoverText(){
-        projectName.style.padding = "23px";
-        projectName.textContent = "";
-    }
-
     //Event listeners
     toBeginning.addEventListener('click', jumpToBeginning)
     playBtn.addEventListener('click', startDriving);
@@ -161,13 +138,4 @@ document.addEventListener('DOMContentLoaded', () => {
     toEnd.addEventListener('mouseup', jumpToEnd);
     point10.addEventListener('animationend', endAnimation);
     closeBtn.addEventListener('click', closeAnimation);
-
-    storefront1.addEventListener('mouseover', showHoverText);
-    storefront1.addEventListener('mouseout', hideHoverText);
-    storefront2.addEventListener('mouseover', showHoverText);
-    storefront2.addEventListener('mouseout', hideHoverText);
-    storefront3.addEventListener('mouseover', showHoverText);
-    storefront3.addEventListener('mouseout', hideHoverText);
-    storefront4.addEventListener('mouseover', showHoverText);
-    storefront4.addEventListener('mouseout', hideHoverText);
 });
