@@ -111,7 +111,7 @@
     border: 5px double rgba(13, 18, 0, 0.4);
     font-family: "Big Shoulders Inline", sans-serif;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
     padding: 50px;
     text-align: center;
     background: radial-gradient(
@@ -122,15 +122,7 @@
       rgba(159, 160, 63, 0.7),
       rgba(239, 241, 121, 0.7)
     );
-    background-size: 100%;
     margin: auto;
-    mask-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 1) 5%,
-      rgba(0, 0, 0, 1) 95%,
-      rgba(0, 0, 0, 0)
-    );
   }
   #jumpTo a,
   #jumpTo p {
@@ -566,6 +558,7 @@
 
 /*SPLIT SCREEN COMPUTER OR LARGE TABLET*/
 @media (max-width: 1080px) {
+    /*About Me*/
   .plotPoint {
     margin-inline: 15px;
     width: 115px;
@@ -608,6 +601,17 @@
 
 /*MOBILE PHONE*/
 @media (max-width: 600px){
+    #aboutMeContainer, #degreeContainer, #learningLately{
+        grid-template-columns: 1;
+    }
+    #roadtrip{
+        display: none;
+    }
+    #past, #present, #future, #degreeImg, #degreeText, #learningText, .projectContainer{
+        grid-column: 1;
+        width: 400px;
+        margin: 10px auto;
+    }
 .projectImg{
         width: 100%;
     }
@@ -617,9 +621,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
         margin: auto;
-    }
-    .projectContainer{
-        width: 100%;
     }
     #sundustImg{
         grid-row: 1;
