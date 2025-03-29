@@ -1,158 +1,175 @@
-@media (max-width: 3000px){
-/*WHOLE PAGE*/
-html{
-    background:
-        linear-gradient(to bottom right,
-            rgba(253, 245, 236, 0.9),
-            rgba(245, 230, 212, 0.7),
-            rgba(213, 195, 174, 0.5),
-            rgba(180, 157, 129, 0.5),
-            rgba(158, 134, 105, 0.7),
-            rgb(139, 112, 91, 0.9)),
-        url('Images/texture2.jpg');
+@media (max-width: 3000px) {
+  /*WHOLE PAGE*/
+  html {
+    background: linear-gradient(
+        to bottom right,
+        rgba(253, 245, 236, 0.9),
+        rgba(245, 230, 212, 0.7),
+        rgba(213, 195, 174, 0.5),
+        rgba(180, 157, 129, 0.5),
+        rgba(158, 134, 105, 0.7),
+        rgb(139, 112, 91, 0.9)
+      ),
+      url("Images/texture2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: rgb(0, 50, 0);
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5), -1px -1px 5px rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5),
+      -1px -1px 5px rgba(255, 255, 255, 0.5);
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-}
-body{
+  }
+  body {
     overflow: auto;
     height: 100vh;
     width: 100vw;
-}
+  }
 
-html, body{
+  html,
+  body {
     overflow-x: hidden;
-}
+  }
 
-button{
+  button {
     text-align: center;
-    background: radial-gradient(rgba(252, 228, 216, 1) 0%, rgba(252, 215, 199, 0.7) 50%, rgba(247, 195, 170, 0.5) 70%, rgba(250, 143, 94, 0.3) 95%);
+    background: radial-gradient(
+      rgba(252, 228, 216, 1) 0%,
+      rgba(252, 215, 199, 0.7) 50%,
+      rgba(247, 195, 170, 0.5) 70%,
+      rgba(250, 143, 94, 0.3) 95%
+    );
     color: black;
     border-radius: 10px;
-}
-button:hover{
+  }
+  button:hover {
     box-shadow: 2px 1px 4px rgb(57, 26, 0);
-}
+  }
 
-.sectionHeading{
+  .sectionHeading {
     text-decoration: underline;
     font-size: 45px;
     font-family: "Big Shoulders Inline", sans-serif;
     text-align: center;
     margin-bottom: 0;
-}
-.sectionSubHeading{
+  }
+  .sectionSubHeading {
     text-align: center;
     font-family: "Emblema One", system-ui;
     font-size: 20px;
     margin-top: 0;
-}
-section{
+  }
+  section {
     width: 90vw;
     margin: 20px auto;
     padding: 5px;
     border-bottom: 5px double rgb(0, 24, 0);
-}
+  }
 
-#socials{
+  #socials {
     text-align: center;
     margin: auto;
-}
+  }
 
-/*HEADER*/
-#name{
+  /*HEADER*/
+  #name {
     font-family: "Fascinate Inline", system-ui;
     font-size: 50px;
     margin-bottom: 0;
-}
-#tagline{
+  }
+  #tagline {
     font-family: "Emblema One", system-ui;
     font-size: 20px;
     margin-top: 0;
-}
-#name, #tagline{
+  }
+  #name,
+  #tagline {
     text-align: center;
-}
-#socials{
+  }
+  #socials {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     width: 105px;
     margin-top: 0;
-}
-#LiFavicon{
+  }
+  #LiFavicon {
     width: 55px;
     margin-right: 0;
     grid-column: 1;
-}
-#GhFavicon{
+  }
+  #GhFavicon {
     width: 50px;
     margin-left: 0;
     grid-column: 2;
-}
+  }
 
-/*JUMP TO*/
-#jumpTo{
+  /*JUMP TO*/
+  #jumpTo {
     border: 5px double rgba(13, 18, 0, 0.4);
     font-family: "Big Shoulders Inline", sans-serif;
     border-radius: 10px;
     width: 100%;
     padding: 50px;
     text-align: center;
-    background: radial-gradient(ellipse, rgba(68, 69, 4, 0.7), rgba(95, 97, 14, 0.7), rgba(131, 133, 37, 0.7),rgba(159, 160, 63, 0.7),rgba(239, 241, 121, 0.7));
+    background: radial-gradient(
+      ellipse,
+      rgba(68, 69, 4, 0.7),
+      rgba(95, 97, 14, 0.7),
+      rgba(131, 133, 37, 0.7),
+      rgba(159, 160, 63, 0.7),
+      rgba(239, 241, 121, 0.7)
+    );
     background-size: 100%;
     margin: auto;
     mask-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) ,
-        rgba(0, 0, 0, 1) 5%,
-        rgba(0, 0, 0, 1) 95%,
-        rgba(0, 0, 0, 0) 
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 1) 95%,
+      rgba(0, 0, 0, 0)
     );
-}
-#jumpTo a, #jumpTo p{
+  }
+  #jumpTo a,
+  #jumpTo p {
     display: inline;
     text-decoration: none;
     margin: auto 10px;
     font-size: 25px;
     color: rgb(253, 243, 233);
     text-shadow: 1px 1px 1px rgb(13, 6, 0), -1px -1px 1px rgb(13, 6, 1);
-}
-#jumpTo a:hover{
+  }
+  #jumpTo a:hover {
     text-shadow: 3px 4px 3px rgb(7, 3, 0), -2px -3px 2px rgb(34, 16, 4);
-}
+  }
 
-#navContainer{
+  #navContainer {
     text-align: center;
     margin: auto;
-}
+  }
 
-/*ABOUT ME*/
-#aboutMe{
+  /*ABOUT ME*/
+  #aboutMe {
     margin-top: 20px;
-}
-    /*CAR ANIMATION*/
-#timeline{
+  }
+  /*CAR ANIMATION*/
+  #timeline {
     height: 410px;
     padding-bottom: 20px;
-}
-#carContainer{
+  }
+  #carContainer {
     display: flex;
     width: 50px;
     margin: 0 auto;
     padding: 0;
-}
-#car{
+  }
+  #car {
     width: 50px;
     height: auto;
-}
-#line{
+  }
+  #line {
     border: 1px solid rgb(0, 0, 46);
     height: 10px;
     background-color: rgb(31, 31, 31);
@@ -160,33 +177,34 @@ section{
     margin-top: 0;
     overflow: hidden;
     mask-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1) 10%,
-        rgba(0, 0, 0, 1) 90%,
-        rgba(0, 0, 0, 0)
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 10%,
+      rgba(0, 0, 0, 1) 90%,
+      rgba(0, 0, 0, 0)
     );
     mask-size: 100% 100%;
-}
-.plotPoint{
+  }
+  .plotPoint {
     font-size: 20px;
     display: inline;
     border-radius: 10px;
-    background: linear-gradient(to bottom,
-            rgba(1, 12, 123, 0.5) 0%,
-            rgba(2, 10, 99, 0.7) 5%,
-            rgba(1, 6, 64, 0.9) 40%,
-            rgba(2, 10, 99, 0.7) 85%,
-            rgba(1, 12, 123, 0.5) 90%
-        );
+    background: linear-gradient(
+      to bottom,
+      rgba(1, 12, 123, 0.5) 0%,
+      rgba(2, 10, 99, 0.7) 5%,
+      rgba(1, 6, 64, 0.9) 40%,
+      rgba(2, 10, 99, 0.7) 85%,
+      rgba(1, 12, 123, 0.5) 90%
+    );
     mask-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 1) 10%,
-            rgba(0, 0, 0, 1) 90%,
-            rgba(0, 0, 0, 0)
-        );
-        mask-size: 100% 100%;
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 10%,
+      rgba(0, 0, 0, 1) 90%,
+      rgba(0, 0, 0, 0)
+    );
+    mask-size: 100% 100%;
     color: white;
     text-shadow: 1px 1px 1px rgb(1, 6, 64), -1px -1px 1px rgb(1, 6, 64);
     text-align: center;
@@ -198,426 +216,357 @@ section{
     top: 0;
     left: 100%;
     overflow: hidden;
-}
-#plotPointContainer{
+  }
+  #plotPointContainer {
     display: flex;
     position: relative;
     height: 0px;
     mask-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1) 10%,
-        rgba(0, 0, 0, 1) 90%,
-        rgba(0, 0, 0, 0)
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 10%,
+      rgba(0, 0, 0, 1) 90%,
+      rgba(0, 0, 0, 0)
     );
     mask-size: 100% 100%;
     margin: 0 auto;
     padding: 0;
-}
-@keyframes rumble{
-    0%{
-        transform: translateY(0);
+  }
+  @keyframes rumble {
+    0% {
+      transform: translateY(0);
     }
-    50%{
-        transform: translateY(1px);
+    50% {
+      transform: translateY(1px);
     }
-    100%{
-        transform: translateY(0);
+    100% {
+      transform: translateY(0);
     }
-}
-@keyframes scrollTimeline{
-    from{
-        left: 100%;
+  }
+  @keyframes scrollTimeline {
+    from {
+      left: 100%;
     }
-    to{
-        left: -100%;
+    to {
+      left: -100%;
     }
-}
-@keyframes point10Stop{
-    from{
-        left: 100%;
+  }
+  @keyframes point10Stop {
+    from {
+      left: 100%;
     }
-    to{
-        left: 40%;
+    to {
+      left: 40%;
     }
-}
-@keyframes point9Stop{
-    from{
-        left: 100%;
+  }
+  @keyframes point9Stop {
+    from {
+      left: 100%;
     }
-    to{
-        left: 20%;
+    to {
+      left: 20%;
     }
-}
-@keyframes point8Stop{
-    from{
-        left: 100%;
+  }
+  @keyframes point8Stop {
+    from {
+      left: 100%;
     }
-    to{
-        left: 0%;
+    to {
+      left: 0%;
     }
-}
+  }
 
-#controlBtnContainer{
+  #controlBtnContainer {
     display: flex;
     padding: 0;
     margin: 0 auto;
-}
-.controlBtn{
+  }
+  .controlBtn {
     padding: 10px;
     width: 50px;
-}
+  }
 
-#timelineControls{
+  #timelineControls {
     margin: 0 auto;
     text-align: center;
-}
-#closeBtn{
+  }
+  #closeBtn {
     text-align: center;
     margin: 5px auto;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: 700;
     font-size: 15px;
     padding: 5px;
     width: 100px;
-}
-#controlsListContainer{
+  }
+  #controlsListContainer {
     text-align: center;
     margin: auto;
     width: 400px;
-}
-#controlsLabel{
+  }
+  #controlsLabel {
     font-family: "Fascinate Inline", system-ui;
     font-size: 25px;
     margin: 0 auto;
-}
-#controlsList{
+  }
+  #controlsList {
     font-family: "Emblema One", system-ui;
     list-style-type: none;
-}
-#controlsList p{
+  }
+  #controlsList p {
     margin: 5px auto;
-}
-#clickPlay, #clickPause, #clickFastForward, #clickRewind{
+  }
+  #clickPlay,
+  #clickPause,
+  #clickFastForward,
+  #clickRewind {
     display: flex;
     margin: auto;
-}
-#clickPlay, #clickPause, #clickRewind{
+  }
+  #clickPlay,
+  #clickPause,
+  #clickRewind {
     width: 180px;
-}
-#clickFastForward{
+  }
+  #clickFastForward {
     width: 260px;
-}
-#haveFun{
+  }
+  #haveFun {
     font-family: "Big Shoulders Inline", sans-serif;
     font-size: 20px;
     text-align: center;
     margin: 0 auto;
-}
+  }
 
-#message{
+  #message {
     text-align: center;
     font-family: "Denk One", sans-serif;
     font-size: 18px;
     height: 17px;
-}
+  }
 
-/*EDUCATION*/
-#education{
+  /*EDUCATION*/
+  #education {
     margin: 5px auto;
     padding: 7px;
     text-align: center;
-}
-.credentials{
+  }
+  .credentials {
     width: 300px;
     height: auto;
-}
-#bachelorsDegree{
+  }
+  #bachelorsDegree {
     font-weight: 700;
-}
-#degreeInfo{
+  }
+  #degreeInfo {
     font-weight: 500;
     text-align: center;
-}
-#degreeInfo p{
+  }
+  #degreeInfo p {
     margin: 0;
     font-size: 20px;
-}
-#degreeBtn{
+  }
+  #degreeBtn {
     margin-top: 10px;
     padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: 700;
-}
-#degreeBtnContainer{
+  }
+  #degreeBtnContainer {
     margin: auto;
-}
+  }
 
-/*EXPERIENCE*/
-#experience{
-    text-align: center;
-    margin: 5px auto;
-    padding: 7px;
-}
-#experienceContainer{
-    font-size: 17px;
-}
-#experienceContainer p{
-    margin: 3px;
-}
-#accomplishments{
-    border-top: 1px solid rgb(0, 24, 0);
-    padding-top: 10px;
-}
-#transferrableSkillsContainer{
-    border-top: 1px solid rgb(0, 24, 0);
-}
-.positionTitle{
-    font-weight: 700;
-    font-size: 20px;
-}
-#triSphereContainer ul, #accomplishments ul{
-    text-align: left;
-    margin-left: 25%;
-}
-#transferrableSkillsContainer ul{
-    text-align: left;
-    margin-left: 25%;
-}
-.sublist{
-    margin-left: 5%;
-}
-
-
-/*PROJECTS*/
-#characterAndSpeech{
+  /*PROJECTS*/
+  #projectsContainer {
     display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    overflow: hidden;
-    position: relative;
-    width: 360px;
+    gap: 10px;
+  }
+  .projectContainer{
+    border: 5px double rgb(0, 24, 0);
+    padding: 10px;
+  }
+  video {
+    width: 500px;
     height: auto;
-    margin: 0;
-    padding: 0;
-}
-#speechBubbleContainer{
-    grid-column: 2;
-    display: flex;
-    position: relative;
-    right: 25%;
-    top: 15%;
-    padding: 0;
-    margin: 0;
-    height: 150px;
-}
-#speechBubble{
-    opacity: 50%;
-    width: 200px;
-    height: 200px;
-}
-#speechTxt{
-    position: absolute;
-    top: -5%;
-    right: 0;
-    color: black;
-    font-weight: bold;
-    margin: auto;
-    width: auto;
-    height: auto;
-    max-width: 150px;
-    max-height: 100px;
-    padding: 10%;
-    background: radial-gradient(ellipse, 
-        white, 
-        rgba(255, 255, 255, 0.9) 10%,
-        rgba(255, 255, 255, 0.7) 50%, 
-        rgba(255, 255, 255, 0.5) 60%, 
-        rgba(255, 255, 255, 0.3) 65%, 
-        rgba(255, 255, 255, 0) 90%
-    );
-}
-#characterContainer{
+    margin: 5px 0;
     grid-column: 1;
-    position: relative;
-    top: 0;
-    mask-image: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 1) 20%,
-            rgba(0, 0, 0, 1) 100%
-        );
-        mask-size: 100% 100%;
-    padding: 0;
-    margin: 0;
-}
-#character{
-    width: 200px;
-}
-#projectsDiv{
-    width: 73%;
+  }
+  #sundustVideo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  #groceryVideo {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  #incomeVideo {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  #jupiterVideo{
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  #projectsDiv {
+    width: 90%;
     margin: auto;
     border-bottom: 5px double rgb(0, 24, 0);
     padding-bottom: 20px;
     text-align: center;
     position: relative;
-}
-#projectButtons{
-    position: absolute;
-    display: block;
-    height: auto;        
-    width: 600px;
-    right: 0;
-    bottom: 0;
-}
-.projectBtn{
-    width: 600px;
-    height: 85px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: 30px;
-    margin: 10px auto;
-    padding: 10px;
-}
+  }
 
-/*TO TOP BUTTON*/
-#toTop{
+  .projectButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    height: 50px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .projectBtn{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+  }
+  .learnMore{
+    grid-column: 1;
+  }
+  .liveDemo{
+    grid-column: 2;
+  }
+  .sourceCode{
+    grid-column: 3;
+  }
+
+  .projectDescription{
+    grid-column: 2;
+  }
+
+  /*TO TOP BUTTON*/
+  #toTop {
     padding: 10px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: 700;
     font-size: 15px;
     width: 100px;
     opacity: 60%;
     transition: opacity 1s;
-}
-#toTop:hover{
+  }
+  #toTop:hover {
     opacity: 100%;
-}
-#toTopContainer{
+  }
+  #toTopContainer {
     position: fixed;
     right: 2%;
     bottom: 2%;
-}
+  }
 
-/*FOOTER*/
-footer{
+  /*FOOTER*/
+  footer {
     padding: 10px;
     margin: 0;
     text-align: center;
-}
+  }
 
-/*PORTRAIT MODE ON MOBILE*/
-#portraitModeContainer {
-    display: none;
-    position: relative;
-    width: 100vw;
-    height: auto;
-    margin: 35% auto;
-}
-#portraitModeMessage {
-    margin: auto;
-    text-align: center;
-    font-family: "Emblema One", system-ui;
-    background-color: rgb(0, 50, 0);
-    border-radius: 10px;
-    padding: 20px;
-    font-size: 20px;
-    width: 80%;
-    height: auto; 
-    font-weight: bold;
-    color: white;
-    text-shadow: 1px 1px 3px rgb(0, 50, 0), -1px -1px 5px rgb(0, 50, 0);
-}
-
-#flowerFrameContainer{
-    display: none;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    width: 100vw;
-    height: 110vh;
-}
-#flowerFrame{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-}
-
-/*FONTS*/
-.big-shoulders-inline-font {
+  /*FONTS*/
+  .big-shoulders-inline-font {
     font-family: "Big Shoulders Inline", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
   }
-.emblema-one-regular {
+  .emblema-one-regular {
     font-family: "Emblema One", system-ui;
     font-weight: 400;
     font-style: normal;
   }
-.fascinate-inline-regular {
+  .fascinate-inline-regular {
     font-family: "Fascinate Inline", system-ui;
     font-weight: 400;
     font-style: normal;
   }
-.denk-one-regular {
+  .denk-one-regular {
     font-family: "Denk One", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 }
 
-
 /*SPLIT SCREEN COMPUTER OR LARGE TABLET*/
-@media (max-width: 1080px){
-    .plotPoint{
-        margin-inline: 15px;
-        width: 115px;
-    }
-    #experienceContainer ul{
-        text-align: left;
-        margin-left: 0;
-    }
-    .sublist{
-        margin-left: 10%;
-    }
+@media (max-width: 1080px) {
+  .plotPoint {
+    margin-inline: 15px;
+    width: 115px;
   }
+  #experienceContainer ul {
+    text-align: left;
+    margin-left: 0;
+  }
+  .sublist {
+    margin-left: 10%;
+  }
+  video{
+    width: 300px;
+  }
+  .projectDescription{
+    padding-top: 20px;
+  }
+}
 
-  @media (min-width: 300px) and (max-width: 812px){
-    .plotPoint{
-        left: 110%;
-    }
-    #projectsDiv{
+/*UNDER CONSTRUCTION*/
+.underConstruction{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+.underConstructionImg{
+    width: 70%;
+}
+.underConstructionMsg{
+    font-weight: 800;
+}
+.underConstruction p{
+    font-size: 30px;
+    text-align: center;
+}
+.embeddedVideo{
+    border: 10px double rgb(0, 24, 0);
+    border-radius: 10px;
+}
+
+/*MOBILE PHONE*/
+@media (max-width: 600px){
+video{
         width: 100%;
     }
-    #projectButtons{
-        position: absolute;
-        display: block;
-        height: auto;
-        width: 300px;
-        right: 0;
-        bottom: 0;
+    #projectsContainer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        margin: auto;
     }
-    .projectBtn{
-        width: 280px;
-        height: 85px;
-        margin: 10px auto;
-        padding: 10px;
-        font-size: 20px;
+    .projectContainer{
+        width: 100%;
     }
-  }
-
-  /*MOBILE PHONE*/
-  @media (max-width: 600px) and (orientation: portrait){
-    body > *, #socials{
-        display: none;
+    #sundustVideo{
+        grid-row: 1;
     }
-    #portraitModeContainer, #portraitModeMessageContainer, #flowerFrameContainer{
-        display: block;
+    #groceryVideo{
+        grid-row: 2;
     }
-    html, body{
-        overflow: hidden;
-        margin: 0;
+    #incomeVideo{
+        grid-row: 3;
     }
-  }
+    #jupiterVideo{
+        grid-row: 4;
+    }
+}

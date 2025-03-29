@@ -116,40 +116,69 @@
     <!--PROJECTS SECTION-->
     <section id="projectsDiv">
         <h1 id="projects" class="sectionHeading">Projects</h1>
-        <p class="sectionSubHeading"></p>
+        <p class="sectionSubHeading">Click play on any video to see the corresponding project in action!</p>
 
-        <div id="characterAndSpeech">
-            <div id="speechBubbleContainer">
-                <div id="speechTxt">
-                    Welcome! This section is under construction. Click any button to be taken to the corresponding project. Enjoy!
-                </div>
-                    <img src="Images/speechBubble.png" alt="A white speech bubble" id="speechBubble">
+    <div id="projectsContainer">
+        <div id="sundustContainer" class="projectContainer">
+            <h3>Sundust Photography</h3>
+            <video id="sundustVideo" controls>
+                <source src="Videos/SundustPhotography.mp4" type="video/mp4">
+            </video>
+        <div class="projectButtons">
+            <a href="sundustInfo"><button id="sundustInfoBtn" class="projectBtn learnMore">Learn More</button></a>
+            <a href="https://sundustphotography.com" target="_blank"><button id="sundustphotography" class="projectBtn liveDemo">Live Demo</button></a>
+            <a href="https://github.com/AlexRiley99/SundustPhotography" target="_blank"><button id="sundustCode" class="projectBtn sourceCode">Source Code</button></a>
+        </div>
+            <div class="projectDescription">
+                <p>A multi-page professional website that I developed for a freelance photographer.</p>
             </div>
-            <div id="characterContainer">
-                <img src="Images/Character.png" alt="Girl with dark hair and blue eyes" id="character">
+        </div>
+        
+        <div id="groceryContainer" class="projectContainer">
+            <h3>Grocery List Maker</h3>
+            <video id="groceryVideo" controls>
+                <source src="Videos/GroceryListMaker.mp4" type="video/mp4">
+            </video>
+            <div class="projectButtons">
+                <a href="groceryInfo"><button id="groceryInfoBtn" class="projectBtn learnMore">Learn More</button></a>
+                <a href="https://alexriley99.github.io/Grocery_List_Maker/" target="_blank"><button id="grocerylist" class="projectBtn liveDemo">Live Demo</button></a>
+                <a href="https://github.com/AlexRiley99/Grocery_List_Maker" target="_blank"><button id="groceryCode" class="projectBtn sourceCode">Source Code</button></a>   
+            </div>
+            <div class="projectDescription">
+                <p>A CRUD application that I developed to allow a user to create and manage a grocery list while staying on budget.</p>
             </div>
         </div>
-
-        <div id="projectButtons">
-            <a href="https://sundustphotography.com" target="_blank"><button id="sundustphotography" class="projectBtn">Sundust Photography Website</button></a><br>
-            <a href="https://alexriley99.github.io/Grocery_List_Maker/" target="_blank"><button id="grocerylist" class="projectBtn">Grocery List Maker</button></a><br>
-            <a href="https://alexriley99.github.io/Variable_Income_Calculator/" target="_blank"><button id="variableincome" class="projectBtn">Variable Income Calculator</button></a>
+        
+        <div id="incomeContainer" class="projectContainer">
+            <h3>Variable Income Calculator</h3>
+            <video id="incomeVideo" controls>
+                <source src="Videos/VariableIncomeCalculator.mp4" type="video/mp4">
+            </video>
+            <div class="projectButtons">
+                <a href="incomeInfo"><button id="incomeInfoBtn" class="projectBtn learnMore">Learn More</button></a>
+                <a href="https://alexriley99.github.io/Variable_Income_Calculator/" target="_blank"><button id="variableincome" class="projectBtn liveDemo">Live Demo</button></a>
+                <a href="https://github.com/AlexRiley99/Variable_Income_Calculator" target="_blank"><button id="incomeCode" class="projectBtn sourceCode">Source Code</button></a>
+            </div>
+            <div class="projectDescription">
+                <p>A web application that I developed to help people who make variable income (hourly, freelance, etc.) to make future financial decisions based on what their income has been in the past.</p>
+            </div>
         </div>
-    </section>
-
-    <!--PORTRAIT MODE ON MOBILE-->
-    <div id="portraitModeContainer">
-        <div id="flowerFrameContainer">
-            <img src="Images/FlowerFrame.png" alt="Frame of flowers" id="flowerFrame">
+        <div id="jupiterContainer" class="projectContainer">
+            <h3>Jupiter Tech Studio</h3>
+            <video id="jupiterVideo" controls>
+                <source src="Videos/JupiterTechStudio.mp4" type="video/mp4">
+            </video>
+            <div class="projectButtons">
+                <a href="jupiterInfo"><button id="jupiterInfoBtn" class="projectBtn learnMore">Learn More</button></a>
+                <a href="https://jupitertechstudio.com" target="_blank"><button id="jupiter" class="projectBtn liveDemo">Live Demo</button></a>
+                <a href="https://github.com/AlexRiley99/JupiterTechStudio" target="_blank"><button id="jupiterCode" class="projectBtn sourceCode">Source Code</button></a>
+            </div>
+            <div class="projectDescription">
+                <p>A website that I developed for the brand name that I put on all of my projects. Was previously used as a portfolio and I've since removed the "Projects" page.</p>
+            </div>
         </div>
-        <p id="portraitModeMessage">
-            Welcome!<br><br>
-            Please rotate your mobile device to landscape mode in order to proceed.<br><br>
-            This is to ensure the best possible experience.<br><br>
-            Thank you!</p>
     </div>
-    
-    
+    </section>
 
     <!--TO TOP BUTTON-->
     <div id="toTopContainer">
@@ -159,7 +188,7 @@
     <!--FOOTER-->
     <div class="footer_div">
         <footer>
-            <p>Alex Riley | March 2025 | Last Updated: March 27, 2025</p>
+            <p>Alex Riley | March 2025 | Last Updated: March 28, 2025</p>
         </footer>
     </div>
 </body>
