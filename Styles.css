@@ -154,14 +154,38 @@
   #aboutMe {
     margin-top: 20px;
   }
-  /*SUMMARY*/
+
+  /*About Me Container*/
+  #aboutMeContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    margin-top: 20px;
+  }
+  #past, #present, #future{
+    margin-inline: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #past{
+    grid-column: 1;
+  }
+  #present{
+    grid-column: 2;
+  }
+  #future{
+    grid-column: 3;
+  }
+
+  /*Summary*/
   summary{
     text-align: center;
     font-family: "Emblema One", system-ui;
     font-size: 15px;
     margin: 20px auto;
   }
-  /*CAR ANIMATION*/
+  /*Car Animation*/
   #timeline {
     height: 410px;
     padding-bottom: 20px;
