@@ -505,6 +505,27 @@
     grid-column: 2;
   }
 
+  /*UNDER CONSTRUCTION*/
+.underConstruction{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+.underConstructionImg{
+    width: 70%;
+}
+.underConstructionMsg{
+    font-weight: 800;
+}
+.underConstruction p{
+    font-size: 30px;
+    text-align: center;
+}
+.embeddedVideo{
+    border: 10px double rgb(0, 24, 0);
+    border-radius: 10px;
+}
+
   /*TO TOP BUTTON*/
   #toTop {
     padding: 10px;
@@ -558,45 +579,34 @@
 
 /*SPLIT SCREEN COMPUTER OR LARGE TABLET*/
 @media (max-width: 1080px) {
-    /*About Me*/
   .plotPoint {
     margin-inline: 15px;
     width: 115px;
   }
-  #experienceContainer ul {
-    text-align: left;
-    margin-left: 0;
+  #degreeContainer{
+    grid-template-columns: 1;
   }
-  .sublist {
-    margin-left: 10%;
+  #degreeImg, #degreeText, .techStackContainer, #learningText{
+    grid-column: 1;
   }
+
+  #learningLately{
+    grid-template-columns: 1;
+  }
+  .techStackContainer, #learningText, #degreeText{
+    width: 550px;
+    margin: 10px auto;
+  }
+  #degreeImg{
+    margin: auto;
+  }
+
   .projectImg{
     width: 300px;
   }
   .projectDescription{
     padding-top: 20px;
   }
-}
-
-/*UNDER CONSTRUCTION*/
-.underConstruction{
-    text-align: center;
-    margin: auto;
-    padding: 30px;
-}
-.underConstructionImg{
-    width: 70%;
-}
-.underConstructionMsg{
-    font-weight: 800;
-}
-.underConstruction p{
-    font-size: 30px;
-    text-align: center;
-}
-.embeddedVideo{
-    border: 10px double rgb(0, 24, 0);
-    border-radius: 10px;
 }
 
 /*MOBILE PHONE*/
@@ -607,9 +617,9 @@
     #roadtrip{
         display: none;
     }
-    #past, #present, #future, #degreeImg, #degreeText, #learningText, .projectContainer{
+    #past, #present, #future, #degreeImg, #degreeText, #learningText, .projectContainer, .techStackContainer{
         grid-column: 1;
-        width: 400px;
+        width: 300px;
         margin: 10px auto;
     }
 .projectImg{
