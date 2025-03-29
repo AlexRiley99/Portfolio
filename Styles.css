@@ -354,7 +354,57 @@
 
   /*EDUCATION*/
   #degreeImg{
-    width: 300px;
+    width: 400px;
+  }
+  #degreeContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1;
+  }
+  .techStackHeading{
+    margin-top: 30px;
+  }
+  .techStackImg{
+    display: inline;
+    width: 55px;
+  }
+  .techStackContainer{
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    background: radial-gradient(ellipse, 
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5),
+    rgba(0, 0, 0, 0));
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  .techStackImgContainer{
+    width: 55px;
+    margin: auto;
+  }
+  .techStackCaption{
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  #learningLately{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+  }
+  #learningLatelyStack{
+    grid-column: 1;
+  }
+  #learningText, #degreeText{
+    grid-column: 2;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto;
   }
 
   /*PROJECTS*/
