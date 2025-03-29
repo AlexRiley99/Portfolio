@@ -55,7 +55,7 @@
     text-align: center;
     margin-bottom: 0;
   }
-  .sectionSubHeading {
+  .sectionSubHeading  {
     text-align: center;
     font-family: "Emblema One", system-ui;
     font-size: 20px;
@@ -153,6 +153,13 @@
   /*ABOUT ME*/
   #aboutMe {
     margin-top: 20px;
+  }
+  /*SUMMARY*/
+  summary{
+    text-align: center;
+    font-family: "Emblema One", system-ui;
+    font-size: 15px;
+    margin: 20px auto;
   }
   /*CAR ANIMATION*/
   #timeline {
@@ -346,34 +353,8 @@
   }
 
   /*EDUCATION*/
-  #education {
-    margin: 5px auto;
-    padding: 7px;
-    text-align: center;
-  }
-  .credentials {
+  #degreeImg{
     width: 300px;
-    height: auto;
-  }
-  #bachelorsDegree {
-    font-weight: 700;
-  }
-  #degreeInfo {
-    font-weight: 500;
-    text-align: center;
-  }
-  #degreeInfo p {
-    margin: 0;
-    font-size: 20px;
-  }
-  #degreeBtn {
-    margin-top: 10px;
-    padding: 10px;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
-  }
-  #degreeBtnContainer {
-    margin: auto;
   }
 
   /*PROJECTS*/
@@ -387,25 +368,25 @@
     border: 5px double rgb(0, 24, 0);
     padding: 10px;
   }
-  video {
+  .projectImg {
     width: 500px;
     height: auto;
     margin: 5px 0;
     grid-column: 1;
   }
-  #sundustVideo {
+  #sundustImg {
     grid-row: 1;
     grid-column: 1;
   }
-  #groceryVideo {
+  #groceryImg {
     grid-row: 1;
     grid-column: 2;
   }
-  #incomeVideo {
+  #incomeImg {
     grid-row: 2;
     grid-column: 1;
   }
-  #jupiterVideo{
+  #jupiterImg{
     grid-row: 2;
     grid-column: 2;
   }
@@ -513,7 +494,7 @@
   .sublist {
     margin-left: 10%;
   }
-  video{
+  .projectImg{
     width: 300px;
   }
   .projectDescription{
@@ -544,7 +525,7 @@
 
 /*MOBILE PHONE*/
 @media (max-width: 600px){
-video{
+.projectImg{
         width: 100%;
     }
     #projectsContainer{
@@ -557,16 +538,16 @@ video{
     .projectContainer{
         width: 100%;
     }
-    #sundustVideo{
+    #sundustImg{
         grid-row: 1;
     }
-    #groceryVideo{
+    #groceryImg{
         grid-row: 2;
     }
-    #incomeVideo{
+    #incomeImg{
         grid-row: 3;
     }
-    #jupiterVideo{
+    #jupiterImg{
         grid-row: 4;
     }
 }

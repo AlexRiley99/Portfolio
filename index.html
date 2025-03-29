@@ -42,8 +42,19 @@
     <!--ABOUT ME SECTION-->
     <section id="aboutMeDiv">
         <h1 id="aboutMe" class="sectionHeading">About Me</h1>
+        <div id="past">
+            <p class="sectionSubHeading">Past</p>
+        </div>
+        <div id="present">
+            <p class="sectionSubHeading">Present</p>
+        </div>
+        <div id="future">
+            <p class="sectionSubHeading">Future</p>
+        </div>
+        <details>
+            <summary>The Journey: A Summary of Where I Came From and Where I'm Going</summary>
+        
         <div id="timeline">
-            <h2 id="theJourney" class="sectionSubHeading">The Journey: A Summary of Where I Came From and Where I'm Going</h2>
             <p id="message"></p>
             <br>
 
@@ -88,7 +99,7 @@
                     <p id="haveFun">Have fun! I hope you packed snacks for the trip!</p>
                 </div>
             </div>
-
+        </details>
             <!--Audio Files-->
             <audio id="beepbeep" src="Audio/BeepBeep.wav"></audio>
             <audio id="carRunning" src="Audio/CarRunning.m4a" loop></audio>
@@ -98,18 +109,18 @@
 
     <!--EDUCATION SECTION-->
     <section id="education">
-            <h1 id="education" class="sectionHeading">Education</h1>
+            <h1 id="education" class="sectionHeading">Learning</h1>
             <div id="educationContainer">
-                <div id="degreeInfo">
-                    <p id="bachelorsDegree">Bachelor of Science</p>
-                    <p>Computer & Information Science</p>
-                    <p>Majored in Software Development</p>
-                    <p>ECPI University</p>
-                    <strong><p>Magna Cum Laude</p></strong>
-                </div>
-                <div id="degreeBtnContainer">
-                    <a href="Images/BachelorsDegree.png" target="_blank"><button id="degreeBtn" class="clickToView">Click To View</button></a>
-                </div>
+                <div id="learned">
+                <p class="sectionSubHeading">What I've Learned</p>
+                <img src="Images/BachelorsDegree.png" alt="Bachelor of Science in Computer and Information Science with a major in Software Development. Graduated Magna Cum Laude" id="degreeImg">
+            </div>
+            <div id="learning">
+                <p class="sectionSubHeading">What I'm Learning Lately</p>
+            </div>
+            <div id="toLearn">
+                <p class="sectionSubHeading">What I Plan On Learning</p>
+            </div>
             </div>
     </section>
 
@@ -121,9 +132,7 @@
     <div id="projectsContainer">
         <div id="sundustContainer" class="projectContainer">
             <h3>Sundust Photography</h3>
-            <video id="sundustVideo" controls>
-                <source src="Videos/SundustPhotography.mp4" type="video/mp4">
-            </video>
+            <img src="Images/sundustImg.png" alt="A screenshot of the Sundust Photography home page" id="sundustImg" class="projectImg">
         <div class="projectButtons">
             <a href="sundustInfo"><button id="sundustInfoBtn" class="projectBtn learnMore">Learn More</button></a>
             <a href="https://sundustphotography.com" target="_blank"><button id="sundustphotography" class="projectBtn liveDemo">Live Demo</button></a>
@@ -136,9 +145,7 @@
         
         <div id="groceryContainer" class="projectContainer">
             <h3>Grocery List Maker</h3>
-            <video id="groceryVideo" controls>
-                <source src="Videos/GroceryListMaker.mp4" type="video/mp4">
-            </video>
+            <img src="Images/groceryImg.png" alt="A screenshot of a grocery list maker" id="groceryImg" class="projectImg">
             <div class="projectButtons">
                 <a href="groceryInfo"><button id="groceryInfoBtn" class="projectBtn learnMore">Learn More</button></a>
                 <a href="https://alexriley99.github.io/Grocery_List_Maker/" target="_blank"><button id="grocerylist" class="projectBtn liveDemo">Live Demo</button></a>
@@ -151,9 +158,7 @@
         
         <div id="incomeContainer" class="projectContainer">
             <h3>Variable Income Calculator</h3>
-            <video id="incomeVideo" controls>
-                <source src="Videos/VariableIncomeCalculator.mp4" type="video/mp4">
-            </video>
+            <img src="Images/incomeImg.png" alt="A screenshot of a variable income calculator" id="incomeImg" class="projectImg">
             <div class="projectButtons">
                 <a href="incomeInfo"><button id="incomeInfoBtn" class="projectBtn learnMore">Learn More</button></a>
                 <a href="https://alexriley99.github.io/Variable_Income_Calculator/" target="_blank"><button id="variableincome" class="projectBtn liveDemo">Live Demo</button></a>
@@ -165,9 +170,7 @@
         </div>
         <div id="jupiterContainer" class="projectContainer">
             <h3>Jupiter Tech Studio</h3>
-            <video id="jupiterVideo" controls>
-                <source src="Videos/JupiterTechStudio.mp4" type="video/mp4">
-            </video>
+            <img src="Images/jupiterImg.png" alt="A screenshot of the Jupiter Tech Studio home page" id="jupiterImg" class="projectImg">
             <div class="projectButtons">
                 <a href="jupiterInfo"><button id="jupiterInfoBtn" class="projectBtn learnMore">Learn More</button></a>
                 <a href="https://jupitertechstudio.com" target="_blank"><button id="jupiter" class="projectBtn liveDemo">Live Demo</button></a>
