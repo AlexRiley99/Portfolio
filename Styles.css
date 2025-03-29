@@ -361,6 +361,9 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1;
   }
+  #schoolWebsite{
+    text-align: center;
+  }
   .techStackHeading{
     margin-top: 30px;
   }
@@ -368,11 +371,7 @@
     display: inline;
     width: 55px;
   }
-  .techStackContainer{
-    display: grid;
-    gap: 0;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+  .whiteBackground{
     background: radial-gradient(ellipse, 
     rgba(255, 255, 255, 0.9),
     rgba(255, 255, 255, 0.7),
@@ -381,6 +380,12 @@
     margin-bottom: 25px;
     padding: 25px;
     border-radius: 10px;
+  }
+  .techStackContainer{
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
   }
   .techStackImgContainer{
     width: 55px;
@@ -405,6 +410,10 @@
     font-size: 20px;
     padding: 10px;
     margin: 0 auto;
+    text-align: center;
+  }
+  #degreeText ol{
+    text-align: left;
   }
 
   /*PROJECTS*/
