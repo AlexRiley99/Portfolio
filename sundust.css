@@ -8,18 +8,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    border: 1px solid red;
 }
 .pageFeatures{
     grid-column: 1;
     width: 85%;
-    margin: auto;
-    border: 1px solid orange;
+    margin: 20px auto;
 }
 .pages img{
     grid-column: 2;
     width: 100%;
-    border: 1px solid blue;
+}
+.pageFeatures li{
+    margin: 10px auto;
 }
 
 
