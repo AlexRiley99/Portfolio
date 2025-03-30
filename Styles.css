@@ -68,46 +68,23 @@
     border-bottom: 5px double rgb(0, 24, 0);
   }
 
-  #socials {
-    text-align: center;
-    margin: auto;
-  }
-
-  /*HEADER*/
-  #name {
+  .title {
     font-family: "Fascinate Inline", system-ui;
     font-size: 50px;
     margin-bottom: 0;
   }
-  #tagline {
+  .tagline {
     font-family: "Emblema One", system-ui;
     font-size: 20px;
     margin-top: 0;
   }
-  #name,
-  #tagline {
+  .title,
+  .tagline {
     text-align: center;
-  }
-  #socials {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    width: 105px;
-    margin-top: 0;
-  }
-  #LiFavicon {
-    width: 55px;
-    margin-right: 0;
-    grid-column: 1;
-  }
-  #GhFavicon {
-    width: 50px;
-    margin-left: 0;
-    grid-column: 2;
   }
 
   /*JUMP TO*/
-  #jumpTo {
+  .jumpTo {
     border: 5px double rgba(13, 18, 0, 0.4);
     font-family: "Big Shoulders Inline", sans-serif;
     border-radius: 10px;
@@ -124,8 +101,8 @@
     );
     margin: auto;
   }
-  #jumpTo a,
-  #jumpTo p {
+  .jumpTo a,
+  .jumpTo p {
     display: inline;
     text-decoration: none;
     margin: auto 10px;
@@ -133,376 +110,13 @@
     color: rgb(253, 243, 233);
     text-shadow: 1px 1px 1px rgb(13, 6, 0), -1px -1px 1px rgb(13, 6, 1);
   }
-  #jumpTo a:hover {
+  .jumpTo a:hover {
     text-shadow: 3px 4px 3px rgb(7, 3, 0), -2px -3px 2px rgb(34, 16, 4);
   }
 
-  #navContainer {
+  .navContainer {
     text-align: center;
     margin: auto;
-  }
-
-  /*ABOUT ME*/
-  #aboutMe {
-    margin-top: 20px;
-  }
-
-  /*About Me Container*/
-  #aboutMeContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1;
-    margin-top: 20px;
-  }
-  #past, #present, #future{
-    margin-inline: 10px;
-    border: 1px solid gray;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  #past{
-    grid-column: 1;
-  }
-  #present{
-    grid-column: 2;
-  }
-  #future{
-    grid-column: 3;
-  }
-
-  /*Summary*/
-  summary{
-    text-align: center;
-    font-family: "Emblema One", system-ui;
-    font-size: 15px;
-    margin: 20px auto;
-  }
-  /*Car Animation*/
-  #timeline {
-    height: 410px;
-    padding-bottom: 20px;
-  }
-  #carContainer {
-    display: flex;
-    width: 50px;
-    margin: 0 auto;
-    padding: 0;
-  }
-  #car {
-    width: 50px;
-    height: auto;
-  }
-  #line {
-    border: 1px solid rgb(0, 0, 46);
-    height: 10px;
-    background-color: rgb(31, 31, 31);
-    position: relative;
-    margin-top: 0;
-    overflow: hidden;
-    mask-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 1) 10%,
-      rgba(0, 0, 0, 1) 90%,
-      rgba(0, 0, 0, 0)
-    );
-    mask-size: 100% 100%;
-  }
-  .plotPoint {
-    font-size: 20px;
-    display: inline;
-    border-radius: 10px;
-    background: linear-gradient(
-      to bottom,
-      rgba(1, 12, 123, 0.5) 0%,
-      rgba(2, 10, 99, 0.7) 5%,
-      rgba(1, 6, 64, 0.9) 40%,
-      rgba(2, 10, 99, 0.7) 85%,
-      rgba(1, 12, 123, 0.5) 90%
-    );
-    mask-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 1) 10%,
-      rgba(0, 0, 0, 1) 90%,
-      rgba(0, 0, 0, 0)
-    );
-    mask-size: 100% 100%;
-    color: white;
-    text-shadow: 1px 1px 1px rgb(1, 6, 64), -1px -1px 1px rgb(1, 6, 64);
-    text-align: center;
-    width: 200px;
-    margin-inline: 5px;
-    padding: 10px;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    overflow: hidden;
-  }
-  #plotPointContainer {
-    display: flex;
-    position: relative;
-    height: 0px;
-    mask-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 1) 10%,
-      rgba(0, 0, 0, 1) 90%,
-      rgba(0, 0, 0, 0)
-    );
-    mask-size: 100% 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  @keyframes rumble {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(1px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  @keyframes scrollTimeline {
-    from {
-      left: 100%;
-    }
-    to {
-      left: -100%;
-    }
-  }
-  @keyframes point10Stop {
-    from {
-      left: 100%;
-    }
-    to {
-      left: 40%;
-    }
-  }
-  @keyframes point9Stop {
-    from {
-      left: 100%;
-    }
-    to {
-      left: 20%;
-    }
-  }
-  @keyframes point8Stop {
-    from {
-      left: 100%;
-    }
-    to {
-      left: 0%;
-    }
-  }
-
-  #controlBtnContainer {
-    display: flex;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .controlBtn {
-    padding: 10px;
-    width: 50px;
-  }
-
-  #timelineControls {
-    margin: 0 auto;
-    text-align: center;
-  }
-  #closeBtn {
-    text-align: center;
-    margin: 5px auto;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
-    font-size: 15px;
-    padding: 5px;
-    width: 100px;
-  }
-  #controlsListContainer {
-    text-align: center;
-    margin: auto;
-    width: 400px;
-  }
-  #controlsLabel {
-    font-family: "Fascinate Inline", system-ui;
-    font-size: 25px;
-    margin: 0 auto;
-  }
-  #controlsList {
-    font-family: "Emblema One", system-ui;
-    list-style-type: none;
-  }
-  #controlsList p {
-    margin: 5px auto;
-  }
-  #clickPlay,
-  #clickPause,
-  #clickFastForward,
-  #clickRewind {
-    display: flex;
-    margin: auto;
-  }
-  #clickPlay,
-  #clickPause,
-  #clickRewind {
-    width: 180px;
-  }
-  #clickFastForward {
-    width: 260px;
-  }
-  #haveFun {
-    font-family: "Big Shoulders Inline", sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  #message {
-    text-align: center;
-    font-family: "Denk One", sans-serif;
-    font-size: 18px;
-    height: 17px;
-  }
-
-  /*EDUCATION*/
-  #degreeImg{
-    width: 400px;
-  }
-  #degreeContainer{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1;
-  }
-  #schoolWebsite{
-    text-align: center;
-  }
-  .techStackHeading{
-    margin-top: 30px;
-  }
-  .techStackImg{
-    display: inline;
-    width: 55px;
-  }
-  .whiteBackground{
-    background: radial-gradient(ellipse, 
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.5),
-    rgba(0, 0, 0, 0));
-    margin-bottom: 25px;
-    padding: 25px;
-    border-radius: 10px;
-  }
-  .techStackContainer{
-    display: grid;
-    gap: 0;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-  }
-  .techStackImgContainer{
-    width: 55px;
-    margin: auto;
-  }
-  .techStackCaption{
-    text-align: center;
-    font-weight: 800;
-    font-size: 20px;
-  }
-  #learningLately{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1;
-  }
-  #learningLatelyStack{
-    grid-column: 1;
-  }
-  #learningText, #degreeText{
-    grid-column: 2;
-    font-size: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  #degreeText ol{
-    text-align: left;
-  }
-
-  /*PROJECTS*/
-  #projectsContainer {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  .projectContainer{
-    border: 5px double rgb(0, 24, 0);
-    padding: 10px;
-  }
-  .projectImg {
-    width: 500px;
-    height: auto;
-    margin: 5px 0;
-    grid-column: 1;
-  }
-  #sundustImg {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  #groceryImg {
-    grid-row: 1;
-    grid-column: 2;
-  }
-  #incomeImg {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  #jupiterImg{
-    grid-row: 2;
-    grid-column: 2;
-  }
-
-  #projectsDiv {
-    width: 90%;
-    margin: auto;
-    border-bottom: 5px double rgb(0, 24, 0);
-    padding-bottom: 20px;
-    text-align: center;
-    position: relative;
-  }
-
-  .projectButtons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
-    height: 50px;
-    width: 80%;
-    margin: auto;
-  }
-
-  .projectBtn{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    width: 100%;
-    padding: 5px;
-    margin: auto;
-  }
-  .learnMore{
-    grid-column: 1;
-  }
-  .liveDemo{
-    grid-column: 2;
-  }
-  .sourceCode{
-    grid-column: 3;
-  }
-
-  .projectDescription{
-    grid-column: 2;
   }
 
   /*UNDER CONSTRUCTION*/
@@ -546,6 +160,18 @@
     bottom: 2%;
   }
 
+  /*Other*/
+  .whiteBackground{
+    background: radial-gradient(ellipse, 
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5),
+    rgba(0, 0, 0, 0));
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+  }
+
   /*FOOTER*/
   footer {
     padding: 10px;
@@ -577,71 +203,3 @@
   }
 }
 
-/*SPLIT SCREEN COMPUTER OR LARGE TABLET*/
-@media (max-width: 1080px) {
-  .plotPoint {
-    margin-inline: 15px;
-    width: 115px;
-  }
-  #degreeContainer{
-    grid-template-columns: 1;
-  }
-  #degreeImg, #degreeText, .techStackContainer, #learningText{
-    grid-column: 1;
-  }
-
-  #learningLately{
-    grid-template-columns: 1;
-  }
-  .techStackContainer, #learningText, #degreeText{
-    width: 550px;
-    margin: 10px auto;
-  }
-  #degreeImg{
-    margin: auto;
-  }
-
-  .projectImg{
-    width: 300px;
-  }
-  .projectDescription{
-    padding-top: 20px;
-  }
-}
-
-/*MOBILE PHONE*/
-@media (max-width: 600px){
-    #aboutMeContainer, #degreeContainer, #learningLately{
-        grid-template-columns: 1;
-    }
-    #roadtrip{
-        display: none;
-    }
-    #past, #present, #future, #degreeImg, #degreeText, #learningText, .projectContainer, .techStackContainer{
-        grid-column: 1;
-        width: 300px;
-        margin: 10px auto;
-    }
-.projectImg{
-        width: 100%;
-    }
-    #projectsContainer{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-        margin: auto;
-    }
-    #sundustImg{
-        grid-row: 1;
-    }
-    #groceryImg{
-        grid-row: 2;
-    }
-    #incomeImg{
-        grid-row: 3;
-    }
-    #jupiterImg{
-        grid-row: 4;
-    }
-}

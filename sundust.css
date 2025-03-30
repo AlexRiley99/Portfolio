@@ -1,0 +1,39 @@
+.screenshot{
+    width: 500px;
+}
+.learnMoreSection{
+    font-size: 20px;
+}
+.pages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border: 1px solid red;
+}
+.pageFeatures{
+    grid-column: 1;
+    width: 85%;
+    margin: auto;
+    border: 1px solid orange;
+}
+.pages img{
+    grid-column: 2;
+    width: 100%;
+    border: 1px solid blue;
+}
+
+
+@media(max-width: 1080px){
+    .pages{
+        grid-template-columns: 1;
+        grid-template-rows: auto;
+    }
+    .pageFeatures, .pages img{
+        grid-column: 1;
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px){
+
+}

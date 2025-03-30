@@ -4,30 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn More - Sundust Photography</title>
+    <link rel="stylesheet" href="sundust.css" />
     <link rel="stylesheet" href="Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Denk+One&family=Emblema+One&family=Fascinate+Inline&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="underConstruction">
-      <img
-        src="Images/UnderConstruction.png"
-        class="underConstructionImg"
-        alt="A barrier arm with a sign hanging from it that says 'under construction'"
-      />
-      <p class="underConstructionMsg">
-        This page is under construction! I appreciate your patience.
-      </p>
-      <p>In the meantime, please enjoy this:</p>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/F0GOOP82094?si=Rr9XPXULLuDO_ELI"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        class="embeddedVideo"
-      ></iframe>
+    <div id="heading">
+      <h1 class="title">Sundust Photography</h1>
+      <h2 class="tagline">HTML | CSS | JavaScript</h2>
+    </div>
+
+    <nav class="jumpTo">
+      <div class="navContainer">
+        <p><a href="#what">What</a> |</p>
+        <p><a href="#why">Why</a> |</p>
+        <p><a href="#how">How</a></p>
+      </div>
+    </nav>
+    <div id="contentContainer">
+      <section class="what">
+        <h3 class="sectionHeading" id="what">What It Is</h3>
+        <div class="learnMoreSection whiteBackground">
+          <p>
+            This is a website that I built for Derek Riley, freelance
+            photographer and also my husband. It includes a Home page, an About
+            page, a Gallery page, and a Pricing page. It is a professional
+            website to help attract customers, allow them to see his work, and
+            allow them to book a session easily.
+          </p>
+          <div class="pages">
+            <div class="pageFeatures">
+              <p>Key <b>Home Page</b> Features:</p>
+              <ul>
+                <li>Call to action at the top</li>
+                <li>
+                  Some information about where Sundust Photography is located,
+                  as well as traveling distance
+                </li>
+                <li>
+                  A "Book Now" button, which opens up an email draft addressed
+                  to sundustphotography@gmail.com
+                </li>
+                <li>
+                  A changing image in the center, which loops through 5 images.
+                </li>
+              </ul>
+            </div>
+            <img
+              src="Images/sundustImg.png"
+              alt="Sundust Photography home page"
+              class="screenshot"
+            />
+
+            <div class="pageFeatures">
+              <p>Key <b>About Page</b> Features:</p>
+              <ul>
+                <li>
+                  A few paragraphs about who he is and why he does photography
+                </li>
+                <li>Contact information at the bottom of the screen</li>
+              </ul>
+            </div>
+            <img
+              src="Images/aboutSundust1.png"
+              alt="Sundust Photography About page"
+              id="about1"
+            />
+            <img
+              src="Images/aboutSundust2.png"
+              alt="Sundust Photography About page"
+              id="about2"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="why">
+        <h3 class="sectionHeading" id="why">Why I Created It</h3>
+        <p></p>
+      </section>
+      <section class="how">
+        <h3 class="sectionHeading" id="how">How I Did It</h3>
+        <p></p>
+      </section>
     </div>
     <div class="footer_div">
       <footer>
