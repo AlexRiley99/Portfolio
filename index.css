@@ -29,6 +29,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
     margin-top: 20px;
+    font-weight: 800;
   }
   #past, #present, #future{
     margin-inline: 10px;
