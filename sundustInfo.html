@@ -20,27 +20,34 @@
   <body>
     <div id="heading">
       <h1 class="title">Sundust Photography</h1>
-      <h2 class="tagline">HTML | CSS | JavaScript</h2>
+      <h2 class="tagline">
+        HTML | CSS | JavaScript | Visual Studio Code | GitHub Pages
+      </h2>
     </div>
 
     <nav class="jumpTo">
       <div class="navContainer">
-        <p><a href="#what">What</a> |</p>
-        <p><a href="#why">Why</a> |</p>
-        <p><a href="#how">How</a></p>
+        <p><a href="#what">What & Why</a> |</p>
+        <p><a href="#how">How</a> |</p>
+        <p><a href="#next">What's Next</a></p>
       </div>
     </nav>
     <div id="contentContainer">
       <section class="what">
-        <h3 class="sectionHeading" id="what">What It Is</h3>
+        <h3 class="sectionHeading" id="what">
+          What It Is & Why I Developed It
+        </h3>
         <div class="learnMoreSection">
-          <p>
-            This is a website that I built for Derek Riley, a freelance
-            photographer (and also my husband). It includes a Home page, an
-            About page, a Gallery page, and a Pricing page. It is a professional
-            website to help attract customers, allow them to see his work, and
-            allow them to book a session easily.
-          </p>
+          <div id="whatDiv">
+            <p>
+              This is a website that I built for Derek Riley, a freelance
+              photographer (and also my husband). It is a professional website
+              to help attract customers, allow them to see his work, and allow
+              them to book a session easily. It includes a Home page, an About
+              page, a Gallery page, and a Pricing page.
+            </p>
+          </div>
+
           <div class="pages">
             <div class="pageFeatures whiteBackground">
               <p>Key <b>Home Page</b> Features:</p>
@@ -59,6 +66,8 @@
                   Clicking the image takes the user to the Gallery page.
                 </li>
               </ul>
+              The Home page, provides nice examples of past work, a clear travel
+              range, and a quick and easy way for customers to get in contact.
             </div>
             <img
               src="Images/sundustImg.png"
@@ -74,18 +83,22 @@
                 </li>
                 <li>Contact information at the bottom of the screen</li>
               </ul>
+              <p>
+                The About page contains information all about who Derek is and
+                why he chose to get into photography. It provides a sense of
+                personality, like there's a real human on the other end of this
+                website, and allows the customer to get a feel for who they're
+                hiring. The bottom of the page includes contact details (phone
+                number and business email) to, again, allow the customer to
+                quickly and easily get in contact.
+              </p>
             </div>
             <img
               src="Images/aboutSundust1.png"
               alt="Sundust Photography About page"
               id="about1"
             />
-            <img
-              src="Images/aboutSundust2.png"
-              alt="Sundust Photography About page"
-              id="about2"
-            />
-            <div class="pageFeatures whiteBackground">
+            <div class="pageFeatures whiteBackground" id="galleryFeatures">
               <p>Key <b>Gallery Page</b> Features:</p>
               <ul>
                 <li>
@@ -102,6 +115,27 @@
                   close button is clicked.
                 </li>
               </ul>
+              <p>
+                The Gallery page was my favorite to develop and I'm very proud
+                of it. It includes all sorts of examples of his work, divided
+                into 5 categories: Events, Animals, Nature, Manmade, and People.
+                Clicking on any section title in the "Jump To" section will skip
+                to that section. I added this so that if someone, for example,
+                wants to view the Nature section, they don't have to scroll
+                through two other sections to get there. Similarly, I added a
+                "To Top" button to bring the user back to the top of the page to
+                select another section, rather than scrolling all the way back
+                up. This streamlines and improves the experience for the user.
+              </p>
+              <p>
+                Each image in the Gallery page is clickable and clicking on any
+                image will expand it so that it can be seen more closely or
+                viewed on its own without the visual clutter of the other
+                images. When an image is expanded, a close button also appears,
+                to allow the user to shrink the image back down and keep
+                scrolling. Hovering over an image shows a white box-shadow to
+                let the user know that it's a clickable item.
+              </p>
             </div>
             <img
               src="Images/Gallery1.png"
@@ -122,49 +156,164 @@
                 </li>
                 <li>Information about discounts and add-ons</li>
               </ul>
+              <p>
+                The pricing page clearly outlines the different photo and
+                session packages that are available, as well as their pricing.
+                This provides some transparency to the customer and streamlines
+                the experience because they don't have to do any extra legwork
+                to obtain the information. The customer can see right away
+                whether Sundust Photography is within their budget. The Pricing
+                page also includes a list of promo codes that can be used when
+                booking an appointment.
+              </p>
             </div>
             <img
               src="Images/Pricing.png"
               alt="Sundust Photography Pricing page"
               id="pricing"
             />
+            <div class="pageFeatures whiteBackground" id="keyDesignElements">
+              <p>Key <b>Design</b> Elements:</p>
+              <ul>
+                <li>
+                  Background is a radial gradient, intended to look like a ring
+                  of light. Background uses warm inviting colors and is a
+                  semi-transparent gradient over an image of film grain, for
+                  texture.
+                </li>
+                <li>
+                  Text and buttons are a shade of blue that compliments the
+                  background color.
+                </li>
+                <li>
+                  Hovering over a button causes it to transition to a lighter
+                  shade of blue. Clicking on a button does the same.
+                </li>
+              </ul>
+              <p>
+                All of this, combined with business cards (which I designed in
+                Canva), work toward my goal of bringing customers to Sundust
+                Photography.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="why">
-        <h3 class="sectionHeading" id="why">Why I Created It</h3>
-        <p></p>
-        <div class="underConstruction">
+      <div id="businessCardDiv">
+        <figure id="sundustBusinessCard">
           <img
-            src="Images/UnderConstruction.png"
-            class="underConstructionImg"
-            alt="A barrier arm with a sign hanging from it that says 'under construction'"
+            src="Images/SundustCard1.png"
+            alt="Front side of Sundust Photography business card"
+            id="sundustCard1"
+            class="sundustCard"
           />
-          <p class="underConstructionMsg">
-            This page is under construction! I appreciate your patience.
-          </p>
-          <p>In the meantime, please enjoy this:</p>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/F0GOOP82094?si=Rr9XPXULLuDO_ELI"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            class="embeddedVideo"
-          ></iframe>
-        </div>
-      </section>
+          <img
+            src="Images/SundustCard2.png"
+            alt="Back side of Sundust Photography business card"
+            id="sundustCard2"
+            class="sundustCard"
+          />
+          <figcaption>
+            Front and back of the Sundust Photography business card that I
+            designed. We had 100 of them printed via Canva and they are actively
+            in use, to help bring customers to Sundust Photography.
+          </figcaption>
+        </figure>
+      </div>
       <section class="how">
         <h3 class="sectionHeading" id="how">How I Did It</h3>
-        <p></p>
+        <div class="developmentSteps">
+          <ol>
+            <li class="stepNumber">Set Up The Repository & Domain</li>
+            <p class="whiteBackground">
+              I created the repository in GitHub and cloned it in VS Code so
+              that I could use GitHub for version control. GitHub Pages is also
+              my chosen hosting platform for this website, as it's free,
+              enforces HTTPS, and allows me to update my website directly from
+              the repository. The domain was bought via Network Solutions and is
+              hosted as a custom domain in GitHub pages.
+            </p>
+            <li class="stepNumber">Gather Requirements</li>
+            <p class="whiteBackground">
+              I spoke with the client to determine what he wants to see in his
+              website. He used words like "cozy" and "neighborly" to describe
+              the feel he wanted the site to have. We also discussed which pages
+              he would want on the website and what sorts of functionalities he
+              wants it to have.
+            </p>
+            <li class="stepNumber">Design</li>
+            <p class="whiteBackground">
+              First, I looked up some mood boards on Pinterest, using keywords
+              like "cozy" and "neighborly". Next, I used Google color picker to
+              find some hex codes for colors that I would potentially use for
+              this project, based on the mood boards. I decided on the sepia and
+              blue color scheme because it has a cozy vibe and the blue really
+              compliments the orange in the sepia.
+            </p>
+            <p class="whiteBackground">
+              Next, I put together some wireframes to show to the client, to get
+              his approval on the layout of the pages. I also showed him the
+              color scheme and used Google Fonts to choose some fonts together.
+            </p>
+            <li class="stepNumber">Front End</li>
+            <p class="whiteBackground">
+              I began by creating HTML files for each page of the website. Then,
+              I created corresponding CSS files and one overarching Styles.css
+              file. Styles.css handles styles that apply to the entire website,
+              such as the background and button colors. The CSS files for each
+              page only handles styles that are specific to that page.
+            </p>
+            <p class="whiteBackground">
+              Next, I pasted in HTML boilerplate code from a boilerplate.html
+              file that I keep on my device for when I want to create a new HTML
+              file. It saves me from typing out the same things over and over
+              again to create the basic structure of an HTML page.
+            </p>
+            <p class="whiteBackground">
+              Once each page had its boilerplate code, I went through and added
+              actual elements to each page such as text, buttons, image boxes,
+              etc. I styled each element as it was created, as this is my
+              preferred method.
+            </p>
+            <li class="stepNumber">Back End</li>
+            <p class="whiteBackground">
+              The back end for this website mainly consists of JavaScript for
+              the Gallery page. I had never created an expanding image effect
+              like this in JavaScript before. I had created one in Kotlin
+              before, for an Android app assignment in college, but never for a
+              website. Since this was new territory, I began by researching how
+              to do it.
+            </p>
+            <p class="whiteBackground">
+              Once I had consulted a few resources online, I began using a
+              combination of CSS and JavaScript to produce the expanding image
+              effect and the close button that appears when the image is
+              expanded.
+            </p>
+            <p class="whiteBackground">
+              JavaScript is also used to create the changing image on the Home
+              page, cycling through an array of images and changing every 3
+              seconds. There is an event listener on the image container so that
+              when the image is clicked, it takes the user to the Gallery page.
+            </p>
+          </ol>
+        </div>
+      </section class="next">
+      <section id="next">
+        <h3 class="sectionHeading" id="how">What's Next</h3>
+        <p class="sectionSubHeading">What I'll Be Adding in the Future</p>
+        <div id="whatsNextDiv">
+          <ul>
+            <li>A form where users can fill in their contact information and a message if they prefer not to use the Book Now button.</li>
+            <li>Testimonials on the Home page.</li>
+            <li>Social media links</li>
+          </ul>
+        </div>
       </section>
     </div>
     <div class="footer_div">
       <footer>
-        <p>Alex Riley | March 2025 | Last Updated: March 28, 2025</p>
+        <p>Alex Riley | March 2025 | Last Updated: March 31, 2025</p>
       </footer>
     </div>
   </body>

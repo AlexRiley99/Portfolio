@@ -18,19 +18,47 @@
     grid-column: 2;
     width: 100%;
 }
+#keyDesignElements{
+    grid-column: span 2;
+}
 .pageFeatures li{
     margin: 10px auto;
 }
+#galleryFeatures{
+    grid-row: span 2;
+}
 
+#whatDiv, #howDiv{
+    font-weight: 800;
+}
+.sundustCard{
+    width: 45%;
+}
+#sundustBusinessCard{
+    text-align: center;
+    margin: auto;
+}
+figcaption{
+    margin: 10px auto;
+    font-weight: 800;
+}
+.stepNumber, #whatsNextDiv li{
+    font-size: 20px;
+    font-weight: bold;
+}
+.how{
+    border-top: 5px double rgb(0, 24, 0);
+}
 
 @media(max-width: 1080px){
     .pages{
-        grid-template-columns: 1;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
     .pageFeatures, .pages img{
         grid-column: 1;
-        width: 100%;
+        width: 70%;
+        margin: auto;
     }
 }
 
