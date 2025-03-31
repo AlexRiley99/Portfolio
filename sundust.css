@@ -1,3 +1,10 @@
+#backBtn{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 10%;
+    padding: 5px;
+    margin: 10px;
+}
 .screenshot{
     width: 500px;
 }
@@ -51,6 +58,9 @@ figcaption{
 }
 
 @media(max-width: 1080px){
+    #backBtn{
+        width: 20%;
+    }
     .pages{
         grid-template-columns: 1fr;
         grid-template-rows: auto;

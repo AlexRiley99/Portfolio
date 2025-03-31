@@ -140,8 +140,8 @@
     border-radius: 10px;
 }
 
-  /*TO TOP BUTTON*/
-  #toTop {
+  /*BACK/TO TOP BUTTON*/
+  .backBtn, .toTop {
     padding: 10px;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
@@ -151,11 +151,17 @@
     opacity: 60%;
     transition: opacity 1s;
   }
-  #toTop:hover {
+  .backBtn:hover, .toTop:hover {
     opacity: 100%;
   }
-  #toTopContainer {
+  .backBtnContainer, .toTopContainer {
     position: fixed;
+  }
+  .backBtnContainer{
+    right: 2%;
+    bottom: 8%;
+  }
+  .toTopContainer{
     right: 2%;
     bottom: 2%;
   }
