@@ -1,373 +1,650 @@
 <!DOCTYPE html>
 <head>
-    <!--Metas-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Alex Riley's Portfolio">
-    <meta property="og:description" content="Welcome to my professional portfolio! Explore some of my projects as well as my personal story and my educational and professional backgrounds.">
-    <meta property="og:image" content="Images/Character.png">
-    <meta property="og:url" content="https://seealexcode.com">
-    <meta property="og:type" content="website">
-    <!--Title and Links-->
-    <title>Alex Riley - Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="Styles.css">
-    <script src="Script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Denk+One&family=Emblema+One&family=Fascinate+Inline&display=swap" rel="stylesheet">
+  <!--Metas-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Alex Riley's Portfolio" />
+  <meta
+    property="og:description"
+    content="Welcome to my professional portfolio! Explore some of my projects as well as my personal story and my educational and professional backgrounds."
+  />
+  <meta property="og:image" content="Images/Character.png" />
+  <meta property="og:url" content="https://seealexcode.com" />
+  <meta property="og:type" content="website" />
+  <!--Title and Links-->
+  <title>Alex Riley - Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="Styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Denk+One&family=Emblema+One&family=Fascinate+Inline&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-    <!--NAME AND TAGLINE-->
-    <div id="heading">
-        <h1 class="title" id="name">Alex Riley </h1>
-        <h2 class="tagline">Software Engineer | Web Developer | Mobile Developer</h2>
+  <!--NAME AND TAGLINE-->
+  <div id="heading">
+    <h1 class="title" id="name">Alex Riley</h1>
+    <h2 class="tagline">
+      Software Engineer | Web Developer | Mobile Developer
+    </h2>
+  </div>
+
+  <!--SOCIALS-->
+  <div id="socials">
+    <a href="https://www.linkedin.com/in/alex-r-riley" target="_blank"
+      ><img
+        src="Images/LinkedInFavicon.png"
+        id="LiFavicon"
+        alt="LinkedIn Logo"
+        loading="lazy"
+    /></a>
+    <a href="https://github.com/AlexRiley99" target="_blank"
+      ><img
+        src="Images/GitHubFavicon.png"
+        id="GhFavicon"
+        alt="GitHub Logo"
+        loading="lazy"
+    /></a>
+  </div>
+
+  <!--NAVIGATION-->
+  <nav class="jumpTo">
+    <div class="navContainer">
+      <p><a href="#hireMe">Hire Me</a> |</p>
+      <p><a href="#aboutMe">About Me</a> |</p>
+      <p><a href="#learning">Learning</a> |</p>
+      <p><a href="#projects">Projects</a></p>
     </div>
+  </nav>
 
-    <!--SOCIALS-->
-    <div id="socials">
-        <a href="https://www.linkedin.com/in/alex-r-riley" target="_blank"><img src="Images/LinkedInFavicon.png" id="LiFavicon" alt="LinkedIn Logo" loading="lazy"></a>
-        <a href="https://github.com/AlexRiley99" target="_blank"><img src="Images/GitHubFavicon.png" id="GhFavicon" alt="GitHub Logo" loading="lazy"></a>
+  <!--CONNECT SECTION-->
+  <section>
+    <h3 id="hireMe" class="sectionHeading">Hire Me</h3>
+    <div id="hireMeContainer">
+      <div id="connectContainer">
+        <p class="sectionSubHeading">Connect With Me!</p>
+        <a href="mailto:alexcancode@yahoo.com" target="_blank"
+          ><button id="sendEmail" mailto="alexcancode@yahoo.com">
+            Send Email
+          </button></a
+        >
+        <img
+          src="Images/Mail.png"
+          id="mailImg"
+          alt="White envelope with red, white, and blue stripes on the edges"
+        />
+      </div>
+      <div id="resumeContainer">
+        <p class="sectionSubHeading">Download My Resume!</p>
+        <b><p>I'm looking for a...</p></b>
+        <div id="resumeButtons">
+          <a
+            href="Resumes/Alex Riley Software Engineer.pdf"
+            target="_blank"
+            download
+            ><button id="softwareEngineer" class="resumeBtn">
+              Software Enginner
+            </button></a
+          >
+          <a
+            href="Resumes/Alex Riley Web Developer.pdf"
+            target="_blank"
+            download
+            ><button id="webDeveloper" class="resumeBtn">
+              Web Developer
+            </button></a
+          >
+          <a
+            href="Resumes/Alex Riley Mobile Developer.pdf"
+            target="_blank"
+            download
+            ><button id="mobileDeveloper" class="resumeBtn">
+              Mobile Developer
+            </button></a
+          >
+        </div>
+      </div>
     </div>
-    
-    <!--NAVIGATION-->
-    <nav class="jumpTo">
-        <div class="navContainer">
-            <p><a href="#hireMe">Hire Me</a> | </p>
-            <p><a href="#aboutMe">About Me</a> | </p> 
-            <p><a href="#learning">Learning</a> | </p>
-            <p><a href="#projects">Projects</a></p>
+  </section>
+
+  <!--ABOUT ME SECTION-->
+  <section id="aboutMeDiv">
+    <h3 id="aboutMe" class="sectionHeading">About Me</h3>
+    <div id="aboutMeContainer">
+      <div id="past">
+        <p class="sectionSubHeading">Past</p>
+        <p>
+          I've always been creative and passionate about problem-solving. When I
+          discovered software development combines both, I knew it was the right
+          field for me. I enrolled in ECPI University's Computer & Information
+          Science program, majoring in Software Development. I completed my
+          degree and graduated Magna Cum Laude. Each project I create confirms I
+          made the right choice.
+        </p>
+      </div>
+
+      <div id="present">
+        <p class="sectionSubHeading">Present</p>
+        <p>
+          I'm an apprentice at TriSphere Apps, working as a Software Testing
+          Engineer and Software Development Manager. I manage a remote
+          development team, test and debug code, and ensure feature parity
+          between Android and iOS apps. While gaining valuable experience, I'm
+          actively seeking my first paid position in the field.
+        </p>
+      </div>
+
+      <div id="future">
+        <p class="sectionSubHeading">Future</p>
+        <p>
+          I aim to land an entry-level role where I can learn, grow, and be part
+          of a great team long-term. Over time, I plan to strengthen my skills
+          in areas I'm less proficient in, with the ultimate goal of becoming a
+          full-stack senior developer, leading and mentoring junior developers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--Learning SECTION-->
+  <section id="learningSection">
+    <h3 id="learning" class="sectionHeading">Learning</h3>
+    <div id="educationContainer">
+      <div id="learned">
+        <br />
+        <p class="sectionSubHeading">My Formal Education</p>
+        <div id="degreeContainer">
+          <img
+            src="Images/BachelorsDegree.png"
+            alt="Bachelor of Science in Computer and Information Science with a major in Software Development. Graduated Magna Cum Laude"
+            id="degreeImg"
+            loading="lazy"
+          />
+          <div id="degreeText" class="whiteBackground">
+            <p>
+              College equipped me with essential skills to succeed, especially
+              through ECPI’s hands-on approach, which works best for my learning
+              style. New concepts were taught in this format:
+            </p>
+            <ol>
+              <li><b>Guided Practice</b> - Tutorial from the professor.</li>
+              <li>
+                <b>Performance Assessment</b> - Applying what I learned on my
+                own, with variations to encourage problem-solving and logical
+                thinking beyond the tutorial.
+              </li>
+              <li>
+                <b>Discussion Forum</b> - A space to discuss new concepts with
+                my professor and peers, enhancing my understanding and
+                introducing new ideas.
+              </li>
+            </ol>
+
+            <p>
+              <strong
+                >I still use this process to teach myself new concepts today:
+              </strong>
+            </p>
+            <ol>
+              <li>Follow tutorials to get a solid grasp on the basics.</li>
+              <li>
+                Build small projects, incorporating new techniques to push my
+                boundaries.
+              </li>
+              <li>Engage in or read community discussions on the topic.</li>
+            </ol>
+            <p id="schoolWebsite">
+              My school's website: <br /><a
+                href="https://www.ecpi.edu/"
+                target="_blank"
+                >ECPI University</a
+              >
+            </p>
+          </div>
         </div>
-    </nav>
 
-    <!--CONNECT SECTION-->
-    <section>
-        <h3 id="hireMe" class="sectionHeading">Hire Me</h3>
-        <div id="hireMeContainer">
-            <div id="connectContainer">
-                <p class="sectionSubHeading">Connect With Me!</p>
-                <a href="mailto:alexcancode@yahoo.com" target="_blank"><button id="sendEmail" mailto="alexcancode@yahoo.com">Send Email</button></a> 
-                <img src="Images/Mail.png" id="mailImg" alt="White envelope with red, white, and blue stripes on the edges">
-            </div>
-            <div id="resumeContainer">
-                <p class="sectionSubHeading">Download My Resume!</p>
-                <b><p>I'm looking for a...</p></b>
-                <div id="resumeButtons">
-                    <a href="Resumes/Alex Riley Software Engineer.pdf" target="_blank" download><button id="softwareEngineer" class="resumeBtn">Software Enginner</button></a>
-                    <a href="Resumes/Alex Riley Web Developer.pdf" target="_blank" download><button id="webDeveloper" class="resumeBtn">Web Developer</button></a>
-                    <a href="Resumes/Alex Riley Mobile Developer.pdf" target="_blank" download><button id="mobileDeveloper" class="resumeBtn">Mobile Developer</button></a>
-                </div>
-            </div>
+        <p class="techStackHeading sectionSubHeading">
+          In school, I learned and worked with:
+        </p>
+        <div id="learnedStack" class="whiteBackground techStackContainer">
+          <!--HTML-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/HTML5.png"
+              alt="HTML5 icon"
+              id="html5"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">HTML5</p>
+          </div>
+
+          <!--CSS-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/CSS3.png"
+              alt="CSS3 icon"
+              id="css3"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">CSS3</p>
+          </div>
+
+          <!--JS-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/JavaScript.png"
+              alt="JavaScript icon"
+              id="javaScript"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">JavaScript</p>
+          </div>
+
+          <!--Java-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/Java.png"
+              alt="Java icon"
+              id="java"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">Java</p>
+          </div>
+
+          <!--Python-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/Python.png"
+              alt="Python icon"
+              id="python"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">Python</p>
+          </div>
+
+          <!--C#-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/CS.png"
+              alt="C# icon"
+              id="cs"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">C#</p>
+          </div>
+
+          <!--C++-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/CPP.png"
+              alt="C++ icon"
+              id="cpp"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">C++</p>
+          </div>
+
+          <!--SQL-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/SQL.png"
+              alt="SQL icon"
+              id="sql"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">SQL</p>
+          </div>
+
+          <!--PHP-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/PHP.png"
+              alt="PHP icon"
+              id="php"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">PHP</p>
+          </div>
+
+          <!--Kotlin-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/Kotlin.png"
+              alt="Kotlin icon"
+              id="kotlin"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">Kotlin</p>
+          </div>
+
+          <!--Android-->
+          <div class="techStackImgContainer">
+            <img
+              src="Images/Android.png"
+              alt="Android icon"
+              id="android"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">Android Studio</p>
+          </div>
+          <div class="techStackImgContainer">
+            <img
+              src="Images/VSCode.png"
+              alt="VSCode icon"
+              id="vscode"
+              class="techStackImg"
+              loading="lazy"
+            />
+            <p class="techStackCaption">Visual Studio Code</p>
+          </div>
         </div>
-    </section>
-    
-    <!--ABOUT ME SECTION-->
-    <section id="aboutMeDiv">
-        <h3 id="aboutMe" class="sectionHeading">About Me</h3>
-        <div id="aboutMeContainer">
-            <div id="past">
-                <p class="sectionSubHeading">Past</p>
-                <p>I've always been creative and passionate about problem-solving. When I discovered software development combines both, I knew it was the right field for me. I enrolled in ECPI University's Computer & Information Science program, majoring in Software Development. I completed my degree and graduated Magna Cum Laude. Each project I create confirms I made the right choice.
-                </p>
+      </div>
+      <div id="learning">
+        <p class="sectionSubHeading">What I'm Learning Lately</p>
+        <div id="learningLately">
+          <div
+            class="whiteBackground techStackContainer"
+            id="learningLatelyStack"
+          >
+            <!--React-->
+            <div class="techStackImgContainer">
+              <img
+                src="Images/React.png"
+                alt="React.js icon"
+                id="react"
+                class="techStackImg"
+                loading="lazy"
+              />
+              <p class="techStackCaption">React.js</p>
+            </div>
+            <!--Bootstrap-->
+            <div class="techStackImgContainer">
+              <img
+                src="Images/BootStrap.png"
+                alt="Bootstrap icon"
+                id="bootstrap"
+                class="techStackImg"
+                loading="lazy"
+              />
+              <p class="techStackCaption">Bootstrap</p>
+            </div>
+            <!--Node-->
+            <div class="techStackImgContainer">
+              <img
+                src="Images/NodeJS.png"
+                alt="Node.js icon"
+                id="node"
+                class="techStackImg"
+                loading="lazy"
+              />
+              <p class="techStackCaption">Node.js</p>
             </div>
 
-            <div id="present">
-                <p class="sectionSubHeading">Present</p>
-                <p>I'm an apprentice at TriSphere Apps, working as a Software Testing Engineer and Software Development Manager. I manage a remote development team, test and debug code, and ensure feature parity between Android and iOS apps. While gaining valuable experience, I'm actively seeking my first paid position in the field.
-                </p>
+            <!--MongoDB-->
+            <div class="techStackImgContainer">
+              <img
+                src="Images/MongoDB.png"
+                alt="MongoDB icon"
+                id="mongodb"
+                class="techStackImg"
+                loading="lazy"
+              />
+              <p class="techStackCaption">MongoDB</p>
             </div>
 
-            <div id="future">
-                <p class="sectionSubHeading">Future</p>
-                <p>I aim to land an entry-level role where I can learn, grow, and be part of a great team long-term. Over time, I plan to strengthen my skills in areas I'm less proficient in, with the ultimate goal of becoming a full-stack senior developer, leading and mentoring junior developers.
-                </p>
+            <!--Swift-->
+            <div class="techStackImgContainer">
+              <img
+                src="Images/Swift.png"
+                alt="Swift icon"
+                id="swift"
+                class="techStackImg"
+                loading="lazy"
+              />
+              <p class="techStackCaption">Swift</p>
             </div>
+
+            <!--Apple-->
+            <div class="techStackImgContainer">
+              <img
+                src="Images/Apple.png"
+                alt="Apple icon"
+                id="apple"
+                class="techStackImg"
+                loading="lazy"
+              />
+              <p class="techStackCaption">iOS</p>
+            </div>
+            <!--XCode-->
+            <div class="techStackImgContainer">
+              <img
+                src="Images/XCode.png"
+                alt="XCode icon"
+                id="xcode"
+                class="techStackImg"
+                loading="lazy"
+              />
+              <p class="techStackCaption">XCode</p>
+            </div>
+            <div class="techStackImgContainer">
+              <img
+                src="Images/TypeScript.png"
+                alt="TypeScript icon"
+                id="xcode"
+                class="techStackImg"
+                loading="lazy"
+              />
+              <p class="techStackCaption">TypeScript</p>
+            </div>
+          </div>
+          <div id="learningText" class="whiteBackground">
+            <p>I'm always learning something new!</p>
+            <p>
+              Along with mastering the tech stack here, I'm attending a
+              <a
+                href="https://www.nvidia.com/en-eu/training/instructor-led-workshops/fundamentals-of-deep-learning/"
+                target="_blank"
+                >Fundamentals of Deep Learning workshop</a
+              >
+              on April 4th. So excited!
+            </p>
+            <p>
+              I also keep up with tech trends through LinkedIn, YouTube, and
+              webinars.
+            </p>
+          </div>
         </div>
-            
-        <details id="roadtrip">
-            <summary>The Journey: Where I Came From and Where I'm Going</summary>
-        
-        <div id="timeline">
-            <p id="message"></p>
-            <br>
+      </div>
+    </div>
+  </section>
 
-            <!--Car asset-->
-            <div id="carContainer">
-                <img src="Images/Car.png" id="car" alt="Yellow Car" loading="lazy">
-            </div>
-
-            <!--Road-->
-            <div id="line"></div>
-
-            <!--Plot points-->
-            <div id="plotPointContainer">
-            <div class="plotPoint" id="point1"><b><u>Past:</u></b><br>Lifelong interest in art and design. Love for problem solving and logic puzzles.</div>
-                <div class="plotPoint" id="point2">Spent time in positions that built my soft skills. Knew I wanted to continue my education, but didn't yet have a field in mind.</div>
-                <div class="plotPoint" id="point3">Wanted a way to combine creativity with problem solving to create something meaningful. Chose to pursue software development.</div>                    
-                <div class="plotPoint" id="point4">Bachelor's degree in computer & information science, majoring in software development. <strong>Graduated with honors</strong></div>
-                <div class="plotPoint" id="point5"><b><u>Present:</u></b><br>Apprenticeship at TriSphere Apps as Software Testing Engineer & Software Development Manager</div>
-                <div class="plotPoint" id="point6">Gaining valuable knowledge and experience working with a shared codebase and managing a remote team</div>
-                <div class="plotPoint" id="point7">Actively working on courses, certifications, and personal projects to hone my skills further</div>
-                <div class="plotPoint" id="point8"><b><u>Future:</u></b><br>An entry-level role where I can learn and grow, becoming a part of an awesome team for the long term</div>
-                <div class="plotPoint" id="point9">Gaining knowledge and independence, spending time sharpening my skills in areas where I'm not yet proficient.</div>   
-                <div class="plotPoint" id="point10"><b><u>End Goal:</u></b><br>Full-Stack Senior Developer, leading and mentoring junior developers</div>
-            </div>
-
-            <!--Control Buttons-->
-            <div id="controlBtnContainer">
-                <div id="timelineControls">
-                    <button id="toBeginning" class="fas fa-step-backward controlBtn"></button> </button> </button> <button id="play" class="fas fa-play controlBtn"></button> <button id="pause" class="fas fa-pause controlBtn"></button> <button id="toEnd" class="fas fa-step-forward controlBtn"></button>
-                    <br><button id="closeBtn" class="controlBtn">Close</button>
-                </div>
-            </div>
-            
-            <!--Controls List-->
-            <div id="controlsListContainer">
-                    <p id="controlsLabel"><u>Controls</u></p>
-                    <div id="controlsList">
-                        <div id="clickPlay"><p>* Click <p class="fas fa-play"></p> to start</p></div>
-                        <div id="clickPause"><p>* Click <p class="fas fa-pause"></p> to stop</p></div>
-                        <div id="clickRewind"><p>* Click <p class="fas fa-step-backward"></p> to restart</p></div>
-                        <div id="clickFastForward"><p>* Click <p class="fas fa-step-forward"></p> to skip to the end</p></div>
-                    <p id="haveFun">Have fun! I hope you packed snacks for the trip!</p>
-                </div>
-            </div>
-        </details>
-            <!--Audio Files-->
-            <audio id="beepbeep" src="Audio/BeepBeep.wav"></audio>
-            <audio id="carRunning" src="Audio/CarRunning.m4a" loop></audio>
-            <audio id="break" src="Audio/TireScreech.m4a"></audio>
-        </div>
-    </section>
-
-    <!--Learning SECTION-->
-    <section id="learningSection">
-            <h3 id="learning" class="sectionHeading">Learning</h3>
-            <div id="educationContainer">
-                <div id="learned">
-                    <br>
-                <p class="sectionSubHeading">My Formal Education</p>
-                <div id="degreeContainer">
-                        <img src="Images/BachelorsDegree.png" alt="Bachelor of Science in Computer and Information Science with a major in Software Development. Graduated Magna Cum Laude" id="degreeImg" loading="lazy">
-                    <div id="degreeText" class="whiteBackground">
-                        <p>College equipped me with essential skills to succeed, especially through ECPI’s hands-on approach, which works best for my learning style. New concepts were taught in this format:</p>
-                        <ol>
-                            <li><b>Guided Practice</b> - Tutorial from the professor.</li>
-                            <li><b>Performance Assessment</b> - Applying what I learned on my own, with variations to encourage problem-solving and logical thinking beyond the tutorial.</li>
-                            <li><b>Discussion Forum</b> - A space to discuss new concepts with my professor and peers, enhancing my understanding and introducing new ideas.</li>
-                        </ol>
-
-                        <p><strong>I still use this process to teach myself new concepts today: </strong></p>
-                        <ol>
-                            <li>Follow tutorials to get a solid grasp on the basics.</li>
-                            <li>Build small projects, incorporating new techniques to push my boundaries.</li>
-                            <li>Engage in or read community discussions on the topic.</li>
-                        </ol>
-                        <p id="schoolWebsite">My school's website: <br><a href="https://www.ecpi.edu/" target="_blank">ECPI University</a></p>
-                    </div>
-                </div>
-            
-                <p class="techStackHeading sectionSubHeading">In school, I learned and worked with:</p>
-                <div id="learnedStack" class="whiteBackground techStackContainer">
-                    <!--HTML-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/HTML5.png" alt="HTML5 icon" id="html5" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">HTML5</p>
-                    </div>
-                        
-                    <!--CSS-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/CSS3.png" alt="CSS3 icon" id="css3" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">CSS3</p>
-                    </div>
-                        
-                    <!--JS-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/JavaScript.png" alt="JavaScript icon" id="javaScript" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">JavaScript</p>
-                    </div>
-                        
-                    <!--Java-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/Java.png" alt="Java icon" id="java" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">Java</p>
-                    </div>
-                        
-                    <!--Python-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/Python.png" alt="Python icon" id="python" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">Python</p>
-                    </div>
-                        
-                    <!--C#-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/CS.png" alt="C# icon" id="cs" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">C#</p>
-                    </div>
-                        
-                    <!--C++-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/CPP.png" alt="C++ icon" id="cpp" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">C++</p>
-                    </div>
-                        
-                    <!--SQL-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/SQL.png" alt="SQL icon" id="sql" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">SQL</p>
-                    </div>
-                        
-                    <!--PHP-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/PHP.png" alt="PHP icon" id="php" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">PHP</p>
-                    </div>
-                        
-                    <!--Kotlin-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/Kotlin.png" alt="Kotlin icon" id="kotlin" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">Kotlin</p>
-                    </div>
-                        
-                    <!--Android-->
-                    <div class="techStackImgContainer">
-                        <img src="Images/Android.png" alt="Android icon" id="android" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">Android Studio</p>
-                    </div>
-                    <div class="techStackImgContainer">
-                        <img src="Images/VSCode.png" alt="VSCode icon" id="vscode" class="techStackImg" loading="lazy">
-                        <p class="techStackCaption">Visual Studio Code</p>
-                    </div>
-                        
-                </div>
-            </div>
-            <div id="learning">
-                <p class="sectionSubHeading">What I'm Learning Lately</p>
-                <div id="learningLately">
-                    <div class="whiteBackground techStackContainer" id="learningLatelyStack">
-                        <!--React-->
-                        <div class="techStackImgContainer">
-                            <img src="Images/React.png" alt="React.js icon" id="react" class="techStackImg" loading="lazy"> 
-                            <p class="techStackCaption">React.js</p>
-                        </div>
-                        <!--Bootstrap-->
-                        <div class="techStackImgContainer">
-                            <img src="Images/BootStrap.png" alt="Bootstrap icon" id="bootstrap" class="techStackImg" loading="lazy">
-                            <p class="techStackCaption">Bootstrap</p>
-                        </div>
-                        <!--Node-->
-                        <div class="techStackImgContainer">
-                            <img src="Images/NodeJS.png" alt="Node.js icon" id="node" class="techStackImg" loading="lazy">
-                            <p class="techStackCaption">Node.js</p>
-                        </div>
-                            
-                        <!--MongoDB-->
-                        <div class="techStackImgContainer">
-                            <img src="Images/MongoDB.png" alt="MongoDB icon" id="mongodb" class="techStackImg" loading="lazy">
-                            <p class="techStackCaption">MongoDB</p>
-                        </div>
-                            
-                        <!--Swift-->
-                        <div class="techStackImgContainer">
-                            <img src="Images/Swift.png" alt="Swift icon" id="swift" class="techStackImg" loading="lazy">
-                            <p class="techStackCaption">Swift</p>
-                        </div>
-                            
-                        <!--Apple-->
-                        <div class="techStackImgContainer">
-                            <img src="Images/Apple.png" alt="Apple icon" id="apple" class="techStackImg" loading="lazy">
-                            <p class="techStackCaption">iOS</p>
-                        </div>
-                        <!--XCode-->
-                        <div class="techStackImgContainer">
-                            <img src="Images/XCode.png" alt="XCode icon" id="xcode" class="techStackImg" loading="lazy">
-                            <p class="techStackCaption">XCode</p>
-                        </div>
-                        <div class="techStackImgContainer">
-                            <img src="Images/TypeScript.png" alt="TypeScript icon" id="xcode" class="techStackImg" loading="lazy">
-                            <p class="techStackCaption">TypeScript</p>
-                        </div>
-                </div> 
-                <div id="learningText" class="whiteBackground">
-                    <p>I'm always learning something new!</p>
-                    <p>Along with mastering the tech stack here, I'm attending a <a href="https://www.nvidia.com/en-eu/training/instructor-led-workshops/fundamentals-of-deep-learning/" target="_blank">Fundamentals of Deep Learning workshop</a> on April 4th. So excited!</p>
-                    <p>I also keep up with tech trends through LinkedIn, YouTube, and webinars.</p>
-                </div>
-                </div>
-            </div>
-            </div>
-    </section>
-
-    <!--PROJECTS SECTION-->
-    <section id="projectsDiv">
-        <h3 id="projects" class="sectionHeading">Projects</h3>
-        <br>
-        <p class="sectionSubHeading">Click a button below any project to learn more, try it out, or view the source code.</p>
+  <!--PROJECTS SECTION-->
+  <section id="projectsDiv">
+    <h3 id="projects" class="sectionHeading">Projects</h3>
+    <br />
+    <p class="sectionSubHeading">
+      Click a button below any project to learn more, try it out, or view the
+      source code.
+    </p>
 
     <div id="projectsContainer">
-        <div id="sundustContainer" class="projectContainer">
-            <h3>Sundust Photography</h3>
-            <img src="Images/sundustImg.png" alt="A screenshot of the Sundust Photography home page" id="sundustImg" class="projectImg" loading="lazy">
+      <div id="sundustContainer" class="projectContainer">
+        <h3>Sundust Photography</h3>
+        <img
+          src="Images/sundustImg.png"
+          alt="A screenshot of the Sundust Photography home page"
+          id="sundustImg"
+          class="projectImg"
+          loading="lazy"
+        />
         <div class="projectButtons">
-            <a href="sundustInfo" target="_blank"><button id="sundustInfoBtn" class="projectBtn learnMore">Learn More</button></a>
-            <a href="https://sundustphotography.com" target="_blank"><button id="sundustphotography" class="projectBtn liveDemo">Live Demo</button></a>
-            <a href="https://github.com/AlexRiley99/SundustPhotography" target="_blank"><button id="sundustCode" class="projectBtn sourceCode">Source Code</button></a>
+          <a href="sundustInfo" target="_blank"
+            ><button id="sundustInfoBtn" class="projectBtn learnMore">
+              Learn More
+            </button></a
+          >
+          <a href="https://sundustphotography.com" target="_blank"
+            ><button id="sundustphotography" class="projectBtn liveDemo">
+              Live Demo
+            </button></a
+          >
+          <a
+            href="https://github.com/AlexRiley99/SundustPhotography"
+            target="_blank"
+            ><button id="sundustCode" class="projectBtn sourceCode">
+              Source Code
+            </button></a
+          >
         </div>
-            <div class="projectDescription">
-                <p>A multi-page professional website that I developed for a freelance photographer.</p>
-            </div>
+        <div class="projectDescription">
+          <p>
+            A multi-page professional website that I developed for a freelance
+            photographer.
+          </p>
         </div>
-        
-        <div id="groceryContainer" class="projectContainer">
-            <h3>Grocery List Maker</h3>
-            <img src="Images/groceryImg.png" alt="A screenshot of a grocery list maker" id="groceryImg" class="projectImg" loading="lazy">
-            <div class="projectButtons">
-                <a href="groceryInfo" target="_blank"><button id="groceryInfoBtn" class="projectBtn learnMore">Learn More</button></a>
-                <a href="https://alexriley99.github.io/Grocery_List_Maker/" target="_blank"><button id="grocerylist" class="projectBtn liveDemo">Live Demo</button></a>
-                <a href="https://github.com/AlexRiley99/Grocery_List_Maker" target="_blank"><button id="groceryCode" class="projectBtn sourceCode">Source Code</button></a>   
-            </div>
-            <div class="projectDescription">
-                <p>A CRUD application that I developed to allow a user to create and manage a grocery list while staying on budget.</p>
-            </div>
-        </div>
-        
-        <div id="incomeContainer" class="projectContainer">
-            <h3>Variable Income Calculator</h3>
-            <img src="Images/incomeImg.png" alt="A screenshot of a variable income calculator" id="incomeImg" class="projectImg" loading="lazy">
-            <div class="projectButtons">
-                <a href="incomeInfo" target="_blank"><button id="incomeInfoBtn" class="projectBtn learnMore">Learn More</button></a>
-                <a href="https://alexriley99.github.io/Variable_Income_Calculator/" target="_blank"><button id="variableincome" class="projectBtn liveDemo">Live Demo</button></a>
-                <a href="https://github.com/AlexRiley99/Variable_Income_Calculator" target="_blank"><button id="incomeCode" class="projectBtn sourceCode">Source Code</button></a>
-            </div>
-            <div class="projectDescription">
-                <p>A web application that I developed to help people who make variable income (hourly, freelance, etc.) to make future financial decisions based on what their income has been in the past.</p>
-            </div>
-        </div>
-        <div id="jupiterContainer" class="projectContainer">
-            <h3>Jupiter Tech Studio</h3>
-            <img src="Images/jupiterImg.png" alt="A screenshot of the Jupiter Tech Studio home page" id="jupiterImg" class="projectImg" loading="lazy">
-            <div class="projectButtons">
-                <a href="jupiterInfo" target="_blank"><button id="jupiterInfoBtn" class="projectBtn learnMore">Learn More</button></a>
-                <a href="https://jupitertechstudio.com" target="_blank"><button id="jupiter" class="projectBtn liveDemo">Live Demo</button></a>
-                <a href="https://github.com/AlexRiley99/JupiterTechStudio" target="_blank"><button id="jupiterCode" class="projectBtn sourceCode">Source Code</button></a>
-            </div>
-            <div class="projectDescription">
-                <p>A website that I developed for the brand name that I put on all of my projects. Was previously used as a portfolio and I've since removed the "Projects" page.</p>
-            </div>
-        </div>
-    </div>
-    </section>
+      </div>
 
-    <!--TO TOP BUTTON-->
-    <div class="toTopContainer">
-        <a href="#name"><button class="toTop">&#8593; To Top</button></a>
-    </div>
+      <div id="groceryContainer" class="projectContainer">
+        <h3>Grocery List Maker</h3>
+        <img
+          src="Images/groceryImg.png"
+          alt="A screenshot of a grocery list maker"
+          id="groceryImg"
+          class="projectImg"
+          loading="lazy"
+        />
+        <div class="projectButtons">
+          <a href="groceryInfo" target="_blank"
+            ><button id="groceryInfoBtn" class="projectBtn learnMore">
+              Learn More
+            </button></a
+          >
+          <a
+            href="https://alexriley99.github.io/Grocery_List_Maker/"
+            target="_blank"
+            ><button id="grocerylist" class="projectBtn liveDemo">
+              Live Demo
+            </button></a
+          >
+          <a
+            href="https://github.com/AlexRiley99/Grocery_List_Maker"
+            target="_blank"
+            ><button id="groceryCode" class="projectBtn sourceCode">
+              Source Code
+            </button></a
+          >
+        </div>
+        <div class="projectDescription">
+          <p>
+            A CRUD application that I developed to allow a user to create and
+            manage a grocery list while staying on budget.
+          </p>
+        </div>
+      </div>
 
-    <!--FOOTER-->
-    <div class="footer_div">
-        <footer>
-            <p>Alex Riley | March 2025 | Last Updated: April 2, 2025</p>
-        </footer>
+      <div id="incomeContainer" class="projectContainer">
+        <h3>Variable Income Calculator</h3>
+        <img
+          src="Images/incomeImg.png"
+          alt="A screenshot of a variable income calculator"
+          id="incomeImg"
+          class="projectImg"
+          loading="lazy"
+        />
+        <div class="projectButtons">
+          <a href="incomeInfo" target="_blank"
+            ><button id="incomeInfoBtn" class="projectBtn learnMore">
+              Learn More
+            </button></a
+          >
+          <a
+            href="https://alexriley99.github.io/Variable_Income_Calculator/"
+            target="_blank"
+            ><button id="variableincome" class="projectBtn liveDemo">
+              Live Demo
+            </button></a
+          >
+          <a
+            href="https://github.com/AlexRiley99/Variable_Income_Calculator"
+            target="_blank"
+            ><button id="incomeCode" class="projectBtn sourceCode">
+              Source Code
+            </button></a
+          >
+        </div>
+        <div class="projectDescription">
+          <p>
+            A web application that I developed to help people who make variable
+            income (hourly, freelance, etc.) to make future financial decisions
+            based on what their income has been in the past.
+          </p>
+        </div>
+      </div>
+      <div id="jupiterContainer" class="projectContainer">
+        <h3>Jupiter Tech Studio</h3>
+        <img
+          src="Images/jupiterImg.png"
+          alt="A screenshot of the Jupiter Tech Studio home page"
+          id="jupiterImg"
+          class="projectImg"
+          loading="lazy"
+        />
+        <div class="projectButtons">
+          <a href="jupiterInfo" target="_blank"
+            ><button id="jupiterInfoBtn" class="projectBtn learnMore">
+              Learn More
+            </button></a
+          >
+          <a href="https://jupitertechstudio.com" target="_blank"
+            ><button id="jupiter" class="projectBtn liveDemo">
+              Live Demo
+            </button></a
+          >
+          <a
+            href="https://github.com/AlexRiley99/JupiterTechStudio"
+            target="_blank"
+            ><button id="jupiterCode" class="projectBtn sourceCode">
+              Source Code
+            </button></a
+          >
+        </div>
+        <div class="projectDescription">
+          <p>
+            A website that I developed for the brand name that I put on all of
+            my projects. Was previously used as a portfolio and I've since
+            removed the "Projects" page.
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!--TO TOP BUTTON-->
+  <div class="toTopContainer">
+    <a href="#name"><button class="toTop">&#8593; To Top</button></a>
+  </div>
+
+  <!--FOOTER-->
+  <div class="footer_div">
+    <footer>
+      <p>Alex Riley | March 2025 | Last Updated: April 2, 2025</p>
+    </footer>
+  </div>
 </body>
