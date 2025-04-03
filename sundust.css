@@ -1,16 +1,3 @@
-#backBtn{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    width: 10%;
-    padding: 5px;
-    margin: 10px;
-}
-.screenshot{
-    width: 500px;
-}
-.learnMoreSection{
-    font-size: 20px;
-}
 .pages{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,18 +12,11 @@
     grid-column: 2;
     width: 100%;
 }
-#keyDesignElements{
-    grid-column: span 2;
-}
 .pageFeatures li{
     margin: 10px auto;
 }
 #galleryFeatures{
     grid-row: span 2;
-}
-
-#whatDiv, #howDiv{
-    font-weight: 800;
 }
 .sundustCard{
     width: 45%;
@@ -49,13 +29,7 @@ figcaption{
     margin: 10px auto;
     font-weight: 800;
 }
-.stepNumber, #whatsNextDiv li{
-    font-size: 20px;
-    font-weight: bold;
-}
-.how{
-    border-top: 5px double rgb(0, 24, 0);
-}
+
 
 @media(max-width: 1080px){
     #backBtn{
@@ -70,8 +44,4 @@ figcaption{
         width: 70%;
         margin: auto;
     }
-}
-
-@media(max-width: 600px){
-
 }
