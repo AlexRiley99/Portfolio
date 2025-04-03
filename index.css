@@ -328,10 +328,16 @@
   }
   #learningText, #degreeText{
     grid-column: 2;
-    font-size: 20px;
     padding: 10px;
     margin: 0 auto;
     text-align: center;
+  }
+  #learningText p{
+    margin: 20px auto;
+    font-size: 25px;
+  }
+  #degreeText{
+    font-size: 20px;
   }
   #degreeText ol{
     text-align: left;
