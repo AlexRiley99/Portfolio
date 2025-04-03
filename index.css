@@ -18,6 +18,43 @@
     grid-column: 2;
   }
 
+/*HIRE ME*/
+#hireMeContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+#connectContainer, #resumeContainer{
+  width: 90%;
+  margin: 10px auto;
+  font-size: 25px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+#mailImg{
+  display: block;
+  width: 40%;
+  height: auto;
+  margin: 20px auto;
+}
+#resumeContainer p{
+  text-align: center;
+}
+#resumeButtons{
+  width: 80%;
+  margin: auto;
+}
+.resumeBtn, #sendEmail{
+  width: 100%;
+  height: 50px;
+  margin: 5px auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 /*ABOUT ME*/
 #aboutMe {
     margin-top: 20px;
