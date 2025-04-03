@@ -290,6 +290,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1;
+    margin: 20px auto;
   }
   #schoolWebsite{
     text-align: center;
