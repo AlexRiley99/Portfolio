@@ -29,7 +29,9 @@ figcaption{
     margin: 10px auto;
     font-weight: 800;
 }
-
+.how{
+    border-top: 5px double rgb(0, 24, 0);
+  }
 
 @media(max-width: 1080px){
     #backBtn{
