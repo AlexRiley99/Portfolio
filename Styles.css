@@ -119,27 +119,6 @@
     margin: auto;
   }
 
-  /*UNDER CONSTRUCTION*/
-.underConstruction{
-    text-align: center;
-    margin: auto;
-    padding: 30px;
-}
-.underConstructionImg{
-    width: 70%;
-}
-.underConstructionMsg{
-    font-weight: 800;
-}
-.underConstruction p{
-    font-size: 30px;
-    text-align: center;
-}
-.embeddedVideo{
-    border: 10px double rgb(0, 24, 0);
-    border-radius: 10px;
-}
-
 /*LEARN MORE PAGES*/
 .learnMoreSection{
   font-size: 20px;

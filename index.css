@@ -85,24 +85,29 @@
   }
   
   /*EDUCATION*/
-  #degreeImg{
+  .credentialImg{
+    width: 350px;
+  }
+  #credentialsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px auto;
+    width: 100%;
+    align-items: baseline;
+  }
+  #bachelorsImg{
+    width: 350px;
+  }
+  #deepLearningImg, #webDesignImg{
     width: 400px;
   }
-  #degreeContainer{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1;
-    margin: 20px auto;
-  }
-  #schoolWebsite{
-    text-align: center;
-  }
+
   .techStackHeading{
     margin-top: 30px;
   }
   .techStackImg{
     display: inline;
-    width: 55px;
+    width: 40px;
   }
   .techStackContainer{
     display: grid;
@@ -111,7 +116,7 @@
     grid-template-rows: auto;
   }
   .techStackImgContainer{
-    width: 55px;
+    width: 45px;
     margin: auto;
   }
   .techStackCaption{
@@ -119,30 +124,13 @@
     font-weight: 800;
     font-size: 20px;
   }
-  #learningLately{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1;
-  }
   #learningLatelyStack{
-    grid-column: 1;
+    margin: auto;
   }
-  #learningText, #degreeText{
-    grid-column: 2;
-    padding: 10px;
-    margin: 0 auto;
+
+  figcaption{
     text-align: center;
-  }
-  #learningText p{
-    margin: 20px auto;
-    font-size: 25px;
-  }
-  #degreeText{
-    font-size: 20px;
-  }
-  #degreeText ol{
-    text-align: left;
+    font-weight: 800;
   }
 
   /*PROJECTS*/
@@ -216,21 +204,22 @@
 
 /*SPLIT SCREEN COMPUTER OR LARGE TABLET*/
 @media (max-width: 1080px) {
-    #degreeContainer{
+    .credentialContainer{
       grid-template-columns: 1;
     }
-    #degreeImg, #degreeText, .techStackContainer, #learningText{
+    .credential, .techStackContainer{
       grid-column: 1;
+      margin: auto;
     }
   
     #learningLately{
       grid-template-columns: 1;
     }
-    .techStackContainer, #learningText, #degreeText{
+    .techStackContainer{
       width: 550px;
       margin: 10px auto;
     }
-    #degreeImg{
+    .credentialImg{
       margin: auto;
     }
   
@@ -260,10 +249,10 @@
   
   /*MOBILE PHONE*/
   @media (max-width: 600px){
-      #aboutMeContainer, #degreeContainer, #learningLately{
+      #aboutMeContainer, .credentialContainer, #learningLately{
           grid-template-columns: 1;
       }
-      #past, #present, #future, #degreeImg, #degreeText, #learningText, .projectContainer, .techStackContainer{
+      #past, #present, #future, .credentialImg, .projectContainer, .techStackContainer{
           grid-column: 1;
           width: 300px;
           margin: 10px auto;
