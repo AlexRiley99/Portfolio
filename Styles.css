@@ -1,14 +1,27 @@
-@media (max-width: 3000px) {
-  /*WHOLE PAGE*/
+:root {
+  line-height: 1.5;
+  color: #331c00;
+  background-color: #eee2df;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
   html {
     background: linear-gradient(
         to bottom right,
-        rgba(253, 245, 236, 0.9),
-        rgba(245, 230, 212, 0.7),
-        rgba(213, 195, 174, 0.5),
-        rgba(180, 157, 129, 0.5),
-        rgba(158, 134, 105, 0.7),
-        rgb(139, 112, 91, 0.9)
+        rgba(254, 250, 224, 1.0),
+        rgba(254, 250, 224, 0.7),
+        rgba(254, 250, 224, 0.5),
+        rgba(254, 250, 224, 0.7),
+        rgba(254, 250, 224, 1.0)
       ),
       url("Images/texture2.jpg");
     background-size: cover;
@@ -16,20 +29,18 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: rgb(0, 50, 0);
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5),
-      -1px -1px 5px rgba(255, 255, 255, 0.5);
-    height: 100vh;
-    width: 100vw;
     overflow: hidden;
   }
   body {
     overflow: auto;
-    height: 100vh;
-    width: 100vw;
   }
 
   html,
   body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
   }
 
@@ -50,32 +61,30 @@
 
   .sectionHeading {
     text-decoration: underline;
-    font-size: 45px;
-    font-family: "Big Shoulders Inline", sans-serif;
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 0;
   }
-  .sectionSubHeading  {
+  .sectionSubHeading {
     text-align: center;
-    font-family: "Emblema One", system-ui;
-    font-size: 20px;
-    margin-top: 0;
+    text-decoration: underline;
+    font-size: 2rem;
   }
   section {
-    width: 90vw;
+    width: 100%;
     margin: 20px auto;
     padding: 5px;
-    border-bottom: 5px double rgb(0, 24, 0);
   }
 
-  .title {
-    font-family: "Fascinate Inline", system-ui;
-    font-size: 50px;
-    margin-bottom: 0;
+  .title, #heading {
+    font-size: 5rem;
+    margin: 0;
+    padding: 1rem;
+    background-color: #283618;
+    color: #FEFAE0
   }
   .tagline {
-    font-family: "Emblema One", system-ui;
-    font-size: 20px;
+    font-size: 2rem;
     margin-top: 0;
   }
   .title,
@@ -85,28 +94,22 @@
 
   /*JUMP TO*/
   .jumpTo {
-    border: 5px double rgba(13, 18, 0, 0.4);
-    font-family: "Big Shoulders Inline", sans-serif;
-    border-radius: 10px;
-    width: 90%;
-    padding: 50px;
+    border: 1px solid rgba(13, 18, 0, 0.4);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
     text-align: center;
-    background: radial-gradient(
-      ellipse,
-      rgba(68, 69, 4, 0.7),
-      rgba(95, 97, 14, 0.7),
-      rgba(131, 133, 37, 0.7),
-      rgba(159, 160, 63, 0.7),
-      rgba(239, 241, 121, 0.7)
-    );
+    background-color: rgba(131, 133, 37);
     margin: auto;
   }
   .jumpTo a,
   .jumpTo p {
     display: inline;
+    text-align: center;
     text-decoration: none;
-    margin: auto 10px;
-    font-size: 25px;
+    margin: auto 2rem;
+    font-size: 2rem;
     color: rgb(253, 243, 233);
     text-shadow: 1px 1px 1px rgb(13, 6, 0), -1px -1px 1px rgb(13, 6, 1);
   }
@@ -137,72 +140,28 @@
   grid-column: span 2;
 }
 
-  /*BACK/TO TOP BUTTON*/
-  .backBtn, .toTop {
-    padding: 10px;
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
-    font-size: 15px;
-    width: 100px;
-    opacity: 60%;
-    transition: opacity 1s;
-  }
-  .backBtn:hover, .toTop:hover {
-    opacity: 100%;
-  }
-  .backBtnContainer, .toTopContainer {
-    position: fixed;
-  }
-  .backBtnContainer{
-    right: 2%;
-    bottom: 8%;
-  }
-  .toTopContainer{
-    right: 2%;
-    bottom: 2%;
-  }
-
   /*Backgrounds*/
-  .whiteBackground{
-    background: radial-gradient(ellipse, 
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.5),
-    rgba(0, 0, 0, 0));
-    margin-bottom: 25px;
-    padding: 25px;
-    border-radius: 10px;
+  .solidBg{
+    background-color: #DDA15E;
   }
 
   /*FOOTER*/
   footer {
-    padding: 10px;
-    margin: 0;
+    background-color: #283618;
+    color: #FEFAE0;
+    padding: 2rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
     text-align: center;
   }
 
-  /*FONTS*/
-  .big-shoulders-inline-font {
-    font-family: "Big Shoulders Inline", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+@media (max-width: 1080px){
+  .tagline{
+    font-size: 1.5rem;;
   }
-  .emblema-one-regular {
-    font-family: "Emblema One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .fascinate-inline-regular {
-    font-family: "Fascinate Inline", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .denk-one-regular {
-    font-family: "Denk One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  .jumpTo a,
+  .jumpTo p{
+    margin: auto;
+    padding: 0.5rem;
   }
 }
-

@@ -15,16 +15,6 @@
   <title>Alex Riley - Portfolio</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="Styles.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Denk+One&family=Emblema+One&family=Fascinate+Inline&display=swap"
-    rel="stylesheet"
-  />
 </head>
 <body>
   <!--NAME AND TAGLINE-->
@@ -34,184 +24,131 @@
       Software Engineer | Web Developer | Mobile Developer
     </h2>
   </div>
-
-  <!--SOCIALS-->
-  <div id="socials">
-    <a href="https://www.linkedin.com/in/alex-r-riley" target="_blank"
-      ><img
-        src="Images/LinkedInFavicon.png"
-        id="LiFavicon"
-        alt="LinkedIn Logo"
-        loading="lazy"
-    /></a>
-    <a href="https://github.com/AlexRiley99" target="_blank"
-      ><img
-        src="Images/GitHubFavicon.png"
-        id="GhFavicon"
-        alt="GitHub Logo"
-        loading="lazy"
-    /></a>
-  </div>
-
   <!--NAVIGATION-->
   <nav class="jumpTo">
     <div class="navContainer">
-      <p><a href="#hireMe">Hire Me</a> |</p>
-      <p><a href="#aboutMe">About Me</a> |</p>
-      <p><a href="#education">Education</a> |</p>
+      <p><a href="#aboutMe">About Me</a></p>
+      <p><a href="#education">Education</a></p>
       <p><a href="#projects">Projects</a></p>
+      <p><a href="#hireMe">Hire Me</a></p>
     </div>
   </nav>
 
-  <!--HIRE ME SECTION-->
-  <section>
-    <h3 id="hireMe" class="sectionHeading">Hire Me</h3>
-    <div id="hireMeContainer">
-      <div id="connectContainer">
-        <p class="sectionSubHeading">Connect With Me!</p>
-        <a href="mailto:alexcancode@yahoo.com" target="_blank"
-          ><button id="sendEmail" mailto="alexcancode@yahoo.com">
-            Send Email
-          </button></a
-        >
-        <img
-          src="Images/Mail.png"
-          id="mailImg"
-          alt="White envelope with red, white, and blue stripes on the edges"
-        />
-      </div>
-      <div id="resumeContainer">
-        <p class="sectionSubHeading">Download My Resume!</p>
-        <b><p>I'm looking for a...</p></b>
-        <div id="resumeButtons">
-          <a
-            href="Resumes/Alex Riley Software Engineer.pdf"
-            target="_blank"
-            download
-            ><button id="softwareEngineer" class="resumeBtn">
-              Software Engineer
-            </button></a
-          >
-          <a
-            href="Resumes/Alex Riley Web Developer.pdf"
-            target="_blank"
-            download
-            ><button id="webDeveloper" class="resumeBtn">
-              Web Developer
-            </button></a
-          >
-          <a
-            href="Resumes/Alex Riley Mobile Developer.pdf"
-            target="_blank"
-            download
-            ><button id="mobileDeveloper" class="resumeBtn">
-              Mobile Developer
-            </button></a
-          >
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!--ABOUT ME SECTION-->
-  <section id="aboutMeDiv">
-    <h3 id="aboutMe" class="sectionHeading">About Me</h3>
-    <div id="aboutMeContainer">
-      <div id="past">
-        <p class="sectionSubHeading">Past</p>
-        <p>
-          I've always been creative and passionate about problem-solving. When I
-          discovered software development combines both, I knew it was the right
-          field for me. I enrolled in ECPI University's Computer & Information
-          Science program, majoring in Software Development. I completed my
-          degree and graduated Magna Cum Laude. Each project I create confirms I
-          made the right choice.
-        </p>
-      </div>
+  <section id="aboutMeSection">
+    <div id="aboutMeContainer" class="solidBg">
+      <h3 id="aboutMe" class="sectionHeading">About Me</h3>
+      <ul>
+        <li>
+          Creative problem-solver with a degree in Software Development
+        </li><br>
+        <li>
+          Apprentice at TriSphere Apps, managing a remote dev team,
+          testing/debugging code, and ensuring Android/iOS feature parity
+        </li><br>
+        <li>
+          Short-term Goal: First paid role in the field
+        </li><br>
+        <li>
+          Long-term Goal: Grow into a full-stack senior developer and mentor
+        others
+        </li>
+      </ul>
+    </div>
 
-      <div id="present">
-        <p class="sectionSubHeading">Present</p>
-        <p>
-          I'm an apprentice at TriSphere Apps, working as a Software Testing
-          Engineer and Software Development Manager. I manage a remote
-          development team, test and debug code, and ensure feature parity
-          between Android and iOS apps. While gaining valuable experience, I'm
-          actively seeking my first paid position in the field.
-        </p>
-      </div>
-
-      <div id="future">
-        <p class="sectionSubHeading">Future</p>
-        <p>
-          I aim to land an entry-level role where I can learn, grow, and be part
-          of a great team long-term. Over time, I plan to strengthen my skills
-          in areas I'm less proficient in, with the ultimate goal of becoming a
-          full-stack senior developer, leading and mentoring junior developers.
-        </p>
-      </div>
+    <!--SOCIALS-->
+    <div id="socials">
+      <h3 id="socialsHeading" class="sectionSubHeading">Socials</h3>
+      <a href="https://www.linkedin.com/in/alex-r-riley" target="_blank"
+        ><img
+          src="Images/LinkedInFavicon.png"
+          id="LiFavicon"
+          alt="LinkedIn Logo"
+          loading="lazy"
+      /></a>
+      <a href="https://github.com/AlexRiley99" target="_blank"
+        ><img
+          src="Images/GitHubFavicon.png"
+          id="GhFavicon"
+          alt="GitHub Logo"
+          loading="lazy"
+      /></a>
     </div>
   </section>
 
-  <!--Learning SECTION-->
-  <section id="learningSection">
-    <h3 id="education" class="sectionHeading">Education</h3>
+  <!--Education SECTION-->
+  <section id="educationSection">
     <div id="educationContainer">
-      <div id="learned">
         <div id="credentialsContainer">
-          <!--Bachelor's Degree-->
-          <div id="bachelorsDegree" class="credential">
-            <figure>
-              <img
-                src="Images/BachelorsDegree.png"
-                alt="Bachelor of Science in Computer and Information Science with a major in Software Development. Graduated Magna Cum Laude"
-                id="bachelorsImg"
-                class="credentialImg"
-                loading="lazy"
-              />
-              <figcaption>
-                B.S. in Computer & Information Science, Software Development |
-                ECPI University
-              </figcaption>
-            </figure>
-          </div>
-          <!--Deep Learning Cert-->
-          <div id="deepLearningCert" class="credential">
-            <figure>
-              <img
-                src="Images/deepLearning.png"
-                alt="Fundamentals of Deep Learning certification"
-                id="deepLearningImg"
-                class="credentialImg"
-                loading="lazy"
-              />
-              <figcaption>
-                Fundamentals of Deep Learning Certificate | NVIDIA
-              </figcaption>
-            </figure>
-            <div class="credentialText"></div>
-          </div>
-
+          <h3 id="education" class="sectionHeading">Education</h3>
+          <img src="Images/Learning.png" alt="Girl reading a book" id="learningImg">
+          <div id="credentials">
+            <!--Bachelor's Degree-->
+            <div id="bachelorsDegree" class="credential solidBg">
+              <p>B.S. in Computer & Information Science, Software Development</p>
+              <details>
+                <summary>View Degree</summary>
+                <figure>
+                  <img
+                    src="Images/BachelorsDegree.png"
+                    alt="Bachelor of Science in Computer and Information Science with a major in Software Development. Graduated Magna Cum Laude"
+                    id="bachelorsImg"
+                    class="credentialImg"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    B.S. in Computer & Information Science, Software Development | ECPI University
+                  </figcaption>
+                </figure>
+              </details>
+            </div>
+            <!--Deep Learning Cert-->
+            <div id="deepLearningCert" class="credential solidBg">
+              <p>Fundamentals of Deep Learning Certificate</p>
+              <details>
+                <summary>View Cert</summary>
+                <figure>
+                  <img
+                    src="Images/deepLearning.png"
+                    alt="Fundamentals of Deep Learning certification"
+                    id="deepLearningImg"
+                    class="credentialImg"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Fundamentals of Deep Learning Certificate | NVIDIA
+                  </figcaption>
+                </figure>
+              </details>
+            </div>
           <!--Web Design Cert-->
-          <div id="webDesignCert" class="credential">
-            <figure>
-              <img
-                src="Images/webDesign.png"
-                alt="Responsive Web Desgin certification"
-                id="webDesignImg"
-                class="credentialImg"
-                loading="lazy"
-              />
-              <figcaption>
-                Responsive Web Design certification | freeCodeCamp
-              </figcaption>
-            </figure>
+          <div id="webDesignCert" class="credential solidBg">
+            <p>Responsive Web Design Certification</p>
+            <details>
+              <summary>
+                View Cert
+              </summary>
+              <figure>
+                <img
+                  src="Images/webDesign.png"
+                  alt="Responsive Web Desgin certification"
+                  id="webDesignImg"
+                  class="credentialImg"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Responsive Web Design certification | freeCodeCamp
+                </figcaption>
+              </figure>
+            </details>
           </div>
         </div>
+      </div>
+    </div>
 
-        <p class="techStackHeading sectionSubHeading">
-          In school, I learned and worked with:
-        </p>
-        <div id="learnedStack" class="whiteBackground techStackContainer">
+        
+        <div id="learnedStack" class="techStackContainer">
+          <p class="techStackHeading sectionSubHeading">I Know:</p>
           <!--HTML-->
           <div class="techStackImgContainer">
             <img
@@ -331,59 +268,33 @@
             />
             <p class="techStackCaption">Kotlin</p>
           </div>
-
-          <!--Android-->
+          <!--Bootstrap-->
           <div class="techStackImgContainer">
             <img
-              src="Images/Android.png"
-              alt="Android icon"
-              id="android"
+              src="Images/BootStrap.png"
+              alt="Bootstrap icon"
+              id="bootstrap"
               class="techStackImg"
               loading="lazy"
             />
-            <p class="techStackCaption">Android Studio</p>
+            <p class="techStackCaption">Bootstrap</p>
           </div>
+          <!--React-->
           <div class="techStackImgContainer">
             <img
-              src="Images/VSCode.png"
-              alt="VSCode icon"
-              id="vscode"
+              src="Images/React.png"
+              alt="React.js icon"
+              id="react"
               class="techStackImg"
               loading="lazy"
             />
-            <p class="techStackCaption">Visual Studio Code</p>
+            <p class="techStackCaption">React.js</p>
           </div>
         </div>
       </div>
-      <div id="educaiton">
-        <p class="sectionSubHeading">What I'm Learning Lately</p>
-        <div id="learningLately">
-          <div
-            class="whiteBackground techStackContainer"
-            id="learningLatelyStack"
-          >
-            <!--React-->
-            <div class="techStackImgContainer">
-              <img
-                src="Images/React.png"
-                alt="React.js icon"
-                id="react"
-                class="techStackImg"
-                loading="lazy"
-              />
-              <p class="techStackCaption">React.js</p>
-            </div>
-            <!--Bootstrap-->
-            <div class="techStackImgContainer">
-              <img
-                src="Images/BootStrap.png"
-                alt="Bootstrap icon"
-                id="bootstrap"
-                class="techStackImg"
-                loading="lazy"
-              />
-              <p class="techStackCaption">Bootstrap</p>
-            </div>
+
+          <div class="techStackContainer" id="learningLatelyStack">
+            <p class="techStackHeading sectionSubHeading">I'm Learning:</p>
             <!--Node-->
             <div class="techStackImgContainer">
               <img
@@ -419,41 +330,29 @@
               />
               <p class="techStackCaption">Swift</p>
             </div>
-
-            <!--Apple-->
-            <div class="techStackImgContainer">
-              <img
-                src="Images/Apple.png"
-                alt="Apple icon"
-                id="apple"
-                class="techStackImg"
-                loading="lazy"
-              />
-              <p class="techStackCaption">iOS</p>
-            </div>
-            <!--XCode-->
-            <div class="techStackImgContainer">
-              <img
-                src="Images/XCode.png"
-                alt="XCode icon"
-                id="xcode"
-                class="techStackImg"
-                loading="lazy"
-              />
-              <p class="techStackCaption">XCode</p>
-            </div>
+            <!--TypeScript-->
             <div class="techStackImgContainer">
               <img
                 src="Images/TypeScript.png"
                 alt="TypeScript icon"
-                id="xcode"
+                id="typescript"
                 class="techStackImg"
                 loading="lazy"
               />
               <p class="techStackCaption">TypeScript</p>
             </div>
+            <!--Playwright-->
+            <div class="techStackImgContainer">
+              <img
+                src="Images/Playwright.png"
+                alt="Playwright icon"
+                id="playwright"
+                class="techStackImg"
+                loading="lazy"
+              />
+              <p class="techStackCaption">Playwright</p>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </section>
@@ -461,12 +360,6 @@
   <!--PROJECTS SECTION-->
   <section id="projectsDiv">
     <h3 id="projects" class="sectionHeading">Projects</h3>
-    <br />
-    <p class="sectionSubHeading">
-      Click a button below any project to learn more, try it out, or view the
-      source code.
-    </p>
-
     <div id="projectsContainer">
       <div id="sundustContainer" class="projectContainer">
         <h3>Sundust Photography</h3>
@@ -583,11 +476,26 @@
     </div>
   </section>
 
-  <!--TO TOP BUTTON-->
-  <div class="toTopContainer">
-    <a href="#name"><button class="toTop">&#8593; To Top</button></a>
-  </div>
-
+  <!--HIRE ME SECTION-->
+  <section id="hireMeSection">
+    <h3 id="hireMe" class="sectionHeading">Hire Me</h3>
+    <div id="hireMeContainer">
+        <a href="mailto:alexcancode@yahoo.com" target="_blank"
+          ><button id="sendEmail" mailto="alexcancode@yahoo.com" class="hireMeBtn">
+            Send Email
+          </button>
+        </a>
+          <a
+            href="Alex Riley Resume.pdf"
+            target="_blank"
+            download
+            ><button id="resumeBtn" class="hireMeBtn">
+              Download Resume
+            </button>
+          </a>
+      </div>
+    </div>
+  </section>
   <!--FOOTER-->
   <div class="footer_div">
     <footer>
