@@ -104,6 +104,7 @@
     text-align: center;
     background-color: rgba(131, 133, 37);
     margin: auto;
+    z-index: 9999;
   }
   .jumpTo a,
   .jumpTo p {
