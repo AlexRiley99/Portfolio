@@ -1,51 +1,51 @@
 .learnMoreSection{
     font-size: 20px;
-  }
-  .whatDiv, .developmentSteps{
+}
+.whatDiv, .developmentSteps{
     font-weight: 800;
-  }
-  .stepNumber, .whatsNextDiv li{
-    font-size: 1rem;
+}
+.stepNumber, .whatsNextDiv li{
+    font-size: 1.5rem;
     font-weight: bold;
     margin-left: 2rem;
-  }
-  .screenshot{
+}
+.screenshot{
     width: 500px;
-  }
-  .keyDesignElements{
+}
+.keyDesignElements{
     grid-column: span 2;
-  }
-  .pages{
+}
+.pages{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin: 1.5rem;
-  }
-  .pageFeatures{
+}
+.pageFeatures{
     grid-column: 1;
     width: 85%;
     margin: 1rem auto;
     padding: 1rem;
-  }
-  .pages img{
+}
+.pages img{
     grid-column: 2;
     width: 100%;
-  }
-  .pageFeatures li{
+}
+.pageFeatures li{
     margin: 10px auto;
-  }
-  .how{
+}
+.how{
     width: 90%;
     margin: 2rem auto;
     padding: 1rem;
-  }
-  #next{
+}
+#next{
     width: 80%;
     margin: 1rem auto;
     border-bottom: none;
     font-weight: 700;
-  }
-  section{
+}
+section{
     border-bottom: 5px double rgb(0, 24, 0);
 }
 .stepsContainer{
