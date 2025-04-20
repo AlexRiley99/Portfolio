@@ -1,0 +1,99 @@
+.learnMoreSection{
+    font-size: 20px;
+  }
+  .whatDiv, .developmentSteps{
+    font-weight: 800;
+  }
+  .stepNumber, .whatsNextDiv li{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+  .screenshot{
+    width: 500px;
+  }
+  .keyDesignElements{
+    grid-column: span 2;
+  }
+  .pages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 1.5rem;
+  }
+  .pageFeatures{
+    grid-column: 1;
+    width: 85%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .pages img{
+    grid-column: 2;
+    width: 100%;
+  }
+  .pageFeatures li{
+    margin: 10px auto;
+  }
+  .how{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  #next{
+    width: 80%;
+    margin: 1rem auto;
+    border-bottom: none;
+    font-weight: 700;
+  }
+  section{
+    border-bottom: 5px double rgb(0, 24, 0);
+}
+.stepsContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    align-items: center;
+}
+.stepsToUse{
+    grid-column: 1;
+    width: 85%;
+    margin: 20px auto;
+    font-size: 20px;
+}
+.stepsContainer img{
+    grid-column: 2;
+    width: 100%;
+    margin: 20px auto;
+}
+#galleryFeatures{
+    grid-row: span 2;
+}
+.sundustCard{
+    width: 45%;
+}
+#sundustBusinessCard{
+    text-align: center;
+    margin: auto;
+}
+figcaption{
+    margin: 10px auto;
+    font-weight: 800;
+}
+
+@media(max-width: 1080px){
+    .stepsContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    #backBtn{
+        width: 20%;
+    }
+    .pages{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .pageFeatures, .pages img{
+        grid-column: 1;
+        width: 70%;
+        margin: auto;
+    }
+}
