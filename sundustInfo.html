@@ -18,14 +18,6 @@
     />
   </head>
   <body>
-    <!--HEADING-->
-    <div id="heading">
-      <h1 class="title" id="sundust">Sundust Photography</h1>
-      <h2 class="tagline">
-        HTML | CSS | JavaScript | Visual Studio Code | GitHub Pages
-      </h2>
-    </div>
-
     <!--JUMP TO-->
     <nav class="jumpTo">
       <div class="navContainer">
@@ -34,6 +26,14 @@
         <p><a href="#next">What's Next</a></p>
       </div>
     </nav>
+
+    <!--HEADING-->
+    <div id="heading">
+      <h1 class="title" id="sundust">Sundust Photography</h1>
+      <h2 class="tagline">
+        HTML | CSS | JavaScript | Visual Studio Code | GitHub Pages
+      </h2>
+    </div>
 
     <!--CONTENT-->
     <div id="contentContainer">
@@ -55,7 +55,7 @@
 
           <!--PAGE FEATURES-->
           <div class="pages">
-            <div class="pageFeatures whiteBackground">
+            <div class="pageFeatures solidBg">
               <p>Key <b>Home Page</b> Features:</p>
               <ul>
                 <li>Call to action at the top</li>
@@ -82,7 +82,7 @@
               loading="lazy"
             />
 
-            <div class="pageFeatures whiteBackground">
+            <div class="pageFeatures solidBg">
               <p>Key <b>About Page</b> Features:</p>
               <ul>
                 <li>
@@ -106,7 +106,7 @@
               id="about1"
               loading="lazy"
             />
-            <div class="pageFeatures whiteBackground" id="galleryFeatures">
+            <div class="pageFeatures solidBg" id="galleryFeatures">
               <p>Key <b>Gallery Page</b> Features:</p>
               <ul>
                 <li>
@@ -157,7 +157,7 @@
               id="gallery2"
               loading="lazy"
             />
-            <div class="pageFeatures whiteBackground">
+            <div class="pageFeatures solidBg">
               <p>Key <b>Pricing Page</b> Features:</p>
               <ul>
                 <li>
@@ -183,7 +183,7 @@
               id="pricing"
               loading="lazy"
             />
-            <div class="pageFeatures whiteBackground keyDesignElements">
+            <div class="pageFeatures solidBg keyDesignElements">
               <p>Key <b>Design</b> Elements:</p>
               <ul>
                 <li>
@@ -234,7 +234,7 @@
         <div class="developmentSteps">
           <ol>
             <li class="stepNumber">Set Up The Repository & Domain</li>
-            <p class="whiteBackground">
+            <p class="solidBg">
               I created the repository in GitHub and cloned it in VS Code so
               that I could use GitHub for version control. GitHub Pages is also
               my chosen hosting platform for this website, as it's free,
@@ -243,7 +243,7 @@
               hosted as a custom domain in GitHub pages.
             </p>
             <li class="stepNumber">Gather Requirements</li>
-            <p class="whiteBackground">
+            <p class="solidBg">
               I spoke with the client to determine what he wants to see in his
               website. He used words like "cozy" and "neighborly" to describe
               the feel he wanted the site to have. We also discussed which pages
@@ -251,7 +251,7 @@
               wants it to have.
             </p>
             <li class="stepNumber">Design</li>
-            <p class="whiteBackground">
+            <p class="solidBg">
               First, I looked up some mood boards on Pinterest, using keywords
               like "cozy" and "neighborly". Next, I used Google color picker to
               find some hex codes for colors that I would potentially use for
@@ -259,33 +259,33 @@
               blue color scheme because it has a cozy vibe and the blue really
               compliments the orange in the sepia.
             </p>
-            <p class="whiteBackground">
+            <p class="solidBg">
               Next, I put together some wireframes to show to the client, to get
               his approval on the layout of the pages. I also showed him the
               color scheme and used Google Fonts to choose some fonts together.
             </p>
             <li class="stepNumber">Front End</li>
-            <p class="whiteBackground">
+            <p class="solidBg">
               I began by creating HTML files for each page of the website. Then,
               I created corresponding CSS files and one overarching Styles.css
               file. Styles.css handles styles that apply to the entire website,
               such as the background and button colors. The CSS files for each
               page only handles styles that are specific to that page.
             </p>
-            <p class="whiteBackground">
+            <p class="solidBg">
               Next, I pasted in HTML boilerplate code from a boilerplate.html
               file that I keep on my device for when I want to create a new HTML
               file. It saves me from typing out the same things over and over
               again to create the basic structure of an HTML page.
             </p>
-            <p class="whiteBackground">
+            <p class="solidBg">
               Once each page had its boilerplate code, I went through and added
               actual elements to each page such as text, buttons, image boxes,
               etc. I styled each element as it was created, as this is my
               preferred method.
             </p>
             <li class="stepNumber">Back End</li>
-            <p class="whiteBackground">
+            <p class="solidBg">
               The back end for this website mainly consists of JavaScript for
               the Gallery page. I had never created an expanding image effect
               like this in JavaScript before. I had created one in Kotlin
@@ -293,13 +293,13 @@
               website. Since this was new territory, I began by researching how
               to do it.
             </p>
-            <p class="whiteBackground">
+            <p class="solidBg">
               Once I had consulted a few resources online, I began using a
               combination of CSS and JavaScript to produce the expanding image
               effect and the close button that appears when the image is
               expanded.
             </p>
-            <p class="whiteBackground">
+            <p class="solidBg">
               JavaScript is also used to create the changing image on the Home
               page, cycling through an array of images and changing every 3
               seconds. There is an event listener on the image container so that
@@ -310,7 +310,7 @@
       </section>
       <!--NEXT-->
       <section id="next">
-        <h3 class="sectionHeading" id="how">What's Next</h3>
+        <h3 class="sectionHeading">What's Next</h3>
         <p class="sectionSubHeading">What I'll Be Adding in the Future</p>
         <div class="whatsNextDiv">
           <ul>
@@ -324,19 +324,9 @@
         </div>
       </section>
     </div>
-    <!--BACK BUTTON-->
-    <div class="backBtnContainer">
-      <button onclick="window.location.href='index'" class="backBtn">
-        &#8592; Back
-      </button>
-    </div>
-    <!--TO TOP BUTTON-->
-    <div class="toTopContainer">
-      <a href="#sundust"><button class="toTop">&#8593; To Top</button></a>
-    </div>
     <div class="footer_div">
       <footer>
-        <p>Alex Riley | March 2025 | Last Updated: March 31, 2025</p>
+        <p>Alex Riley | March 2025 | Last Updated: April 19, 2025</p>
       </footer>
     </div>
   </body>

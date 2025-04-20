@@ -1,12 +1,17 @@
+section{
+    border-bottom: 5px double rgb(0, 24, 0);
+}
 .pages{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    margin: 1.5rem;
 }
 .pageFeatures{
     grid-column: 1;
     width: 85%;
-    margin: 20px auto;
+    margin: 1rem auto;
+    padding: 1rem;
 }
 .pages img{
     grid-column: 2;
@@ -30,9 +35,18 @@ figcaption{
     font-weight: 800;
 }
 .how{
-    border-top: 5px double rgb(0, 24, 0);
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
   }
-
+.stepNumber{
+    margin-left: 2rem;
+}
+#next{
+    width: 80%;
+    margin: 1rem auto;
+    border-bottom: none;
+}
 @media(max-width: 1080px){
     #backBtn{
         width: 20%;
