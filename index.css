@@ -1,16 +1,28 @@
 /*ABOUT ME*/
-  /*#aboutMeSection{
+  #aboutMeSection{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 15rem;
+    gap: 1rem;
     align-items: center;
     width: 100%;
+    margin: 1.5rem auto;
+    padding: 1rem;
   }
   #aboutMeContainer{
     grid-column: 1;
-    width: 100%;
     font-weight: 700;
+    font-size: 1.5rem;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+  #devImageContainer{
+    grid-column: 2;
+  }
+  #devImage{
+    width: 100%;
+    height: auto;
   }
   /*SOCIALS
   #socials {
@@ -21,10 +33,6 @@
     align-items: center;
     width: 9rem;
     height: 7rem;
-  }*/
-
-  #aboutMeSection{
-    width: 100%;
   }
   #LiFavicon, #GhFavicon{
     width: 4rem;
@@ -41,7 +49,7 @@
     text-align: center;
     margin: 0;
     grid-column: span 2;
-  }
+  }*/
   
   /*EDUCATION*/
   #credentialsContainer{
