@@ -1,5 +1,5 @@
 /*ABOUT ME*/
-  #aboutMeSection{
+  /*#aboutMeSection{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
@@ -12,7 +12,7 @@
     width: 100%;
     font-weight: 700;
   }
-  /*SOCIALS*/
+  /*SOCIALS
   #socials {
     grid-column: 2;
     text-align: center;
@@ -21,6 +21,10 @@
     align-items: center;
     width: 9rem;
     height: 7rem;
+  }*/
+
+  #aboutMeSection{
+    width: 100%;
   }
   #LiFavicon, #GhFavicon{
     width: 4rem;
