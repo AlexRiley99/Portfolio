@@ -289,6 +289,14 @@
   
   /*MOBILE PHONE*/
   @media (max-width: 600px){
+    .navContainer{
+      height: 15rem;
+    }
+    .navContainer a,
+    .navContainer p{
+      margin: 0;
+      padding: 0;
+    }
     #aboutMeSection, #credentialsContainer{
       display: block;
       margin: 0;

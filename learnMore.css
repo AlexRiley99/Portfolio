@@ -90,10 +90,26 @@ figcaption{
     .pages{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        width: 100%;
+        margin: 1rem auto;
     }
     .pageFeatures, .pages img{
         grid-column: 1;
-        width: 70%;
-        margin: auto;
+        width: 100;
+        margin: 1rem auto;
     }
 }
+
+@media (max-width: 600px){
+    .navContainer{
+        height: 13rem;
+      }
+    .navContainer a,
+    .navContainer p{
+      margin: 0;
+      padding: 0;
+    }
+    .pageFeatures, .pages img{
+        grid-column: 1;
+    }
+} 
