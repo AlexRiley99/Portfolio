@@ -289,32 +289,38 @@
   
   /*MOBILE PHONE*/
   @media (max-width: 600px){
-      #aboutMeContainer, .credentialContainer, #learningLately{
-          grid-template-columns: 1;
+    #aboutMeSection, #credentialsContainer{
+      display: block;
+      margin: 0;
+      padding: 1rem;
+    }
+    #aboutMeContainer, #credentials, #learningLately, #devImage, 
+    .credentialImg, .projectContainer, .techStackContainer{
+        align-items: center;
+        width: 100%;
+        margin: 1rem auto;
+    }
+    #learningImg{
+      display: none;
+    }
+    .projectImg{
+        width: 100%;
       }
-      #past, #present, #future, .credentialImg, .projectContainer, .techStackContainer{
-          grid-column: 1;
-          width: 300px;
-          margin: 10px auto;
-      }
-  .projectImg{
-          width: 100%;
-      }
-      #projectsContainer{
-          width: 100%;
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows: repeat(4, auto);
-          margin: auto;
-      }
-      #sundustImg{
-          grid-row: 1;
-      }
-      #groceryImg{
-          grid-row: 2;
-      }
-      #incomeImg{
-          grid-row: 3;
-      }
+    #projectsContainer{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      margin: auto;
+    }
+    #sundustImg{
+      grid-row: 1;
+    }
+    #groceryImg{
+      grid-row: 2;
+    }
+    #incomeImg{
+      grid-row: 3;
+    }
   }
   
