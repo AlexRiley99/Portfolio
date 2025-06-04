@@ -16,6 +16,7 @@
     width: 100%;
     height: auto;
     padding: 2rem;
+    border-radius: 1rem;
   }
   #devImageContainer{
     grid-column: 2;
@@ -82,6 +83,7 @@
     width: 100%;
     margin-bottom: 1rem;
     padding: 1rem;
+    border-radius: 1rem;
   }
   .credentialImg{
     width: 100%;
@@ -159,6 +161,7 @@
   .projectContainer{
     border: 5px double #283618;
     padding: 1rem;
+    border-radius: 1rem;
   }
   .projectImg {
     width: 100%;
