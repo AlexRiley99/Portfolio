@@ -224,13 +224,8 @@
 
   /*HIRE ME*/
 #hireMeSection{
-    background-color: #BC6C25;
     margin: 0 auto;
-    padding: 1rem;
-}
-#hireMe{
-  color: #FEFAE0;
-  text-shadow: 2px 2px 2px #283618, -1px -1px 1px #283618;
+    padding: 2rem;
 }
 #hireMeContainer{
   display: grid;
