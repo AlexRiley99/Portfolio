@@ -119,6 +119,7 @@
   .solidBg{
     background-color: #DDA15E;
     padding: 1.5rem;
+    border-radius: 1rem;
   }
 
   /*FOOTER*/
@@ -133,7 +134,8 @@
 
 @media (max-width: 1080px){
   .tagline{
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
+    padding: 0.5rem;
   }
   .navContainer a,
   .navContainer p{
