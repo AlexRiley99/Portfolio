@@ -222,6 +222,21 @@
     padding: 1rem;
   }
 
+/*WIPS*/
+#worksInProgress{
+  border: 5px double #283618;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+}
+#worksInProgress h2{
+  text-align: center;
+}
+.wip{
+  padding: 1rem;
+}
+
   /*HIRE ME*/
 #hireMeSection{
     margin: 0 auto;
