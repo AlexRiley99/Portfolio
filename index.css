@@ -147,6 +147,10 @@
     text-align: center;
     margin: auto;
     font-weight: 800;
+    color: black;
+  }
+  summary{
+    color: black;
   }
 
   /*PROJECTS*/
@@ -214,7 +218,7 @@
   }
   .projectDescription{
     grid-column: 2;
-    font-weight: 500;
+    font-weight: 800;
     padding: 1rem;
   }
 
