@@ -1,7 +1,7 @@
 :root {
+  background-color: rgb(252, 250, 234);
+  color: black;
   line-height: 1.5;
-  color: #331c00;
-  background-color: #eee2df;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,15 +15,6 @@
 }
 
   html {
-    background: linear-gradient(
-        to bottom right,
-        rgba(254, 250, 224, 1.0),
-        rgba(254, 250, 224, 0.7),
-        rgba(254, 250, 224, 0.5),
-        rgba(254, 250, 224, 0.7),
-        rgba(254, 250, 224, 1.0)
-      ),
-      url("Images/texture2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
