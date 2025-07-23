@@ -8,147 +8,158 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
-  html {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: rgb(0, 50, 0);
-    overflow: hidden;
-  }
-  body {
-    overflow: auto;
-  }
+html {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(0, 50, 0);
+  overflow: hidden;
+}
 
-  html,
-  body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
+body {
+  overflow: auto;
+}
 
-  button {
-    text-align: center;
-    background: radial-gradient(
-      rgba(252, 228, 216, 1) 0%,
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+button {
+  text-align: center;
+  background: radial-gradient(rgba(252, 228, 216, 1) 0%,
       rgba(252, 215, 199, 0.7) 50%,
       rgba(247, 195, 170, 0.5) 70%,
-      rgba(250, 143, 94, 0.3) 95%
-    );
-    color: black;
-    border-radius: 10px;
-  }
-  button:hover {
-    box-shadow: 2px 1px 4px rgb(57, 26, 0);
-  }
+      rgba(250, 143, 94, 0.3) 95%);
+  color: black;
+  border-radius: 10px;
+}
 
-  .sectionHeading {
-    text-decoration: underline;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 0;
-  }
-  .sectionSubHeading {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 2rem;
-  }
-  section {
-    width: 100%;
-    margin: 20px auto;
-    padding: 5px;
-  }
+button:hover {
+  box-shadow: 2px 1px 4px rgb(57, 26, 0);
+}
 
-  .title, #heading {
-    font-size: 5rem;
-    margin: 0;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    border-bottom: 5px double #283618;
-  }
+.sectionHeading {
+  text-decoration: underline;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.sectionSubHeading {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+section {
+  width: 100%;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+.title,
+#heading {
+  font-size: 5rem;
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 5px double #283618;
+}
+
+.tagline {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.title,
+.tagline {
+  text-align: center;
+}
+
+/*JUMP TO*/
+.jumpTo {
+  position: fixed;
+  border: 1px solid rgba(13, 18, 0, 0.4);
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #283618;
+  ;
+  margin: auto;
+  z-index: 9999;
+}
+
+.jumpTo a,
+.jumpTo p {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  margin: auto 2rem;
+  font-size: 2rem;
+  color: rgb(253, 243, 233);
+  text-shadow: 2px 1px 1px rgb(13, 6, 0), -2px -1px 1px rgb(13, 6, 1);
+}
+
+.jumpTo a:hover {
+  text-decoration: underline;
+}
+
+.navContainer {
+  text-align: center;
+  margin: auto;
+}
+
+/*Backgrounds*/
+.solidBg {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 5px double #283618;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #283618;
+  color: #FEFAE0;
+  padding: 2rem;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
   .tagline {
-    font-size: 2rem;
-    margin-top: 0;
-  }
-  .title,
-  .tagline {
-    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
   }
 
-  /*JUMP TO*/
-  .jumpTo {
-    position: fixed;
-    border: 1px solid rgba(13, 18, 0, 0.4);
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-    text-align: center;
-    background-color: #283618;;
+  .navContainer a,
+  .navContainer p {
     margin: auto;
-    z-index: 9999;
+    padding: 0.5rem;
   }
-  .jumpTo a,
-  .jumpTo p {
-    display: inline;
-    text-align: center;
-    text-decoration: none;
-    margin: auto 2rem;
-    font-size: 2rem;
-    color: rgb(253, 243, 233);
-    text-shadow: 2px 1px 1px rgb(13, 6, 0), -2px -1px 1px rgb(13, 6, 1);
-  }
-  .jumpTo a:hover {
-    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #heading {
+    padding-top: 15rem;
   }
 
   .navContainer {
-    text-align: center;
-    margin: auto;
-  }
-
-  /*Backgrounds*/
-  .solidBg{
-    padding: 1.5rem;
-    border-radius: 1rem;
-    border: 5px double #283618;
-  }
-
-  /*FOOTER*/
-  footer {
-    background-color: #283618;
-    color: #FEFAE0;
-    padding: 2rem;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-@media (max-width: 1080px){
-  .tagline{
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
-  .navContainer a,
-  .navContainer p{
-    margin: auto;
-    padding: 0.5rem;
-  }
-}
-
-@media (max-width: 600px){
-  #heading{
-    padding-top: 15rem;
-  }
-  .navContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,9 +167,10 @@
     padding: 0;
     margin: 0;
   }
+
   .navContainer a,
-    .navContainer p{
-      text-align: center;
-      width: 100%;
-    }
+  .navContainer p {
+    text-align: center;
+    width: 100%;
+  }
 }
