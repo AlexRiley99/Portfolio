@@ -29,53 +29,44 @@
   <!--NAME AND TAGLINE-->
   <div id="heading">
     <h1 class="title" id="name">Alex Riley</h1>
-    <h2 class="tagline">
-      Software Engineer | Web Developer | Mobile Developer
-    </h2>
   </div>
   <!--ABOUT ME SECTION-->
   <section id="aboutMeSection">
     <div id="aboutMeContainer" class="solidBg">
       <h3 id="aboutMe" class="sectionHeading">About Me</h3>
-      <ul>
-        <li>
-          Creative problem-solver with a degree in Software Development
-        </li><br>
-        <li>
-          Apprentice at TriSphere Apps, managing a remote dev team,
-          testing/debugging code, and ensuring Android/iOS feature parity
-        </li><br>
-        <li>
-          Short-term Goal: Gain industry experience to further build my skills and contribute to something great
-        </li><br>
-        <li>
-          Long-term Goal: Grow into a full-stack senior developer and mentor
-        others
-        </li>
-      </ul>
+      I’m a software developer passionate about creating solutions that are both innovative and secure. 
+      I learn best by diving in hands-on, supported by research and tutorials.<br> 
+      <br><p id="motto">My Motto: <i>I can do anything because I can learn anything</i></p><br>
+      I thrive in teams that balance independence with clear communication and collaboration. Outside of tech, I enjoy crocheting/knitting, baking, 
+      and playing video games.<br>
+      <br>Known for my reliability and initiative, I’ve contributed meaningfully in startup environments, like representing TriSphere Apps 
+      at an online career fair to support busy leadership. 
+      Driven by curiosity and growth, I’m eager to continuously learn and improve.<br>
+      <br>When working with me, expect clear communication, proactive effort, and a growth mindset.
     </div>
+    
     <div id="devImageContainer">
+      <div id="socials">
+        <h3 id="socialsHeading" class="sectionSubHeading">Socials</h3>
+        <a href="https://medium.com/@alexcancode" target="_blank"
+          ><img
+            src="Images/MediumFavicon.png"
+            id="MedFavicon"
+            class="socialsFavicon"
+            alt="Medium Logo"
+            loading="lazy"
+        /></a>
+        <a href="https://github.com/AlexRiley99" target="_blank"
+          ><img
+            src="Images/GitHubFavicon.png"
+            id="GhFavicon"
+            class="socialsFavicon"
+            alt="GitHub Logo"
+            loading="lazy"
+        /></a>
+      </div>
       <img src="Images/developer.png" alt="Woman at a computer" id="devImage">
     </div>
-
-    <!--SOCIALS
-    <div id="socials">
-      <h3 id="socialsHeading" class="sectionSubHeading">Socials</h3>
-      <a href="https://www.linkedin.com/in/alex-r-riley" target="_blank"
-        ><img
-          src="Images/LinkedInFavicon.png"
-          id="LiFavicon"
-          alt="LinkedIn Logo"
-          loading="lazy"
-      /></a>
-      <a href="https://github.com/AlexRiley99" target="_blank"
-        ><img
-          src="Images/GitHubFavicon.png"
-          id="GhFavicon"
-          alt="GitHub Logo"
-          loading="lazy"
-      /></a>
-    </div>-->
   </section>
 
   <!--Education SECTION-->
@@ -85,6 +76,10 @@
           <h3 id="education" class="sectionHeading">Education</h3>
           <img src="Images/Learning.png" alt="Girl reading a book" id="learningImg" loading="lazy">
           <div id="credentials">
+            <!--Master's Degree-->
+            <div id="mastersDegree" class="credential solidBg">
+              <p>Coming August 2026: M.S. in Cybersecurity</p>
+            </div>
             <!--Bachelor's Degree-->
             <div id="bachelorsDegree" class="credential solidBg">
               <p>B.S. in Computer & Information Science, Software Development</p>
@@ -473,15 +468,35 @@
             will be able to place an imaginary online order. This project is 
             helping me learn to use React.js, Vite, and Stripe via online 
             sources such as YouTube.</p>
+            <details id="heresTheTeaDetails">
+              <summary class="wipSummary">Progress</summary>
+              <p id="heresTheTeaProgress" class="progressDescription">Currently working on adding functionality to the Shop page and making it look nicer.
+                The logic is there for adding items to a cart. I'm thinking of using something like Stripe to simulate an online checkout experience. 
+              </p>
+              <img src="Images/heresTheTea1.png" class="progressImg" loading="lazy">
+              <img src="Images/heresTheTea2.png" class="progressImg" loading="lazy">
+              <img src="Images/heresTheTea3.png" class="progressImg" loading="lazy">
+              <img src="Images/heresTheTea4.png" class="progressImg" loading="lazy">
+              <img src="Images/heresTheTea5.png" class="progressImg" loading="lazy">
+              <img src="Images/heresTheTea6.png" class="progressImg" loading="lazy">
+              <img src="Images/heresTheTea7.png" class="progressImg" loading="lazy">
+              <img src="Images/heresTheTea8.png" class="progressImg" loading="lazy">
+              <img src="Images/heresTheTea9.png" class="progressImg" loading="lazy">
+              <img src="Images/heresTheTea10.png" class="progressImg" loading="lazy">
+            </details>
         </div>
         <div id="bookCatalog" class="wip">
           <h3>Book Catalog</h3>
-          <p>A Java program designed to organize the plethora of books in my 
-            home. Will use an SQLite database to store information about books
-             and will allow me to add new books, edit them, delete them, or search 
-             for a specific title, author, category, or age group. This project is 
-             in the early stages of development and I'm excited to really start making 
-             it functional.</p>
+          <p>A Java program designed to organize the many books in my home. It uses a relational database accessed through JDBC to store 
+            information about books, allowing me to add, edit, delete, or search by title, author, category, or age group. This project 
+            is in the early stages, and I’m excited to make it fully functional.</p>
+             <details id="bookCatalogDetails">
+              <summary class="wipSummary">Progress</summary>
+              <p id="bookCatalogProgress" class="progressDescription">The user can currently add books, view the entire catalog, 
+                and delete books by ID. Still working on the logic for searching for specific books and modifying books. Also working
+                out a bug with the book addition feature, as it's adding books to the database and then saying "invalid entry".</p>
+              <img src="Images/BookCatalog.png" class="progressImg" loading="lazy">
+            </details>
         </div>
   </section>
 
