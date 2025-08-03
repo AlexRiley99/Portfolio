@@ -39,19 +39,23 @@
   text-align: center;
   width: 11rem;
   height: 7rem;
+}
+
+#socialsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 .socialsFavicon {
   width: 5rem;
 }
 
-#MedFavicon {
+#HsFavicon {
   grid-column: 1;
 }
 
-#GhFavicon {
+#MedFavicon {
   grid-column: 2;
 }
 
