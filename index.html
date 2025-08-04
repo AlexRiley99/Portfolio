@@ -344,6 +344,47 @@
   <section id="projectsDiv">
     <h3 id="projects" class="sectionHeading">Projects</h3>
     <div id="projectsContainer">
+      <div id="bookCatalogContainer" class="projectContainer">
+        <h3>Book Catalog</h3>
+        <img
+          src="Images/BookCatalog1.png"
+          alt="A screenshot of the book catalog output"
+          id="bookCatalogImg"
+          class="projectImg"
+          loading="lazy"
+        />
+        <div class="projectButtons">
+          <a href="bookCatalogInfo.html" target="_blank"
+            ><button id="bookCatalogInfoBtn" class="projectBtn learnMore">
+              Learn More
+            </button></a
+          >
+          <button onclick="openVideo()" class="projectBtn liveDemo">
+              View Video
+            </button>
+          <script>
+            function openVideo(){
+              window.open('bookCatalogVideo.html', '_blank');
+            }
+          </script><!--Open video when button is clicked-->
+          <a
+            href="https://github.com/AlexRiley99/Book_Catalog"
+            target="_blank"
+            ><button id="incomeCode" class="projectBtn sourceCode">
+              Source Code
+            </button></a
+          >
+        </div>
+        <div class="projectDescription">
+          <p>
+            A CRUD application that I developed using Java and JDBC to 
+            manage a personal book catalog. Users can add, remove, edit, and 
+            search for books across the whole catalog or by specific fields like
+            title, author, category, etc.
+          </p>
+        </div>
+      </div>
+      
       <div id="sundustContainer" class="projectContainer">
         <h3>Sundust Photography</h3>
         <img
@@ -417,45 +458,6 @@
           </p>
         </div>
       </div>
-
-      <div id="incomeContainer" class="projectContainer">
-        <h3>Variable Income Calculator</h3>
-        <img
-          src="Images/incomeImg.png"
-          alt="A screenshot of a variable income calculator"
-          id="incomeImg"
-          class="projectImg"
-          loading="lazy"
-        />
-        <div class="projectButtons">
-          <a href="incomeInfo" target="_blank"
-            ><button id="incomeInfoBtn" class="projectBtn learnMore">
-              Learn More
-            </button></a
-          >
-          <a
-            href="https://alexriley99.github.io/Variable_Income_Calculator/"
-            target="_blank"
-            ><button id="variableincome" class="projectBtn liveDemo">
-              Live Demo
-            </button></a
-          >
-          <a
-            href="https://github.com/AlexRiley99/Variable_Income_Calculator"
-            target="_blank"
-            ><button id="incomeCode" class="projectBtn sourceCode">
-              Source Code
-            </button></a
-          >
-        </div>
-        <div class="projectDescription">
-          <p>
-            A web application that I developed to help people who make variable
-            income (hourly, freelance, etc.) to make future financial decisions
-            based on what their income has been in the past.
-          </p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -484,18 +486,6 @@
               <img src="Images/heresTheTea8.png" class="progressImg" loading="lazy">
               <img src="Images/heresTheTea9.png" class="progressImg" loading="lazy">
               <img src="Images/heresTheTea10.png" class="progressImg" loading="lazy">
-            </details>
-        </div>
-        <div id="bookCatalog" class="wip">
-          <h3>Book Catalog</h3>
-          <p>A Java program designed to organize the many books in my home. It uses a relational database accessed through JDBC to store 
-            information about books, allowing me to add, edit, delete, or search by title, author, category, or age group. This project 
-            is in the early stages, and I’m excited to make it fully functional.</p>
-             <details id="bookCatalogDetails">
-              <summary class="wipSummary">Progress</summary>
-              <p id="bookCatalogProgress" class="progressDescription">The user can currently add books, view the entire catalog, 
-                and delete books by ID. Still working on the logic for searching for specific books and modifying books.</p>
-              <img src="Images/BookCatalog.png" class="progressImg" loading="lazy">
             </details>
         </div>
   </section>

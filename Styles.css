@@ -131,6 +131,14 @@ section {
   border: 5px double #283618;
 }
 
+/*VIDEO*/
+#bookCatalogVideo {
+  display: block;
+  margin: 1rem auto;
+  width: 80%;
+  height: auto;
+}
+
 /*FOOTER*/
 footer {
   background-color: #283618;
