@@ -76,11 +76,12 @@
               <li class="stepNumber">Set Up Database</li>
               <p class="solidBg">
                 I downloaded the appropriate JDBC driver to allow my Java application 
-                to communicate with the database. I then created a CreateDatabase
-                class to handle establishing and managing the database connection. After 
-                that, I developed a DatabaseHelper class, which contains methods with prepared 
-                statements for all database-related operations, such as adding new books, updating 
-                existing entries, deleting records, and retrieving book information based on user input.
+                to communicate with the database. Next, I created a CreateDatabase utility 
+                class that establishes the initial SQLite database file (bookcatalog.db). 
+                Running this class ensures the database exists before the application starts. 
+                For ongoing database operations, I implemented a DatabaseHelper class responsible 
+                for connecting to the database and performing database-related functionalities using 
+                methods with prepared SQL statements.
               </p>
               <li class="stepNumber">Development</li>
               <p class="solidBg">
