@@ -194,7 +194,8 @@ summary {
   margin: auto;
 }
 
-.projectContainer {
+.projectContainer,
+#honorableMentionsDiv {
   border: 5px double #283618;
   padding: 1rem;
   border-radius: 1rem;
@@ -223,11 +224,19 @@ summary {
 }
 
 #projectsDiv {
-  width: 90%;
-  margin: auto;
   padding-bottom: 20px;
   text-align: center;
   position: relative;
+}
+
+#projectsDiv,
+#honorableMentionsDiv {
+  width: 90%;
+  margin: auto;
+}
+
+#honorableMentions ul {
+  padding: 1rem;
 }
 
 .projectButtons {
@@ -271,7 +280,7 @@ summary {
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem auto;
-  width: 80%;
+  width: 90%;
 }
 
 #worksInProgress h2 {
