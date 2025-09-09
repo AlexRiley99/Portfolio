@@ -37,18 +37,20 @@
 #socials {
   grid-column: 2;
   text-align: center;
-  width: 11rem;
-  height: 7rem;
+  width: 17rem;
+  height: 15rem;
 }
 
 #socialsContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
 
 .socialsFavicon {
   width: 5rem;
+  margin: 0.25rem;
+  border-radius: 1rem;
 }
 
 #HsFavicon {
