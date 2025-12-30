@@ -276,39 +276,6 @@ summary {
   padding: 1rem;
 }
 
-/*WIPS*/
-#worksInProgress {
-  border: 5px double #283618;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem auto;
-  width: 90%;
-}
-
-#worksInProgress h2 {
-  text-align: center;
-}
-
-.wip {
-  padding: 1rem;
-}
-
-.wipSummary {
-  font-size: 1rem;
-}
-
-.progressDescription {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  text-align: justify;
-}
-
-.progressImg {
-  width: 60%;
-  height: auto;
-}
-
 /*HIRE ME*/
 #hireMeSection {
   margin: 0 auto;
